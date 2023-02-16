@@ -1,0 +1,5232 @@
+TIMESTAMP: 00:00:34.0790000
+foreign
+
+
+first please take a moment to review our
+
+
+about 24 to 48 hours I'll be sharing the
+
+
+
+
+thank you so much Albina as always for
+
+
+he he wasn't on the
+
+
+have heard of it so no one better than
+
+
+you take out with the reactor too as
+
+
+little bit more about utilizing Linux on
+
+
+freaking cool anyway
+
+
+are based off of like Linux images so if
+
+
+reasoning or can you give me like a
+
+
+people is at so that's super
+
+
+
+
+which is called reactor demo
+
+
+be running
+
+
+videos uh I think the longest one might
+
+
+think this is going to provision okay
+okay there's someone in the chat who
+
+
+like networking programming
+
+
+how things boot like you don't it's
+
+
+this uh our y-axis and then the level of
+
+
+it's like a managed service but you
+
+
+in any Cloud it doesn't really matter I
+
+
+uh in like two hours or so and then
+
+
+simulated with like software but I know
+
+
+because ultimately like the program
+example uh vs code Docker kubernetes SQL
+
+
+um but yeah so you say that it it can't
+
+
+agree yeah that's why I was trying to
+
+
+think so yeah yeah like bash is like
+
+
+one is better you shouldn't learn the
+
+
+stuff that I like so bash uh Azure and
+
+
+high level of talking about like open
+
+
+um but
+
+
+but there might be some gray area with
+
+
+two are very important too typically
+
+
+yeah yeah have you seen that I think I
+
+
+organizations that do utilize open
+
+
+I joined to Microsoft about a year and a
+
+
+this like the culture was completely
+
+
+or with Microsoft in general like what
+
+
+yeah
+
+
+probably get a lot more information
+
+
+yeah our position against open source
+
+
+it's just like not the right move from
+
+
+they grabbed.net and they pulled a lot
+
+
+like there's multiple things that
+
+
+you start to think like the AWS market
+
+
+is open source and the.net Foundation is
+
+
+build as well which I think is important
+
+
+Community has always been that part of
+
+
+about all about getting started with WSL
+
+
+um if you didn't know if you don't know
+
+
+native Computing Foundation cncf which
+
+
+let's move around here
+
+
+don't know why I still get the feeling
+
+
+Adam had like a really great had some
+
+
+still easy like because the other Ides I
+acquisition and I open Visual Studio and
+
+
+that where where Visual Studio is like a
+
+
+ubuntu-based distribution yes snap yep
+
+
+choco yeah choco yeah yeah there might
+
+
+embracing the ones that the majority of
+
+
+bunch of like Windows technology and
+
+
+and this whole like right shift in
+
+
+uh
+
+
+any kind of creative uh migrations it
+
+
+and over 47 000 customers using Azure
+
+
+in terms of leveraging Linux let me
+
+
+this technology in Azure you don't have
+
+
+you then kind of move your way down the
+
+
+um I'm pretty sure there's a lot of
+
+
+typically end up utilizing VMS for that
+
+
+and then I'm going to use open up my
+
+
+oh my goodness there's so many oh no
+
+
+straightforward not a straightforward
+
+
+that is you know as a way to interacts
+
+
+then they came up with this awesome
+
+
+based off Linux right
+
+
+fix blog post I just want to see how it
+
+
+and then we create like shopping I don't
+
+
+this hold on how do I move this can I no
+
+
+
+
+
+
+let's grab a shopping one let's grab
+
+
+uh yeah and I didn't do anything all I
+
+
+Docker running so
+
+
+going to see like yeah type like Linux
+
+
+um
+
+
+bicep but I don't know if it creates
+
+
+
+
+
+
+we know the most because you know if you
+
+
+learner Cloud uh it is an open source
+
+
+people maintaining this website on our
+
+
+know best performant uh SEO optimized
+
+
+only for February and we are just
+
+
+
+
+maintain this with very very little uh
+
+
+past I don't know we'll take a look at
+
+
+
+
+we're gonna do last seven days so
+
+
+here this is actually the API so what
+
+
+Cloud definition uh it calls the API
+um I forgot to close my window that's
+
+
+through essentially the
+
+
+sort of like a road map or a guide right
+
+
+how do you break this down some
+
+
+there's no charge this isn't a boot camp
+
+
+individual projects if you want to get
+
+
+so let's go in here
+
+
+people if it's like a personal site or
+
+
+think so yeah you have additional costs
+
+
+with just things that we're working on
+
+
+um and that's why it's looking like very
+
+
+several languages yes English French
+
+
+um the for a close folder
+
+
+I believe there's like 2 000 minutes uh
+
+
+branch you know that's a release and we
+
+
+know that runs on and Ubuntu container
+
+
+project because we don't want that and
+
+
+aren't familiar diff containers another
+
+
+maybe like one of the best examples is
+
+
+on board and clone the repo and like
+
+
+we're using uh Linux once again for our
+
+
+the well we have an endpoint to create a
+
+
+from somewhere else and I'll be like I
+
+
+
+
+the adding it to the you know
+
+
+pretty sick uh that pretty much covers
+
+
+are talking about can we make sure to
+
+
+in the bottom right so starting vs code
+
+
+Windows because it's yeah I mean it is
+
+
+that in the next session which is the
+um I saw something about um and
+
+
+amount of tokens 4K per per query the
+
+
+Bing like I was I saw the email today I
+
+
+need but why would you want to like
+
+
+pretty sure many many more
+
+
+we will have hold on let me share we
+
+
+uh so the first one is just introducing
+
+
+um you can switch to the bash shell on
+
+
+commands how to list content how to find
+
+
+filtering out that that is the beauty in
+
+
+there too
+
+
+that as well here and then we put it all
+
+
+expect this from Microsoft it's like
+
+
+already that said that they're into the
+
+
+time another couple months doing
+
+
+something that you can help with Gwen
+
+
+you Richard for coming on last minute
+TIMESTAMP: 00:00:41.5200000
+foreign
+
+
+first please take a moment to review our
+
+
+about 24 to 48 hours I'll be sharing the
+
+
+
+
+thank you so much Albina as always for
+
+
+he he wasn't on the
+
+
+have heard of it so no one better than
+
+
+you take out with the reactor too as
+
+
+little bit more about utilizing Linux on
+
+
+freaking cool anyway
+
+
+are based off of like Linux images so if
+
+
+reasoning or can you give me like a
+
+
+people is at so that's super
+
+
+
+
+which is called reactor demo
+
+
+be running
+
+
+videos uh I think the longest one might
+
+
+think this is going to provision okay
+okay there's someone in the chat who
+
+
+like networking programming
+
+
+how things boot like you don't it's
+
+
+this uh our y-axis and then the level of
+
+
+it's like a managed service but you
+
+
+in any Cloud it doesn't really matter I
+
+
+uh in like two hours or so and then
+
+
+simulated with like software but I know
+
+
+because ultimately like the program
+example uh vs code Docker kubernetes SQL
+
+
+um but yeah so you say that it it can't
+
+
+agree yeah that's why I was trying to
+
+
+think so yeah yeah like bash is like
+
+
+one is better you shouldn't learn the
+
+
+stuff that I like so bash uh Azure and
+
+
+high level of talking about like open
+
+
+um but
+
+
+but there might be some gray area with
+
+
+two are very important too typically
+
+
+yeah yeah have you seen that I think I
+
+
+organizations that do utilize open
+
+
+I joined to Microsoft about a year and a
+
+
+this like the culture was completely
+
+
+or with Microsoft in general like what
+
+
+yeah
+
+
+probably get a lot more information
+
+
+yeah our position against open source
+
+
+it's just like not the right move from
+
+
+they grabbed.net and they pulled a lot
+
+
+like there's multiple things that
+
+
+you start to think like the AWS market
+
+
+is open source and the.net Foundation is
+
+
+build as well which I think is important
+
+
+Community has always been that part of
+
+
+about all about getting started with WSL
+
+
+um if you didn't know if you don't know
+
+
+native Computing Foundation cncf which
+
+
+let's move around here
+
+
+don't know why I still get the feeling
+
+
+Adam had like a really great had some
+
+
+still easy like because the other Ides I
+acquisition and I open Visual Studio and
+
+
+that where where Visual Studio is like a
+
+
+ubuntu-based distribution yes snap yep
+
+
+choco yeah choco yeah yeah there might
+
+
+embracing the ones that the majority of
+
+
+bunch of like Windows technology and
+
+
+and this whole like right shift in
+
+
+uh
+
+
+any kind of creative uh migrations it
+
+
+and over 47 000 customers using Azure
+
+
+in terms of leveraging Linux let me
+
+
+this technology in Azure you don't have
+
+
+you then kind of move your way down the
+
+
+um I'm pretty sure there's a lot of
+
+
+typically end up utilizing VMS for that
+
+
+and then I'm going to use open up my
+
+
+oh my goodness there's so many oh no
+
+
+straightforward not a straightforward
+
+
+that is you know as a way to interacts
+
+
+then they came up with this awesome
+
+
+based off Linux right
+
+
+fix blog post I just want to see how it
+
+
+and then we create like shopping I don't
+
+
+this hold on how do I move this can I no
+
+
+
+
+
+
+let's grab a shopping one let's grab
+
+
+uh yeah and I didn't do anything all I
+
+
+Docker running so
+
+
+going to see like yeah type like Linux
+
+
+um
+
+
+bicep but I don't know if it creates
+
+
+
+
+
+
+we know the most because you know if you
+
+
+learner Cloud uh it is an open source
+
+
+people maintaining this website on our
+
+
+know best performant uh SEO optimized
+
+
+only for February and we are just
+
+
+
+
+maintain this with very very little uh
+
+
+past I don't know we'll take a look at
+
+
+
+
+we're gonna do last seven days so
+
+
+here this is actually the API so what
+
+
+Cloud definition uh it calls the API
+um I forgot to close my window that's
+
+
+through essentially the
+
+
+sort of like a road map or a guide right
+
+
+how do you break this down some
+
+
+there's no charge this isn't a boot camp
+
+
+individual projects if you want to get
+
+
+so let's go in here
+
+
+people if it's like a personal site or
+
+
+think so yeah you have additional costs
+
+
+with just things that we're working on
+
+
+um and that's why it's looking like very
+
+
+several languages yes English French
+
+
+um the for a close folder
+
+
+I believe there's like 2 000 minutes uh
+
+
+branch you know that's a release and we
+
+
+know that runs on and Ubuntu container
+
+
+project because we don't want that and
+
+
+aren't familiar diff containers another
+
+
+maybe like one of the best examples is
+
+
+on board and clone the repo and like
+
+
+we're using uh Linux once again for our
+
+
+the well we have an endpoint to create a
+
+
+from somewhere else and I'll be like I
+
+
+
+
+the adding it to the you know
+
+
+pretty sick uh that pretty much covers
+
+
+are talking about can we make sure to
+
+
+in the bottom right so starting vs code
+
+
+Windows because it's yeah I mean it is
+
+
+that in the next session which is the
+um I saw something about um and
+
+
+amount of tokens 4K per per query the
+
+
+Bing like I was I saw the email today I
+
+
+need but why would you want to like
+
+
+pretty sure many many more
+
+
+we will have hold on let me share we
+
+
+uh so the first one is just introducing
+
+
+um you can switch to the bash shell on
+
+
+commands how to list content how to find
+
+
+filtering out that that is the beauty in
+
+
+there too
+
+
+that as well here and then we put it all
+
+
+expect this from Microsoft it's like
+
+
+already that said that they're into the
+
+
+time another couple months doing
+
+
+something that you can help with Gwen
+
+
+you Richard for coming on last minute
+TIMESTAMP: 00:01:09.5500000
+foreign
+
+
+first please take a moment to review our
+
+
+about 24 to 48 hours I'll be sharing the
+
+
+
+
+thank you so much Albina as always for
+
+
+he he wasn't on the
+
+
+have heard of it so no one better than
+
+
+you take out with the reactor too as
+
+
+little bit more about utilizing Linux on
+
+
+freaking cool anyway
+
+
+are based off of like Linux images so if
+
+
+reasoning or can you give me like a
+
+
+people is at so that's super
+
+
+
+
+which is called reactor demo
+
+
+be running
+
+
+videos uh I think the longest one might
+
+
+think this is going to provision okay
+okay there's someone in the chat who
+
+
+like networking programming
+
+
+how things boot like you don't it's
+
+
+this uh our y-axis and then the level of
+
+
+it's like a managed service but you
+
+
+in any Cloud it doesn't really matter I
+
+
+uh in like two hours or so and then
+
+
+simulated with like software but I know
+
+
+because ultimately like the program
+example uh vs code Docker kubernetes SQL
+
+
+um but yeah so you say that it it can't
+
+
+agree yeah that's why I was trying to
+
+
+think so yeah yeah like bash is like
+
+
+one is better you shouldn't learn the
+
+
+stuff that I like so bash uh Azure and
+
+
+high level of talking about like open
+
+
+um but
+
+
+but there might be some gray area with
+
+
+two are very important too typically
+
+
+yeah yeah have you seen that I think I
+
+
+organizations that do utilize open
+
+
+I joined to Microsoft about a year and a
+
+
+this like the culture was completely
+
+
+or with Microsoft in general like what
+
+
+yeah
+
+
+probably get a lot more information
+
+
+yeah our position against open source
+
+
+it's just like not the right move from
+
+
+they grabbed.net and they pulled a lot
+
+
+like there's multiple things that
+
+
+you start to think like the AWS market
+
+
+is open source and the.net Foundation is
+
+
+build as well which I think is important
+
+
+Community has always been that part of
+
+
+about all about getting started with WSL
+
+
+um if you didn't know if you don't know
+
+
+native Computing Foundation cncf which
+
+
+let's move around here
+
+
+don't know why I still get the feeling
+
+
+Adam had like a really great had some
+
+
+still easy like because the other Ides I
+acquisition and I open Visual Studio and
+
+
+that where where Visual Studio is like a
+
+
+ubuntu-based distribution yes snap yep
+
+
+choco yeah choco yeah yeah there might
+
+
+embracing the ones that the majority of
+
+
+bunch of like Windows technology and
+
+
+and this whole like right shift in
+
+
+uh
+
+
+any kind of creative uh migrations it
+
+
+and over 47 000 customers using Azure
+
+
+in terms of leveraging Linux let me
+
+
+this technology in Azure you don't have
+
+
+you then kind of move your way down the
+
+
+um I'm pretty sure there's a lot of
+
+
+typically end up utilizing VMS for that
+
+
+and then I'm going to use open up my
+
+
+oh my goodness there's so many oh no
+
+
+straightforward not a straightforward
+
+
+that is you know as a way to interacts
+
+
+then they came up with this awesome
+
+
+based off Linux right
+
+
+fix blog post I just want to see how it
+
+
+and then we create like shopping I don't
+
+
+this hold on how do I move this can I no
+
+
+
+
+
+
+let's grab a shopping one let's grab
+
+
+uh yeah and I didn't do anything all I
+
+
+Docker running so
+
+
+going to see like yeah type like Linux
+
+
+um
+
+
+bicep but I don't know if it creates
+
+
+
+
+
+
+we know the most because you know if you
+
+
+learner Cloud uh it is an open source
+
+
+people maintaining this website on our
+
+
+know best performant uh SEO optimized
+
+
+only for February and we are just
+
+
+
+
+maintain this with very very little uh
+
+
+past I don't know we'll take a look at
+
+
+
+
+we're gonna do last seven days so
+
+
+here this is actually the API so what
+
+
+Cloud definition uh it calls the API
+um I forgot to close my window that's
+
+
+through essentially the
+
+
+sort of like a road map or a guide right
+
+
+how do you break this down some
+
+
+there's no charge this isn't a boot camp
+
+
+individual projects if you want to get
+
+
+so let's go in here
+
+
+people if it's like a personal site or
+
+
+think so yeah you have additional costs
+
+
+with just things that we're working on
+
+
+um and that's why it's looking like very
+
+
+several languages yes English French
+
+
+um the for a close folder
+
+
+I believe there's like 2 000 minutes uh
+
+
+branch you know that's a release and we
+
+
+know that runs on and Ubuntu container
+
+
+project because we don't want that and
+
+
+aren't familiar diff containers another
+
+
+maybe like one of the best examples is
+
+
+on board and clone the repo and like
+
+
+we're using uh Linux once again for our
+
+
+the well we have an endpoint to create a
+
+
+from somewhere else and I'll be like I
+
+
+
+
+the adding it to the you know
+
+
+pretty sick uh that pretty much covers
+
+
+are talking about can we make sure to
+
+
+in the bottom right so starting vs code
+
+
+Windows because it's yeah I mean it is
+
+
+that in the next session which is the
+um I saw something about um and
+
+
+amount of tokens 4K per per query the
+
+
+Bing like I was I saw the email today I
+
+
+need but why would you want to like
+
+
+pretty sure many many more
+
+
+we will have hold on let me share we
+
+
+uh so the first one is just introducing
+
+
+um you can switch to the bash shell on
+
+
+commands how to list content how to find
+
+
+filtering out that that is the beauty in
+
+
+there too
+
+
+that as well here and then we put it all
+
+
+expect this from Microsoft it's like
+
+
+already that said that they're into the
+
+
+time another couple months doing
+
+
+something that you can help with Gwen
+
+
+you Richard for coming on last minute
+TIMESTAMP: 00:01:21.2000000
+foreign
+
+
+first please take a moment to review our
+
+
+about 24 to 48 hours I'll be sharing the
+
+
+
+
+thank you so much Albina as always for
+
+
+he he wasn't on the
+
+
+have heard of it so no one better than
+
+
+you take out with the reactor too as
+
+
+little bit more about utilizing Linux on
+
+
+freaking cool anyway
+
+
+are based off of like Linux images so if
+
+
+reasoning or can you give me like a
+
+
+people is at so that's super
+
+
+
+
+which is called reactor demo
+
+
+be running
+
+
+videos uh I think the longest one might
+
+
+think this is going to provision okay
+okay there's someone in the chat who
+
+
+like networking programming
+
+
+how things boot like you don't it's
+
+
+this uh our y-axis and then the level of
+
+
+it's like a managed service but you
+
+
+in any Cloud it doesn't really matter I
+
+
+uh in like two hours or so and then
+
+
+simulated with like software but I know
+
+
+because ultimately like the program
+example uh vs code Docker kubernetes SQL
+
+
+um but yeah so you say that it it can't
+
+
+agree yeah that's why I was trying to
+
+
+think so yeah yeah like bash is like
+
+
+one is better you shouldn't learn the
+
+
+stuff that I like so bash uh Azure and
+
+
+high level of talking about like open
+
+
+um but
+
+
+but there might be some gray area with
+
+
+two are very important too typically
+
+
+yeah yeah have you seen that I think I
+
+
+organizations that do utilize open
+
+
+I joined to Microsoft about a year and a
+
+
+this like the culture was completely
+
+
+or with Microsoft in general like what
+
+
+yeah
+
+
+probably get a lot more information
+
+
+yeah our position against open source
+
+
+it's just like not the right move from
+
+
+they grabbed.net and they pulled a lot
+
+
+like there's multiple things that
+
+
+you start to think like the AWS market
+
+
+is open source and the.net Foundation is
+
+
+build as well which I think is important
+
+
+Community has always been that part of
+
+
+about all about getting started with WSL
+
+
+um if you didn't know if you don't know
+
+
+native Computing Foundation cncf which
+
+
+let's move around here
+
+
+don't know why I still get the feeling
+
+
+Adam had like a really great had some
+
+
+still easy like because the other Ides I
+acquisition and I open Visual Studio and
+
+
+that where where Visual Studio is like a
+
+
+ubuntu-based distribution yes snap yep
+
+
+choco yeah choco yeah yeah there might
+
+
+embracing the ones that the majority of
+
+
+bunch of like Windows technology and
+
+
+and this whole like right shift in
+
+
+uh
+
+
+any kind of creative uh migrations it
+
+
+and over 47 000 customers using Azure
+
+
+in terms of leveraging Linux let me
+
+
+this technology in Azure you don't have
+
+
+you then kind of move your way down the
+
+
+um I'm pretty sure there's a lot of
+
+
+typically end up utilizing VMS for that
+
+
+and then I'm going to use open up my
+
+
+oh my goodness there's so many oh no
+
+
+straightforward not a straightforward
+
+
+that is you know as a way to interacts
+
+
+then they came up with this awesome
+
+
+based off Linux right
+
+
+fix blog post I just want to see how it
+
+
+and then we create like shopping I don't
+
+
+this hold on how do I move this can I no
+
+
+
+
+
+
+let's grab a shopping one let's grab
+
+
+uh yeah and I didn't do anything all I
+
+
+Docker running so
+
+
+going to see like yeah type like Linux
+
+
+um
+
+
+bicep but I don't know if it creates
+
+
+
+
+
+
+we know the most because you know if you
+
+
+learner Cloud uh it is an open source
+
+
+people maintaining this website on our
+
+
+know best performant uh SEO optimized
+
+
+only for February and we are just
+
+
+
+
+maintain this with very very little uh
+
+
+past I don't know we'll take a look at
+
+
+
+
+we're gonna do last seven days so
+
+
+here this is actually the API so what
+
+
+Cloud definition uh it calls the API
+um I forgot to close my window that's
+
+
+through essentially the
+
+
+sort of like a road map or a guide right
+
+
+how do you break this down some
+
+
+there's no charge this isn't a boot camp
+
+
+individual projects if you want to get
+
+
+so let's go in here
+
+
+people if it's like a personal site or
+
+
+think so yeah you have additional costs
+
+
+with just things that we're working on
+
+
+um and that's why it's looking like very
+
+
+several languages yes English French
+
+
+um the for a close folder
+
+
+I believe there's like 2 000 minutes uh
+
+
+branch you know that's a release and we
+
+
+know that runs on and Ubuntu container
+
+
+project because we don't want that and
+
+
+aren't familiar diff containers another
+
+
+maybe like one of the best examples is
+
+
+on board and clone the repo and like
+
+
+we're using uh Linux once again for our
+
+
+the well we have an endpoint to create a
+
+
+from somewhere else and I'll be like I
+
+
+
+
+the adding it to the you know
+
+
+pretty sick uh that pretty much covers
+
+
+are talking about can we make sure to
+
+
+in the bottom right so starting vs code
+
+
+Windows because it's yeah I mean it is
+
+
+that in the next session which is the
+um I saw something about um and
+
+
+amount of tokens 4K per per query the
+
+
+Bing like I was I saw the email today I
+
+
+need but why would you want to like
+
+
+pretty sure many many more
+
+
+we will have hold on let me share we
+
+
+uh so the first one is just introducing
+
+
+um you can switch to the bash shell on
+
+
+commands how to list content how to find
+
+
+filtering out that that is the beauty in
+
+
+there too
+
+
+that as well here and then we put it all
+
+
+expect this from Microsoft it's like
+
+
+already that said that they're into the
+
+
+time another couple months doing
+
+
+something that you can help with Gwen
+
+
+you Richard for coming on last minute
+TIMESTAMP: 00:01:24.5600000
+foreign
+
+
+first please take a moment to review our
+
+
+about 24 to 48 hours I'll be sharing the
+
+
+
+
+thank you so much Albina as always for
+
+
+he he wasn't on the
+
+
+have heard of it so no one better than
+
+
+you take out with the reactor too as
+
+
+little bit more about utilizing Linux on
+
+
+freaking cool anyway
+
+
+are based off of like Linux images so if
+
+
+reasoning or can you give me like a
+
+
+people is at so that's super
+
+
+
+
+which is called reactor demo
+
+
+be running
+
+
+videos uh I think the longest one might
+
+
+think this is going to provision okay
+okay there's someone in the chat who
+
+
+like networking programming
+
+
+how things boot like you don't it's
+
+
+this uh our y-axis and then the level of
+
+
+it's like a managed service but you
+
+
+in any Cloud it doesn't really matter I
+
+
+uh in like two hours or so and then
+
+
+simulated with like software but I know
+
+
+because ultimately like the program
+example uh vs code Docker kubernetes SQL
+
+
+um but yeah so you say that it it can't
+
+
+agree yeah that's why I was trying to
+
+
+think so yeah yeah like bash is like
+
+
+one is better you shouldn't learn the
+
+
+stuff that I like so bash uh Azure and
+
+
+high level of talking about like open
+
+
+um but
+
+
+but there might be some gray area with
+
+
+two are very important too typically
+
+
+yeah yeah have you seen that I think I
+
+
+organizations that do utilize open
+
+
+I joined to Microsoft about a year and a
+
+
+this like the culture was completely
+
+
+or with Microsoft in general like what
+
+
+yeah
+
+
+probably get a lot more information
+
+
+yeah our position against open source
+
+
+it's just like not the right move from
+
+
+they grabbed.net and they pulled a lot
+
+
+like there's multiple things that
+
+
+you start to think like the AWS market
+
+
+is open source and the.net Foundation is
+
+
+build as well which I think is important
+
+
+Community has always been that part of
+
+
+about all about getting started with WSL
+
+
+um if you didn't know if you don't know
+
+
+native Computing Foundation cncf which
+
+
+let's move around here
+
+
+don't know why I still get the feeling
+
+
+Adam had like a really great had some
+
+
+still easy like because the other Ides I
+acquisition and I open Visual Studio and
+
+
+that where where Visual Studio is like a
+
+
+ubuntu-based distribution yes snap yep
+
+
+choco yeah choco yeah yeah there might
+
+
+embracing the ones that the majority of
+
+
+bunch of like Windows technology and
+
+
+and this whole like right shift in
+
+
+uh
+
+
+any kind of creative uh migrations it
+
+
+and over 47 000 customers using Azure
+
+
+in terms of leveraging Linux let me
+
+
+this technology in Azure you don't have
+
+
+you then kind of move your way down the
+
+
+um I'm pretty sure there's a lot of
+
+
+typically end up utilizing VMS for that
+
+
+and then I'm going to use open up my
+
+
+oh my goodness there's so many oh no
+
+
+straightforward not a straightforward
+
+
+that is you know as a way to interacts
+
+
+then they came up with this awesome
+
+
+based off Linux right
+
+
+fix blog post I just want to see how it
+
+
+and then we create like shopping I don't
+
+
+this hold on how do I move this can I no
+
+
+
+
+
+
+let's grab a shopping one let's grab
+
+
+uh yeah and I didn't do anything all I
+
+
+Docker running so
+
+
+going to see like yeah type like Linux
+
+
+um
+
+
+bicep but I don't know if it creates
+
+
+
+
+
+
+we know the most because you know if you
+
+
+learner Cloud uh it is an open source
+
+
+people maintaining this website on our
+
+
+know best performant uh SEO optimized
+
+
+only for February and we are just
+
+
+
+
+maintain this with very very little uh
+
+
+past I don't know we'll take a look at
+
+
+
+
+we're gonna do last seven days so
+
+
+here this is actually the API so what
+
+
+Cloud definition uh it calls the API
+um I forgot to close my window that's
+
+
+through essentially the
+
+
+sort of like a road map or a guide right
+
+
+how do you break this down some
+
+
+there's no charge this isn't a boot camp
+
+
+individual projects if you want to get
+
+
+so let's go in here
+
+
+people if it's like a personal site or
+
+
+think so yeah you have additional costs
+
+
+with just things that we're working on
+
+
+um and that's why it's looking like very
+
+
+several languages yes English French
+
+
+um the for a close folder
+
+
+I believe there's like 2 000 minutes uh
+
+
+branch you know that's a release and we
+
+
+know that runs on and Ubuntu container
+
+
+project because we don't want that and
+
+
+aren't familiar diff containers another
+
+
+maybe like one of the best examples is
+
+
+on board and clone the repo and like
+
+
+we're using uh Linux once again for our
+
+
+the well we have an endpoint to create a
+
+
+from somewhere else and I'll be like I
+
+
+
+
+the adding it to the you know
+
+
+pretty sick uh that pretty much covers
+
+
+are talking about can we make sure to
+
+
+in the bottom right so starting vs code
+
+
+Windows because it's yeah I mean it is
+
+
+that in the next session which is the
+um I saw something about um and
+
+
+amount of tokens 4K per per query the
+
+
+Bing like I was I saw the email today I
+
+
+need but why would you want to like
+
+
+pretty sure many many more
+
+
+we will have hold on let me share we
+
+
+uh so the first one is just introducing
+
+
+um you can switch to the bash shell on
+
+
+commands how to list content how to find
+
+
+filtering out that that is the beauty in
+
+
+there too
+
+
+that as well here and then we put it all
+
+
+expect this from Microsoft it's like
+
+
+already that said that they're into the
+
+
+time another couple months doing
+
+
+something that you can help with Gwen
+
+
+you Richard for coming on last minute
+TIMESTAMP: 00:01:27.7100000
+foreign
+
+
+first please take a moment to review our
+
+
+about 24 to 48 hours I'll be sharing the
+
+
+
+
+thank you so much Albina as always for
+
+
+he he wasn't on the
+
+
+have heard of it so no one better than
+
+
+you take out with the reactor too as
+
+
+little bit more about utilizing Linux on
+
+
+freaking cool anyway
+
+
+are based off of like Linux images so if
+
+
+reasoning or can you give me like a
+
+
+people is at so that's super
+
+
+
+
+which is called reactor demo
+
+
+be running
+
+
+videos uh I think the longest one might
+
+
+think this is going to provision okay
+okay there's someone in the chat who
+
+
+like networking programming
+
+
+how things boot like you don't it's
+
+
+this uh our y-axis and then the level of
+
+
+it's like a managed service but you
+
+
+in any Cloud it doesn't really matter I
+
+
+uh in like two hours or so and then
+
+
+simulated with like software but I know
+
+
+because ultimately like the program
+example uh vs code Docker kubernetes SQL
+
+
+um but yeah so you say that it it can't
+
+
+agree yeah that's why I was trying to
+
+
+think so yeah yeah like bash is like
+
+
+one is better you shouldn't learn the
+
+
+stuff that I like so bash uh Azure and
+
+
+high level of talking about like open
+
+
+um but
+
+
+but there might be some gray area with
+
+
+two are very important too typically
+
+
+yeah yeah have you seen that I think I
+
+
+organizations that do utilize open
+
+
+I joined to Microsoft about a year and a
+
+
+this like the culture was completely
+
+
+or with Microsoft in general like what
+
+
+yeah
+
+
+probably get a lot more information
+
+
+yeah our position against open source
+
+
+it's just like not the right move from
+
+
+they grabbed.net and they pulled a lot
+
+
+like there's multiple things that
+
+
+you start to think like the AWS market
+
+
+is open source and the.net Foundation is
+
+
+build as well which I think is important
+
+
+Community has always been that part of
+
+
+about all about getting started with WSL
+
+
+um if you didn't know if you don't know
+
+
+native Computing Foundation cncf which
+
+
+let's move around here
+
+
+don't know why I still get the feeling
+
+
+Adam had like a really great had some
+
+
+still easy like because the other Ides I
+acquisition and I open Visual Studio and
+
+
+that where where Visual Studio is like a
+
+
+ubuntu-based distribution yes snap yep
+
+
+choco yeah choco yeah yeah there might
+
+
+embracing the ones that the majority of
+
+
+bunch of like Windows technology and
+
+
+and this whole like right shift in
+
+
+uh
+
+
+any kind of creative uh migrations it
+
+
+and over 47 000 customers using Azure
+
+
+in terms of leveraging Linux let me
+
+
+this technology in Azure you don't have
+
+
+you then kind of move your way down the
+
+
+um I'm pretty sure there's a lot of
+
+
+typically end up utilizing VMS for that
+
+
+and then I'm going to use open up my
+
+
+oh my goodness there's so many oh no
+
+
+straightforward not a straightforward
+
+
+that is you know as a way to interacts
+
+
+then they came up with this awesome
+
+
+based off Linux right
+
+
+fix blog post I just want to see how it
+
+
+and then we create like shopping I don't
+
+
+this hold on how do I move this can I no
+
+
+
+
+
+
+let's grab a shopping one let's grab
+
+
+uh yeah and I didn't do anything all I
+
+
+Docker running so
+
+
+going to see like yeah type like Linux
+
+
+um
+
+
+bicep but I don't know if it creates
+
+
+
+
+
+
+we know the most because you know if you
+
+
+learner Cloud uh it is an open source
+
+
+people maintaining this website on our
+
+
+know best performant uh SEO optimized
+
+
+only for February and we are just
+
+
+
+
+maintain this with very very little uh
+
+
+past I don't know we'll take a look at
+
+
+
+
+we're gonna do last seven days so
+
+
+here this is actually the API so what
+
+
+Cloud definition uh it calls the API
+um I forgot to close my window that's
+
+
+through essentially the
+
+
+sort of like a road map or a guide right
+
+
+how do you break this down some
+
+
+there's no charge this isn't a boot camp
+
+
+individual projects if you want to get
+
+
+so let's go in here
+
+
+people if it's like a personal site or
+
+
+think so yeah you have additional costs
+
+
+with just things that we're working on
+
+
+um and that's why it's looking like very
+
+
+several languages yes English French
+
+
+um the for a close folder
+
+
+I believe there's like 2 000 minutes uh
+
+
+branch you know that's a release and we
+
+
+know that runs on and Ubuntu container
+
+
+project because we don't want that and
+
+
+aren't familiar diff containers another
+
+
+maybe like one of the best examples is
+
+
+on board and clone the repo and like
+
+
+we're using uh Linux once again for our
+
+
+the well we have an endpoint to create a
+
+
+from somewhere else and I'll be like I
+
+
+
+
+the adding it to the you know
+
+
+pretty sick uh that pretty much covers
+
+
+are talking about can we make sure to
+
+
+in the bottom right so starting vs code
+
+
+Windows because it's yeah I mean it is
+
+
+that in the next session which is the
+um I saw something about um and
+
+
+amount of tokens 4K per per query the
+
+
+Bing like I was I saw the email today I
+
+
+need but why would you want to like
+
+
+pretty sure many many more
+
+
+we will have hold on let me share we
+
+
+uh so the first one is just introducing
+
+
+um you can switch to the bash shell on
+
+
+commands how to list content how to find
+
+
+filtering out that that is the beauty in
+
+
+there too
+
+
+that as well here and then we put it all
+
+
+expect this from Microsoft it's like
+
+
+already that said that they're into the
+
+
+time another couple months doing
+
+
+something that you can help with Gwen
+
+
+you Richard for coming on last minute
+TIMESTAMP: 00:01:27.7200000
+foreign
+
+
+first please take a moment to review our
+
+
+about 24 to 48 hours I'll be sharing the
+
+
+
+
+thank you so much Albina as always for
+
+
+he he wasn't on the
+
+
+have heard of it so no one better than
+
+
+you take out with the reactor too as
+
+
+little bit more about utilizing Linux on
+
+
+freaking cool anyway
+
+
+are based off of like Linux images so if
+
+
+reasoning or can you give me like a
+
+
+people is at so that's super
+
+
+
+
+which is called reactor demo
+
+
+be running
+
+
+videos uh I think the longest one might
+
+
+think this is going to provision okay
+okay there's someone in the chat who
+
+
+like networking programming
+
+
+how things boot like you don't it's
+
+
+this uh our y-axis and then the level of
+
+
+it's like a managed service but you
+
+
+in any Cloud it doesn't really matter I
+
+
+uh in like two hours or so and then
+
+
+simulated with like software but I know
+
+
+because ultimately like the program
+example uh vs code Docker kubernetes SQL
+
+
+um but yeah so you say that it it can't
+
+
+agree yeah that's why I was trying to
+
+
+think so yeah yeah like bash is like
+
+
+one is better you shouldn't learn the
+
+
+stuff that I like so bash uh Azure and
+
+
+high level of talking about like open
+
+
+um but
+
+
+but there might be some gray area with
+
+
+two are very important too typically
+
+
+yeah yeah have you seen that I think I
+
+
+organizations that do utilize open
+
+
+I joined to Microsoft about a year and a
+
+
+this like the culture was completely
+
+
+or with Microsoft in general like what
+
+
+yeah
+
+
+probably get a lot more information
+
+
+yeah our position against open source
+
+
+it's just like not the right move from
+
+
+they grabbed.net and they pulled a lot
+
+
+like there's multiple things that
+
+
+you start to think like the AWS market
+
+
+is open source and the.net Foundation is
+
+
+build as well which I think is important
+
+
+Community has always been that part of
+
+
+about all about getting started with WSL
+
+
+um if you didn't know if you don't know
+
+
+native Computing Foundation cncf which
+
+
+let's move around here
+
+
+don't know why I still get the feeling
+
+
+Adam had like a really great had some
+
+
+still easy like because the other Ides I
+acquisition and I open Visual Studio and
+
+
+that where where Visual Studio is like a
+
+
+ubuntu-based distribution yes snap yep
+
+
+choco yeah choco yeah yeah there might
+
+
+embracing the ones that the majority of
+
+
+bunch of like Windows technology and
+
+
+and this whole like right shift in
+
+
+uh
+
+
+any kind of creative uh migrations it
+
+
+and over 47 000 customers using Azure
+
+
+in terms of leveraging Linux let me
+
+
+this technology in Azure you don't have
+
+
+you then kind of move your way down the
+
+
+um I'm pretty sure there's a lot of
+
+
+typically end up utilizing VMS for that
+
+
+and then I'm going to use open up my
+
+
+oh my goodness there's so many oh no
+
+
+straightforward not a straightforward
+
+
+that is you know as a way to interacts
+
+
+then they came up with this awesome
+
+
+based off Linux right
+
+
+fix blog post I just want to see how it
+
+
+and then we create like shopping I don't
+
+
+this hold on how do I move this can I no
+
+
+
+
+
+
+let's grab a shopping one let's grab
+
+
+uh yeah and I didn't do anything all I
+
+
+Docker running so
+
+
+going to see like yeah type like Linux
+
+
+um
+
+
+bicep but I don't know if it creates
+
+
+
+
+
+
+we know the most because you know if you
+
+
+learner Cloud uh it is an open source
+
+
+people maintaining this website on our
+
+
+know best performant uh SEO optimized
+
+
+only for February and we are just
+
+
+
+
+maintain this with very very little uh
+
+
+past I don't know we'll take a look at
+
+
+
+
+we're gonna do last seven days so
+
+
+here this is actually the API so what
+
+
+Cloud definition uh it calls the API
+um I forgot to close my window that's
+
+
+through essentially the
+
+
+sort of like a road map or a guide right
+
+
+how do you break this down some
+
+
+there's no charge this isn't a boot camp
+
+
+individual projects if you want to get
+
+
+so let's go in here
+
+
+people if it's like a personal site or
+
+
+think so yeah you have additional costs
+
+
+with just things that we're working on
+
+
+um and that's why it's looking like very
+
+
+several languages yes English French
+
+
+um the for a close folder
+
+
+I believe there's like 2 000 minutes uh
+
+
+branch you know that's a release and we
+
+
+know that runs on and Ubuntu container
+
+
+project because we don't want that and
+
+
+aren't familiar diff containers another
+
+
+maybe like one of the best examples is
+
+
+on board and clone the repo and like
+
+
+we're using uh Linux once again for our
+
+
+the well we have an endpoint to create a
+
+
+from somewhere else and I'll be like I
+
+
+
+
+the adding it to the you know
+
+
+pretty sick uh that pretty much covers
+
+
+are talking about can we make sure to
+
+
+in the bottom right so starting vs code
+
+
+Windows because it's yeah I mean it is
+
+
+that in the next session which is the
+um I saw something about um and
+
+
+amount of tokens 4K per per query the
+
+
+Bing like I was I saw the email today I
+
+
+need but why would you want to like
+
+
+pretty sure many many more
+
+
+we will have hold on let me share we
+
+
+uh so the first one is just introducing
+
+
+um you can switch to the bash shell on
+
+
+commands how to list content how to find
+
+
+filtering out that that is the beauty in
+
+
+there too
+
+
+that as well here and then we put it all
+
+
+expect this from Microsoft it's like
+
+
+already that said that they're into the
+
+
+time another couple months doing
+
+
+something that you can help with Gwen
+
+
+you Richard for coming on last minute
+TIMESTAMP: 00:01:29.6900000
+foreign
+
+
+first please take a moment to review our
+
+
+about 24 to 48 hours I'll be sharing the
+
+
+
+
+thank you so much Albina as always for
+
+
+he he wasn't on the
+
+
+have heard of it so no one better than
+
+
+you take out with the reactor too as
+
+
+little bit more about utilizing Linux on
+
+
+freaking cool anyway
+
+
+are based off of like Linux images so if
+
+
+reasoning or can you give me like a
+
+
+people is at so that's super
+
+
+
+
+which is called reactor demo
+
+
+be running
+
+
+videos uh I think the longest one might
+
+
+think this is going to provision okay
+okay there's someone in the chat who
+
+
+like networking programming
+
+
+how things boot like you don't it's
+
+
+this uh our y-axis and then the level of
+
+
+it's like a managed service but you
+
+
+in any Cloud it doesn't really matter I
+
+
+uh in like two hours or so and then
+
+
+simulated with like software but I know
+
+
+because ultimately like the program
+example uh vs code Docker kubernetes SQL
+
+
+um but yeah so you say that it it can't
+
+
+agree yeah that's why I was trying to
+
+
+think so yeah yeah like bash is like
+
+
+one is better you shouldn't learn the
+
+
+stuff that I like so bash uh Azure and
+
+
+high level of talking about like open
+
+
+um but
+
+
+but there might be some gray area with
+
+
+two are very important too typically
+
+
+yeah yeah have you seen that I think I
+
+
+organizations that do utilize open
+
+
+I joined to Microsoft about a year and a
+
+
+this like the culture was completely
+
+
+or with Microsoft in general like what
+
+
+yeah
+
+
+probably get a lot more information
+
+
+yeah our position against open source
+
+
+it's just like not the right move from
+
+
+they grabbed.net and they pulled a lot
+
+
+like there's multiple things that
+
+
+you start to think like the AWS market
+
+
+is open source and the.net Foundation is
+
+
+build as well which I think is important
+
+
+Community has always been that part of
+
+
+about all about getting started with WSL
+
+
+um if you didn't know if you don't know
+
+
+native Computing Foundation cncf which
+
+
+let's move around here
+
+
+don't know why I still get the feeling
+
+
+Adam had like a really great had some
+
+
+still easy like because the other Ides I
+acquisition and I open Visual Studio and
+
+
+that where where Visual Studio is like a
+
+
+ubuntu-based distribution yes snap yep
+
+
+choco yeah choco yeah yeah there might
+
+
+embracing the ones that the majority of
+
+
+bunch of like Windows technology and
+
+
+and this whole like right shift in
+
+
+uh
+
+
+any kind of creative uh migrations it
+
+
+and over 47 000 customers using Azure
+
+
+in terms of leveraging Linux let me
+
+
+this technology in Azure you don't have
+
+
+you then kind of move your way down the
+
+
+um I'm pretty sure there's a lot of
+
+
+typically end up utilizing VMS for that
+
+
+and then I'm going to use open up my
+
+
+oh my goodness there's so many oh no
+
+
+straightforward not a straightforward
+
+
+that is you know as a way to interacts
+
+
+then they came up with this awesome
+
+
+based off Linux right
+
+
+fix blog post I just want to see how it
+
+
+and then we create like shopping I don't
+
+
+this hold on how do I move this can I no
+
+
+
+
+
+
+let's grab a shopping one let's grab
+
+
+uh yeah and I didn't do anything all I
+
+
+Docker running so
+
+
+going to see like yeah type like Linux
+
+
+um
+
+
+bicep but I don't know if it creates
+
+
+
+
+
+
+we know the most because you know if you
+
+
+learner Cloud uh it is an open source
+
+
+people maintaining this website on our
+
+
+know best performant uh SEO optimized
+
+
+only for February and we are just
+
+
+
+
+maintain this with very very little uh
+
+
+past I don't know we'll take a look at
+
+
+
+
+we're gonna do last seven days so
+
+
+here this is actually the API so what
+
+
+Cloud definition uh it calls the API
+um I forgot to close my window that's
+
+
+through essentially the
+
+
+sort of like a road map or a guide right
+
+
+how do you break this down some
+
+
+there's no charge this isn't a boot camp
+
+
+individual projects if you want to get
+
+
+so let's go in here
+
+
+people if it's like a personal site or
+
+
+think so yeah you have additional costs
+
+
+with just things that we're working on
+
+
+um and that's why it's looking like very
+
+
+several languages yes English French
+
+
+um the for a close folder
+
+
+I believe there's like 2 000 minutes uh
+
+
+branch you know that's a release and we
+
+
+know that runs on and Ubuntu container
+
+
+project because we don't want that and
+
+
+aren't familiar diff containers another
+
+
+maybe like one of the best examples is
+
+
+on board and clone the repo and like
+
+
+we're using uh Linux once again for our
+
+
+the well we have an endpoint to create a
+
+
+from somewhere else and I'll be like I
+
+
+
+
+the adding it to the you know
+
+
+pretty sick uh that pretty much covers
+
+
+are talking about can we make sure to
+
+
+in the bottom right so starting vs code
+
+
+Windows because it's yeah I mean it is
+
+
+that in the next session which is the
+um I saw something about um and
+
+
+amount of tokens 4K per per query the
+
+
+Bing like I was I saw the email today I
+
+
+need but why would you want to like
+
+
+pretty sure many many more
+
+
+we will have hold on let me share we
+
+
+uh so the first one is just introducing
+
+
+um you can switch to the bash shell on
+
+
+commands how to list content how to find
+
+
+filtering out that that is the beauty in
+
+
+there too
+
+
+that as well here and then we put it all
+
+
+expect this from Microsoft it's like
+
+
+already that said that they're into the
+
+
+time another couple months doing
+
+
+something that you can help with Gwen
+
+
+you Richard for coming on last minute
+TIMESTAMP: 00:01:29.7000000
+foreign
+
+
+first please take a moment to review our
+
+
+about 24 to 48 hours I'll be sharing the
+
+
+
+
+thank you so much Albina as always for
+
+
+he he wasn't on the
+
+
+have heard of it so no one better than
+
+
+you take out with the reactor too as
+
+
+little bit more about utilizing Linux on
+
+
+freaking cool anyway
+
+
+are based off of like Linux images so if
+
+
+reasoning or can you give me like a
+
+
+people is at so that's super
+
+
+
+
+which is called reactor demo
+
+
+be running
+
+
+videos uh I think the longest one might
+
+
+think this is going to provision okay
+okay there's someone in the chat who
+
+
+like networking programming
+
+
+how things boot like you don't it's
+
+
+this uh our y-axis and then the level of
+
+
+it's like a managed service but you
+
+
+in any Cloud it doesn't really matter I
+
+
+uh in like two hours or so and then
+
+
+simulated with like software but I know
+
+
+because ultimately like the program
+example uh vs code Docker kubernetes SQL
+
+
+um but yeah so you say that it it can't
+
+
+agree yeah that's why I was trying to
+
+
+think so yeah yeah like bash is like
+
+
+one is better you shouldn't learn the
+
+
+stuff that I like so bash uh Azure and
+
+
+high level of talking about like open
+
+
+um but
+
+
+but there might be some gray area with
+
+
+two are very important too typically
+
+
+yeah yeah have you seen that I think I
+
+
+organizations that do utilize open
+
+
+I joined to Microsoft about a year and a
+
+
+this like the culture was completely
+
+
+or with Microsoft in general like what
+
+
+yeah
+
+
+probably get a lot more information
+
+
+yeah our position against open source
+
+
+it's just like not the right move from
+
+
+they grabbed.net and they pulled a lot
+
+
+like there's multiple things that
+
+
+you start to think like the AWS market
+
+
+is open source and the.net Foundation is
+
+
+build as well which I think is important
+
+
+Community has always been that part of
+
+
+about all about getting started with WSL
+
+
+um if you didn't know if you don't know
+
+
+native Computing Foundation cncf which
+
+
+let's move around here
+
+
+don't know why I still get the feeling
+
+
+Adam had like a really great had some
+
+
+still easy like because the other Ides I
+acquisition and I open Visual Studio and
+
+
+that where where Visual Studio is like a
+
+
+ubuntu-based distribution yes snap yep
+
+
+choco yeah choco yeah yeah there might
+
+
+embracing the ones that the majority of
+
+
+bunch of like Windows technology and
+
+
+and this whole like right shift in
+
+
+uh
+
+
+any kind of creative uh migrations it
+
+
+and over 47 000 customers using Azure
+
+
+in terms of leveraging Linux let me
+
+
+this technology in Azure you don't have
+
+
+you then kind of move your way down the
+
+
+um I'm pretty sure there's a lot of
+
+
+typically end up utilizing VMS for that
+
+
+and then I'm going to use open up my
+
+
+oh my goodness there's so many oh no
+
+
+straightforward not a straightforward
+
+
+that is you know as a way to interacts
+
+
+then they came up with this awesome
+
+
+based off Linux right
+
+
+fix blog post I just want to see how it
+
+
+and then we create like shopping I don't
+
+
+this hold on how do I move this can I no
+
+
+
+
+
+
+let's grab a shopping one let's grab
+
+
+uh yeah and I didn't do anything all I
+
+
+Docker running so
+
+
+going to see like yeah type like Linux
+
+
+um
+
+
+bicep but I don't know if it creates
+
+
+
+
+
+
+we know the most because you know if you
+
+
+learner Cloud uh it is an open source
+
+
+people maintaining this website on our
+
+
+know best performant uh SEO optimized
+
+
+only for February and we are just
+
+
+
+
+maintain this with very very little uh
+
+
+past I don't know we'll take a look at
+
+
+
+
+we're gonna do last seven days so
+
+
+here this is actually the API so what
+
+
+Cloud definition uh it calls the API
+um I forgot to close my window that's
+
+
+through essentially the
+
+
+sort of like a road map or a guide right
+
+
+how do you break this down some
+
+
+there's no charge this isn't a boot camp
+
+
+individual projects if you want to get
+
+
+so let's go in here
+
+
+people if it's like a personal site or
+
+
+think so yeah you have additional costs
+
+
+with just things that we're working on
+
+
+um and that's why it's looking like very
+
+
+several languages yes English French
+
+
+um the for a close folder
+
+
+I believe there's like 2 000 minutes uh
+
+
+branch you know that's a release and we
+
+
+know that runs on and Ubuntu container
+
+
+project because we don't want that and
+
+
+aren't familiar diff containers another
+
+
+maybe like one of the best examples is
+
+
+on board and clone the repo and like
+
+
+we're using uh Linux once again for our
+
+
+the well we have an endpoint to create a
+
+
+from somewhere else and I'll be like I
+
+
+
+
+the adding it to the you know
+
+
+pretty sick uh that pretty much covers
+
+
+are talking about can we make sure to
+
+
+in the bottom right so starting vs code
+
+
+Windows because it's yeah I mean it is
+
+
+that in the next session which is the
+um I saw something about um and
+
+
+amount of tokens 4K per per query the
+
+
+Bing like I was I saw the email today I
+
+
+need but why would you want to like
+
+
+pretty sure many many more
+
+
+we will have hold on let me share we
+
+
+uh so the first one is just introducing
+
+
+um you can switch to the bash shell on
+
+
+commands how to list content how to find
+
+
+filtering out that that is the beauty in
+
+
+there too
+
+
+that as well here and then we put it all
+
+
+expect this from Microsoft it's like
+
+
+already that said that they're into the
+
+
+time another couple months doing
+
+
+something that you can help with Gwen
+
+
+you Richard for coming on last minute
+TIMESTAMP: 00:01:32.4500000
+foreign
+
+
+first please take a moment to review our
+
+
+about 24 to 48 hours I'll be sharing the
+
+
+
+
+thank you so much Albina as always for
+
+
+he he wasn't on the
+
+
+have heard of it so no one better than
+
+
+you take out with the reactor too as
+
+
+little bit more about utilizing Linux on
+
+
+freaking cool anyway
+
+
+are based off of like Linux images so if
+
+
+reasoning or can you give me like a
+
+
+people is at so that's super
+
+
+
+
+which is called reactor demo
+
+
+be running
+
+
+videos uh I think the longest one might
+
+
+think this is going to provision okay
+okay there's someone in the chat who
+
+
+like networking programming
+
+
+how things boot like you don't it's
+
+
+this uh our y-axis and then the level of
+
+
+it's like a managed service but you
+
+
+in any Cloud it doesn't really matter I
+
+
+uh in like two hours or so and then
+
+
+simulated with like software but I know
+
+
+because ultimately like the program
+example uh vs code Docker kubernetes SQL
+
+
+um but yeah so you say that it it can't
+
+
+agree yeah that's why I was trying to
+
+
+think so yeah yeah like bash is like
+
+
+one is better you shouldn't learn the
+
+
+stuff that I like so bash uh Azure and
+
+
+high level of talking about like open
+
+
+um but
+
+
+but there might be some gray area with
+
+
+two are very important too typically
+
+
+yeah yeah have you seen that I think I
+
+
+organizations that do utilize open
+
+
+I joined to Microsoft about a year and a
+
+
+this like the culture was completely
+
+
+or with Microsoft in general like what
+
+
+yeah
+
+
+probably get a lot more information
+
+
+yeah our position against open source
+
+
+it's just like not the right move from
+
+
+they grabbed.net and they pulled a lot
+
+
+like there's multiple things that
+
+
+you start to think like the AWS market
+
+
+is open source and the.net Foundation is
+
+
+build as well which I think is important
+
+
+Community has always been that part of
+
+
+about all about getting started with WSL
+
+
+um if you didn't know if you don't know
+
+
+native Computing Foundation cncf which
+
+
+let's move around here
+
+
+don't know why I still get the feeling
+
+
+Adam had like a really great had some
+
+
+still easy like because the other Ides I
+acquisition and I open Visual Studio and
+
+
+that where where Visual Studio is like a
+
+
+ubuntu-based distribution yes snap yep
+
+
+choco yeah choco yeah yeah there might
+
+
+embracing the ones that the majority of
+
+
+bunch of like Windows technology and
+
+
+and this whole like right shift in
+
+
+uh
+
+
+any kind of creative uh migrations it
+
+
+and over 47 000 customers using Azure
+
+
+in terms of leveraging Linux let me
+
+
+this technology in Azure you don't have
+
+
+you then kind of move your way down the
+
+
+um I'm pretty sure there's a lot of
+
+
+typically end up utilizing VMS for that
+
+
+and then I'm going to use open up my
+
+
+oh my goodness there's so many oh no
+
+
+straightforward not a straightforward
+
+
+that is you know as a way to interacts
+
+
+then they came up with this awesome
+
+
+based off Linux right
+
+
+fix blog post I just want to see how it
+
+
+and then we create like shopping I don't
+
+
+this hold on how do I move this can I no
+
+
+
+
+
+
+let's grab a shopping one let's grab
+
+
+uh yeah and I didn't do anything all I
+
+
+Docker running so
+
+
+going to see like yeah type like Linux
+
+
+um
+
+
+bicep but I don't know if it creates
+
+
+
+
+
+
+we know the most because you know if you
+
+
+learner Cloud uh it is an open source
+
+
+people maintaining this website on our
+
+
+know best performant uh SEO optimized
+
+
+only for February and we are just
+
+
+
+
+maintain this with very very little uh
+
+
+past I don't know we'll take a look at
+
+
+
+
+we're gonna do last seven days so
+
+
+here this is actually the API so what
+
+
+Cloud definition uh it calls the API
+um I forgot to close my window that's
+
+
+through essentially the
+
+
+sort of like a road map or a guide right
+
+
+how do you break this down some
+
+
+there's no charge this isn't a boot camp
+
+
+individual projects if you want to get
+
+
+so let's go in here
+
+
+people if it's like a personal site or
+
+
+think so yeah you have additional costs
+
+
+with just things that we're working on
+
+
+um and that's why it's looking like very
+
+
+several languages yes English French
+
+
+um the for a close folder
+
+
+I believe there's like 2 000 minutes uh
+
+
+branch you know that's a release and we
+
+
+know that runs on and Ubuntu container
+
+
+project because we don't want that and
+
+
+aren't familiar diff containers another
+
+
+maybe like one of the best examples is
+
+
+on board and clone the repo and like
+
+
+we're using uh Linux once again for our
+
+
+the well we have an endpoint to create a
+
+
+from somewhere else and I'll be like I
+
+
+
+
+the adding it to the you know
+
+
+pretty sick uh that pretty much covers
+
+
+are talking about can we make sure to
+
+
+in the bottom right so starting vs code
+
+
+Windows because it's yeah I mean it is
+
+
+that in the next session which is the
+um I saw something about um and
+
+
+amount of tokens 4K per per query the
+
+
+Bing like I was I saw the email today I
+
+
+need but why would you want to like
+
+
+pretty sure many many more
+
+
+we will have hold on let me share we
+
+
+uh so the first one is just introducing
+
+
+um you can switch to the bash shell on
+
+
+commands how to list content how to find
+
+
+filtering out that that is the beauty in
+
+
+there too
+
+
+that as well here and then we put it all
+
+
+expect this from Microsoft it's like
+
+
+already that said that they're into the
+
+
+time another couple months doing
+
+
+something that you can help with Gwen
+
+
+you Richard for coming on last minute
+TIMESTAMP: 00:01:32.4600000
+foreign
+
+
+first please take a moment to review our
+
+
+about 24 to 48 hours I'll be sharing the
+
+
+
+
+thank you so much Albina as always for
+
+
+he he wasn't on the
+
+
+have heard of it so no one better than
+
+
+you take out with the reactor too as
+
+
+little bit more about utilizing Linux on
+
+
+freaking cool anyway
+
+
+are based off of like Linux images so if
+
+
+reasoning or can you give me like a
+
+
+people is at so that's super
+
+
+
+
+which is called reactor demo
+
+
+be running
+
+
+videos uh I think the longest one might
+
+
+think this is going to provision okay
+okay there's someone in the chat who
+
+
+like networking programming
+
+
+how things boot like you don't it's
+
+
+this uh our y-axis and then the level of
+
+
+it's like a managed service but you
+
+
+in any Cloud it doesn't really matter I
+
+
+uh in like two hours or so and then
+
+
+simulated with like software but I know
+
+
+because ultimately like the program
+example uh vs code Docker kubernetes SQL
+
+
+um but yeah so you say that it it can't
+
+
+agree yeah that's why I was trying to
+
+
+think so yeah yeah like bash is like
+
+
+one is better you shouldn't learn the
+
+
+stuff that I like so bash uh Azure and
+
+
+high level of talking about like open
+
+
+um but
+
+
+but there might be some gray area with
+
+
+two are very important too typically
+
+
+yeah yeah have you seen that I think I
+
+
+organizations that do utilize open
+
+
+I joined to Microsoft about a year and a
+
+
+this like the culture was completely
+
+
+or with Microsoft in general like what
+
+
+yeah
+
+
+probably get a lot more information
+
+
+yeah our position against open source
+
+
+it's just like not the right move from
+
+
+they grabbed.net and they pulled a lot
+
+
+like there's multiple things that
+
+
+you start to think like the AWS market
+
+
+is open source and the.net Foundation is
+
+
+build as well which I think is important
+
+
+Community has always been that part of
+
+
+about all about getting started with WSL
+
+
+um if you didn't know if you don't know
+
+
+native Computing Foundation cncf which
+
+
+let's move around here
+
+
+don't know why I still get the feeling
+
+
+Adam had like a really great had some
+
+
+still easy like because the other Ides I
+acquisition and I open Visual Studio and
+
+
+that where where Visual Studio is like a
+
+
+ubuntu-based distribution yes snap yep
+
+
+choco yeah choco yeah yeah there might
+
+
+embracing the ones that the majority of
+
+
+bunch of like Windows technology and
+
+
+and this whole like right shift in
+
+
+uh
+
+
+any kind of creative uh migrations it
+
+
+and over 47 000 customers using Azure
+
+
+in terms of leveraging Linux let me
+
+
+this technology in Azure you don't have
+
+
+you then kind of move your way down the
+
+
+um I'm pretty sure there's a lot of
+
+
+typically end up utilizing VMS for that
+
+
+and then I'm going to use open up my
+
+
+oh my goodness there's so many oh no
+
+
+straightforward not a straightforward
+
+
+that is you know as a way to interacts
+
+
+then they came up with this awesome
+
+
+based off Linux right
+
+
+fix blog post I just want to see how it
+
+
+and then we create like shopping I don't
+
+
+this hold on how do I move this can I no
+
+
+
+
+
+
+let's grab a shopping one let's grab
+
+
+uh yeah and I didn't do anything all I
+
+
+Docker running so
+
+
+going to see like yeah type like Linux
+
+
+um
+
+
+bicep but I don't know if it creates
+
+
+
+
+
+
+we know the most because you know if you
+
+
+learner Cloud uh it is an open source
+
+
+people maintaining this website on our
+
+
+know best performant uh SEO optimized
+
+
+only for February and we are just
+
+
+
+
+maintain this with very very little uh
+
+
+past I don't know we'll take a look at
+
+
+
+
+we're gonna do last seven days so
+
+
+here this is actually the API so what
+
+
+Cloud definition uh it calls the API
+um I forgot to close my window that's
+
+
+through essentially the
+
+
+sort of like a road map or a guide right
+
+
+how do you break this down some
+
+
+there's no charge this isn't a boot camp
+
+
+individual projects if you want to get
+
+
+so let's go in here
+
+
+people if it's like a personal site or
+
+
+think so yeah you have additional costs
+
+
+with just things that we're working on
+
+
+um and that's why it's looking like very
+
+
+several languages yes English French
+
+
+um the for a close folder
+
+
+I believe there's like 2 000 minutes uh
+
+
+branch you know that's a release and we
+
+
+know that runs on and Ubuntu container
+
+
+project because we don't want that and
+
+
+aren't familiar diff containers another
+
+
+maybe like one of the best examples is
+
+
+on board and clone the repo and like
+
+
+we're using uh Linux once again for our
+
+
+the well we have an endpoint to create a
+
+
+from somewhere else and I'll be like I
+
+
+
+
+the adding it to the you know
+
+
+pretty sick uh that pretty much covers
+
+
+are talking about can we make sure to
+
+
+in the bottom right so starting vs code
+
+
+Windows because it's yeah I mean it is
+
+
+that in the next session which is the
+um I saw something about um and
+
+
+amount of tokens 4K per per query the
+
+
+Bing like I was I saw the email today I
+
+
+need but why would you want to like
+
+
+pretty sure many many more
+
+
+we will have hold on let me share we
+
+
+uh so the first one is just introducing
+
+
+um you can switch to the bash shell on
+
+
+commands how to list content how to find
+
+
+filtering out that that is the beauty in
+
+
+there too
+
+
+that as well here and then we put it all
+
+
+expect this from Microsoft it's like
+
+
+already that said that they're into the
+
+
+time another couple months doing
+
+
+something that you can help with Gwen
+
+
+you Richard for coming on last minute
+TIMESTAMP: 00:01:34.3700000
+foreign
+
+
+first please take a moment to review our
+
+
+about 24 to 48 hours I'll be sharing the
+
+
+
+
+thank you so much Albina as always for
+
+
+he he wasn't on the
+
+
+have heard of it so no one better than
+
+
+you take out with the reactor too as
+
+
+little bit more about utilizing Linux on
+
+
+freaking cool anyway
+
+
+are based off of like Linux images so if
+
+
+reasoning or can you give me like a
+
+
+people is at so that's super
+
+
+
+
+which is called reactor demo
+
+
+be running
+
+
+videos uh I think the longest one might
+
+
+think this is going to provision okay
+okay there's someone in the chat who
+
+
+like networking programming
+
+
+how things boot like you don't it's
+
+
+this uh our y-axis and then the level of
+
+
+it's like a managed service but you
+
+
+in any Cloud it doesn't really matter I
+
+
+uh in like two hours or so and then
+
+
+simulated with like software but I know
+
+
+because ultimately like the program
+example uh vs code Docker kubernetes SQL
+
+
+um but yeah so you say that it it can't
+
+
+agree yeah that's why I was trying to
+
+
+think so yeah yeah like bash is like
+
+
+one is better you shouldn't learn the
+
+
+stuff that I like so bash uh Azure and
+
+
+high level of talking about like open
+
+
+um but
+
+
+but there might be some gray area with
+
+
+two are very important too typically
+
+
+yeah yeah have you seen that I think I
+
+
+organizations that do utilize open
+
+
+I joined to Microsoft about a year and a
+
+
+this like the culture was completely
+
+
+or with Microsoft in general like what
+
+
+yeah
+
+
+probably get a lot more information
+
+
+yeah our position against open source
+
+
+it's just like not the right move from
+
+
+they grabbed.net and they pulled a lot
+
+
+like there's multiple things that
+
+
+you start to think like the AWS market
+
+
+is open source and the.net Foundation is
+
+
+build as well which I think is important
+
+
+Community has always been that part of
+
+
+about all about getting started with WSL
+
+
+um if you didn't know if you don't know
+
+
+native Computing Foundation cncf which
+
+
+let's move around here
+
+
+don't know why I still get the feeling
+
+
+Adam had like a really great had some
+
+
+still easy like because the other Ides I
+acquisition and I open Visual Studio and
+
+
+that where where Visual Studio is like a
+
+
+ubuntu-based distribution yes snap yep
+
+
+choco yeah choco yeah yeah there might
+
+
+embracing the ones that the majority of
+
+
+bunch of like Windows technology and
+
+
+and this whole like right shift in
+
+
+uh
+
+
+any kind of creative uh migrations it
+
+
+and over 47 000 customers using Azure
+
+
+in terms of leveraging Linux let me
+
+
+this technology in Azure you don't have
+
+
+you then kind of move your way down the
+
+
+um I'm pretty sure there's a lot of
+
+
+typically end up utilizing VMS for that
+
+
+and then I'm going to use open up my
+
+
+oh my goodness there's so many oh no
+
+
+straightforward not a straightforward
+
+
+that is you know as a way to interacts
+
+
+then they came up with this awesome
+
+
+based off Linux right
+
+
+fix blog post I just want to see how it
+
+
+and then we create like shopping I don't
+
+
+this hold on how do I move this can I no
+
+
+
+
+
+
+let's grab a shopping one let's grab
+
+
+uh yeah and I didn't do anything all I
+
+
+Docker running so
+
+
+going to see like yeah type like Linux
+
+
+um
+
+
+bicep but I don't know if it creates
+
+
+
+
+
+
+we know the most because you know if you
+
+
+learner Cloud uh it is an open source
+
+
+people maintaining this website on our
+
+
+know best performant uh SEO optimized
+
+
+only for February and we are just
+
+
+
+
+maintain this with very very little uh
+
+
+past I don't know we'll take a look at
+
+
+
+
+we're gonna do last seven days so
+
+
+here this is actually the API so what
+
+
+Cloud definition uh it calls the API
+um I forgot to close my window that's
+
+
+through essentially the
+
+
+sort of like a road map or a guide right
+
+
+how do you break this down some
+
+
+there's no charge this isn't a boot camp
+
+
+individual projects if you want to get
+
+
+so let's go in here
+
+
+people if it's like a personal site or
+
+
+think so yeah you have additional costs
+
+
+with just things that we're working on
+
+
+um and that's why it's looking like very
+
+
+several languages yes English French
+
+
+um the for a close folder
+
+
+I believe there's like 2 000 minutes uh
+
+
+branch you know that's a release and we
+
+
+know that runs on and Ubuntu container
+
+
+project because we don't want that and
+
+
+aren't familiar diff containers another
+
+
+maybe like one of the best examples is
+
+
+on board and clone the repo and like
+
+
+we're using uh Linux once again for our
+
+
+the well we have an endpoint to create a
+
+
+from somewhere else and I'll be like I
+
+
+
+
+the adding it to the you know
+
+
+pretty sick uh that pretty much covers
+
+
+are talking about can we make sure to
+
+
+in the bottom right so starting vs code
+
+
+Windows because it's yeah I mean it is
+
+
+that in the next session which is the
+um I saw something about um and
+
+
+amount of tokens 4K per per query the
+
+
+Bing like I was I saw the email today I
+
+
+need but why would you want to like
+
+
+pretty sure many many more
+
+
+we will have hold on let me share we
+
+
+uh so the first one is just introducing
+
+
+um you can switch to the bash shell on
+
+
+commands how to list content how to find
+
+
+filtering out that that is the beauty in
+
+
+there too
+
+
+that as well here and then we put it all
+
+
+expect this from Microsoft it's like
+
+
+already that said that they're into the
+
+
+time another couple months doing
+
+
+something that you can help with Gwen
+
+
+you Richard for coming on last minute
