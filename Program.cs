@@ -33,20 +33,27 @@ var trackInfo = trackManifest.GetByLanguage("en");
 var track = await youtube.Videos.ClosedCaptions.GetAsync(trackInfo);
 
  int interval = Convert.ToInt32(Math.Floor(slices));
+ int index = 0;
 
-for (int j = 0; j < slices; j++)
+for (int j = index; j < interval; j++)
 {
+  
+    
     var caption = track.Captions[j];
 
     await file.WriteLineAsync($"TIMESTAMP: {caption.Offset}");
+    
 
-    for (var i = 0; i < track.Captions.Count; i+=interval)
+    for ( var i = index; i < (track.Captions.Count/interval); i++)
     {
         //var caption = track.Captions[i];
-        var newcaption = track.Captions[i];
-        await file.WriteLineAsync($"{newcaption.Text}");
+        //var newcaption = caption.Captions[i];
+        caption = track.Captions[i];
+        await file.WriteLineAsync($"{caption.Text}");
         //Console.WriteLine($"From: {caption.Text}");
     }
+
+    index += interval;
 }
 // Get the caption displayed at 0:35
 //var caption = track.GetByTime(TimeSpan.FromMinutes(15));

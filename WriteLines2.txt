@@ -1,5232 +1,3848 @@
 TIMESTAMP: 00:00:34.0790000
 foreign
+[Music]
+[Music]
+thank you
+hello everyone and welcome thank you all
+
+
+for joining us today for this live
+
+
+stream event my name is Albina and I'm
+
+
+the program manager of the Microsoft
+
+
+reactor San Francisco I will be sharing
+
+
+session Resources with you in the chat
+
+
+but before we begin I would like to
+
+
+quickly review two items with you our
+
+
+code of contact and our event guidelines
 
 
 first please take a moment to review our
 
 
+code of conduct Microsoft reactor seeks
+
+
+to provide a respectful environment for
+
+
+both our audience and our presenters we
+
+
+do encourage engagement in the chat but
+
+
+please be mindful of your commentary
+
+
+remain professional and on topic
+
+
+and secondly our event guidelines this
+
+
+session is being recorded and will be
+
+
+available on demand through the
+
+
+Microsoft reactor YouTube channel in
+
+
 about 24 to 48 hours I'll be sharing the
 
 
+link in the chat for our YouTube channel
+
+
+and if you have not been on a live
+
+
+stream through YouTube before please
+
+
+know that you must create an account on
+
+
+YouTube in order to access and interact
+
+
+in the chat you can set that up right
+
+
+now and if you're unable to use a chat
+
+
+but have questions feel free to reach
+
+
+out to us through the social media or
+
+
+Meetup
+which brings us to today's session Linux
+
+
+on Azure what is it how and when to use
+
+
+it this session will run approximately
+
+
+for 60 minutes and I'm going to bring in
+
+
+our speaker Gwen
+
+
+and our guest reshap as well welcome
 
 
 thank you so much Albina as always for
 
 
+the wonderful introduction hi everyone I
+
+
+see a couple people in the chat hanging
+
+
+out with us already awesome let us know
+
+
+where you are checking in uh also do let
+
+
+me know if you are on our our session
+
+
+last week where we talked all about how
+
+
+Linux works and today we're going to
+
+
+take it a step further and talk a little
+
+
+bit about more about utilizing Linux on
+
+
+Azure and I have my friend rishab here
+
+
 he he wasn't on the
 
 
-have heard of it so no one better than
-
-
-you take out with the reactor too as
-
-
-little bit more about utilizing Linux on
-
-
-freaking cool anyway
-
-
-are based off of like Linux images so if
-
-
-reasoning or can you give me like a
-
-
-people is at so that's super
-
-
-
-
-which is called reactor demo
-
-
-be running
-
-
-videos uh I think the longest one might
-
-
-think this is going to provision okay
-okay there's someone in the chat who
-
-
-like networking programming
-
-
-how things boot like you don't it's
-
-
-this uh our y-axis and then the level of
-
-
-it's like a managed service but you
-
-
-in any Cloud it doesn't really matter I
-
-
-uh in like two hours or so and then
-
-
-simulated with like software but I know
-
-
-because ultimately like the program
-example uh vs code Docker kubernetes SQL
-
-
-um but yeah so you say that it it can't
-
-
-agree yeah that's why I was trying to
-
-
-think so yeah yeah like bash is like
-
-
-one is better you shouldn't learn the
-
-
-stuff that I like so bash uh Azure and
-
-
-high level of talking about like open
-
-
-um but
-
-
-but there might be some gray area with
-
-
-two are very important too typically
-
-
-yeah yeah have you seen that I think I
-
-
-organizations that do utilize open
-
-
-I joined to Microsoft about a year and a
-
-
-this like the culture was completely
-
-
-or with Microsoft in general like what
-
-
-yeah
-
-
-probably get a lot more information
-
-
-yeah our position against open source
-
-
-it's just like not the right move from
-
-
-they grabbed.net and they pulled a lot
-
-
-like there's multiple things that
-
-
-you start to think like the AWS market
-
-
-is open source and the.net Foundation is
-
-
-build as well which I think is important
-
-
-Community has always been that part of
-
-
-about all about getting started with WSL
-
-
-um if you didn't know if you don't know
-
-
-native Computing Foundation cncf which
-
-
-let's move around here
-
-
-don't know why I still get the feeling
-
-
-Adam had like a really great had some
-
-
-still easy like because the other Ides I
-acquisition and I open Visual Studio and
-
-
-that where where Visual Studio is like a
-
-
-ubuntu-based distribution yes snap yep
-
-
-choco yeah choco yeah yeah there might
-
-
-embracing the ones that the majority of
-
-
-bunch of like Windows technology and
-
-
-and this whole like right shift in
-
-
-uh
-
-
-any kind of creative uh migrations it
-
-
-and over 47 000 customers using Azure
-
-
-in terms of leveraging Linux let me
-
-
-this technology in Azure you don't have
-
-
-you then kind of move your way down the
-
-
-um I'm pretty sure there's a lot of
-
-
-typically end up utilizing VMS for that
-
-
-and then I'm going to use open up my
-
-
-oh my goodness there's so many oh no
-
-
-straightforward not a straightforward
-
-
-that is you know as a way to interacts
-
-
-then they came up with this awesome
-
-
-based off Linux right
-
-
-fix blog post I just want to see how it
-
-
-and then we create like shopping I don't
-
-
-this hold on how do I move this can I no
-
-
-
-
-
-
-let's grab a shopping one let's grab
-
-
-uh yeah and I didn't do anything all I
-
-
-Docker running so
-
-
-going to see like yeah type like Linux
+let's switch to this so he wasn't on the
 
 
 um
 
 
-bicep but I don't know if it creates
+like the series information or the page
 
 
+or when you register you probably didn't
 
 
+see his name because last minute I was
 
 
-we know the most because you know if you
+like I really want to talk about uh an
 
 
-learner Cloud uh it is an open source
+app that we have in production that is
 
 
-people maintaining this website on our
+utilizing Linux and it's on Azure and
 
 
-know best performant uh SEO optimized
+it's an effort by both of us it's called
 
 
-only for February and we are just
+learn a cloud some of you may or may not
 
 
+have heard of it so no one better than
 
 
-maintain this with very very little uh
+talk about these things with than
 
 
-past I don't know we'll take a look at
+himself so hey Richard how you doing
 
 
+I'm doing good I'm doing good and I
 
 
-we're gonna do last seven days so
+guess most of the people no one says is
 
 
-here this is actually the API so what
+the duo right the cloud Duo so we do a
 
 
-Cloud definition uh it calls the API
-um I forgot to close my window that's
+lot together yeah yeah
 
 
-through essentially the
+um yeah we are back
 
 
-sort of like a road map or a guide right
+um and I think this is my first reactor
 
 
-how do you break this down some
+stream for this year
 
 
-there's no charge this isn't a boot camp
+oh wow I'm I'm honored yeah you do uh no
 
 
-individual projects if you want to get
+you take out with the reactor too as
 
 
-so let's go in here
+well rishab does a whole bunch of other
 
 
-people if it's like a personal site or
+stuff now with me
 
 
-think so yeah you have additional costs
+um but yeah for today uh I want to dive
 
 
-with just things that we're working on
+a little bit more onto Linux on Azure
 
 
-um and that's why it's looking like very
+we're going to talk a little bit more
 
 
-several languages yes English French
+about Open Source and then the history
 
 
-um the for a close folder
+of Open Source at Microsoft which was
 
 
-I believe there's like 2 000 minutes uh
+pretty interesting to read about
 
 
-branch you know that's a release and we
+um but we're gonna keep these things at
 
 
-know that runs on and Ubuntu container
+high level then we're gonna talk a
 
 
-project because we don't want that and
+little bit more about utilizing Linux on
 
 
-aren't familiar diff containers another
+Azure then we're gonna demo a little bit
 
 
-maybe like one of the best examples is
+about uh again showcasing our use of
 
 
-on board and clone the repo and like
+Linux on Azure and then also I want to
 
 
-we're using uh Linux once again for our
+actually I'm gonna do this right now
 
 
-the well we have an endpoint to create a
+because this might take a while so are
 
 
-from somewhere else and I'll be like I
+you all familiar with the Azure
 
 
+developer CLI Azure developer seal I
 
 
-the adding it to the you know
+don't know if anyone's used it before
 
 
-pretty sick uh that pretty much covers
+um also I just got access to the the
 
 
-are talking about can we make sure to
+Bing chat thing with uh open AI nice so
 
 
-in the bottom right so starting vs code
+freaking cool anyway
 
 
-Windows because it's yeah I mean it is
+um so the Azure developer CLI is it's a
 
 
-that in the next session which is the
-um I saw something about um and
+CLI that will enable you to essentially
 
 
-amount of tokens 4K per per query the
+deploy full-on
 
 
-Bing like I was I saw the email today I
+production ready applications to Azure
 
 
-need but why would you want to like
+with a simple command and they have a
 
 
-pretty sure many many more
+bunch of templates I asked um Savannah
 
 
-we will have hold on let me share we
+who is the PM for the Azure developer
 
 
-uh so the first one is just introducing
+CLI because I know a lot of their
 
 
-um you can switch to the bash shell on
+templates are I want to open up one of
 
 
-commands how to list content how to find
+these templates a lot of their templates
 
 
-filtering out that that is the beauty in
+are based off of like Linux images so if
 
 
-there too
+we look on like sushi sharp I know the
 
 
-that as well here and then we put it all
+these app service ones are based off
 
 
-expect this from Microsoft it's like
+Linux images and I know the one for the
 
 
-already that said that they're into the
+c-sharp and Azure functions is also
 
 
-time another couple months doing
+because I helped author that one but
 
 
-something that you can help with Gwen
+they also have like Java and OJ node.js
 
 
-you Richard for coming on last minute
+Python and I want to pick I don't know
+
+
+let's pick this Java one as an example
+
+
+it's off based off container apps and I
+
+
+asked her like well so what was the
+
+
+reasoning or can you give me like a
+
+
+statement because I want to share with
+
+
+the the people watching the streams like
+
+
+what was the reasoning behind
+
+
+[Music]
+
+
+um
+
+
+you know basing these templates off all
+
+
+like Linux images and then Savannah's
+
+
+great she's one of the funniest and
+
+
+coolest people to talk but she basically
+
+
+was like honestly Linux is where the
+
+
+people is at so that's super
+
+
+straightforward I was like I'm gonna use
+
+
+that exactly because it was it's just
+
+
+the truth it's like you know we'll see a
+
+
+couple more stats about uh why like
+
+
+that's sort of like back up the
+
+
+statement at first but I'm gonna do this
+
+
+deployment first because it's probably
+
+
+gonna take a while
+
+
+um oh look at this WSL which is Linux on
+
+
+on Windows
+and then we're gonna make deer we're
+
+
+gonna call this Howlin next Works demo
+
+
+and then we're gonna CD into this lovely
+
+
+directory name yeah love it uh and then
+
+
+we'll just do azd up
+
+
+and we're gonna call this
+
+
+which is called reactor demo
+
+
 TIMESTAMP: 00:00:41.5200000
-foreign
+
+
+reactor San Francisco I will be sharing
+
+
+session Resources with you in the chat
+
+
+but before we begin I would like to
+
+
+quickly review two items with you our
+
+
+code of contact and our event guidelines
 
 
 first please take a moment to review our
 
 
+code of conduct Microsoft reactor seeks
+
+
+to provide a respectful environment for
+
+
+both our audience and our presenters we
+
+
+do encourage engagement in the chat but
+
+
+please be mindful of your commentary
+
+
+remain professional and on topic
+
+
+and secondly our event guidelines this
+
+
+session is being recorded and will be
+
+
+available on demand through the
+
+
+Microsoft reactor YouTube channel in
+
+
 about 24 to 48 hours I'll be sharing the
 
 
+link in the chat for our YouTube channel
+
+
+and if you have not been on a live
+
+
+stream through YouTube before please
+
+
+know that you must create an account on
+
+
+YouTube in order to access and interact
+
+
+in the chat you can set that up right
+
+
+now and if you're unable to use a chat
+
+
+but have questions feel free to reach
+
+
+out to us through the social media or
+
+
+Meetup
+which brings us to today's session Linux
+
+
+on Azure what is it how and when to use
+
+
+it this session will run approximately
+
+
+for 60 minutes and I'm going to bring in
+
+
+our speaker Gwen
+
+
+and our guest reshap as well welcome
 
 
 thank you so much Albina as always for
 
 
+the wonderful introduction hi everyone I
+
+
+see a couple people in the chat hanging
+
+
+out with us already awesome let us know
+
+
+where you are checking in uh also do let
+
+
+me know if you are on our our session
+
+
+last week where we talked all about how
+
+
+Linux works and today we're going to
+
+
+take it a step further and talk a little
+
+
+bit about more about utilizing Linux on
+
+
+Azure and I have my friend rishab here
+
+
 he he wasn't on the
 
 
-have heard of it so no one better than
-
-
-you take out with the reactor too as
-
-
-little bit more about utilizing Linux on
-
-
-freaking cool anyway
-
-
-are based off of like Linux images so if
-
-
-reasoning or can you give me like a
-
-
-people is at so that's super
-
-
-
-
-which is called reactor demo
-
-
-be running
-
-
-videos uh I think the longest one might
-
-
-think this is going to provision okay
-okay there's someone in the chat who
-
-
-like networking programming
-
-
-how things boot like you don't it's
-
-
-this uh our y-axis and then the level of
-
-
-it's like a managed service but you
-
-
-in any Cloud it doesn't really matter I
-
-
-uh in like two hours or so and then
-
-
-simulated with like software but I know
-
-
-because ultimately like the program
-example uh vs code Docker kubernetes SQL
-
-
-um but yeah so you say that it it can't
-
-
-agree yeah that's why I was trying to
-
-
-think so yeah yeah like bash is like
-
-
-one is better you shouldn't learn the
-
-
-stuff that I like so bash uh Azure and
-
-
-high level of talking about like open
-
-
-um but
-
-
-but there might be some gray area with
-
-
-two are very important too typically
-
-
-yeah yeah have you seen that I think I
-
-
-organizations that do utilize open
-
-
-I joined to Microsoft about a year and a
-
-
-this like the culture was completely
-
-
-or with Microsoft in general like what
-
-
-yeah
-
-
-probably get a lot more information
-
-
-yeah our position against open source
-
-
-it's just like not the right move from
-
-
-they grabbed.net and they pulled a lot
-
-
-like there's multiple things that
-
-
-you start to think like the AWS market
-
-
-is open source and the.net Foundation is
-
-
-build as well which I think is important
-
-
-Community has always been that part of
-
-
-about all about getting started with WSL
-
-
-um if you didn't know if you don't know
-
-
-native Computing Foundation cncf which
-
-
-let's move around here
-
-
-don't know why I still get the feeling
-
-
-Adam had like a really great had some
-
-
-still easy like because the other Ides I
-acquisition and I open Visual Studio and
-
-
-that where where Visual Studio is like a
-
-
-ubuntu-based distribution yes snap yep
-
-
-choco yeah choco yeah yeah there might
-
-
-embracing the ones that the majority of
-
-
-bunch of like Windows technology and
-
-
-and this whole like right shift in
-
-
-uh
-
-
-any kind of creative uh migrations it
-
-
-and over 47 000 customers using Azure
-
-
-in terms of leveraging Linux let me
-
-
-this technology in Azure you don't have
-
-
-you then kind of move your way down the
-
-
-um I'm pretty sure there's a lot of
-
-
-typically end up utilizing VMS for that
-
-
-and then I'm going to use open up my
-
-
-oh my goodness there's so many oh no
-
-
-straightforward not a straightforward
-
-
-that is you know as a way to interacts
-
-
-then they came up with this awesome
-
-
-based off Linux right
-
-
-fix blog post I just want to see how it
-
-
-and then we create like shopping I don't
-
-
-this hold on how do I move this can I no
-
-
-
-
-
-
-let's grab a shopping one let's grab
-
-
-uh yeah and I didn't do anything all I
-
-
-Docker running so
-
-
-going to see like yeah type like Linux
+let's switch to this so he wasn't on the
 
 
 um
 
 
-bicep but I don't know if it creates
+like the series information or the page
 
 
+or when you register you probably didn't
 
 
+see his name because last minute I was
 
 
-we know the most because you know if you
+like I really want to talk about uh an
 
 
-learner Cloud uh it is an open source
+app that we have in production that is
 
 
-people maintaining this website on our
+utilizing Linux and it's on Azure and
 
 
-know best performant uh SEO optimized
+it's an effort by both of us it's called
 
 
-only for February and we are just
+learn a cloud some of you may or may not
 
 
+have heard of it so no one better than
 
 
-maintain this with very very little uh
+talk about these things with than
 
 
-past I don't know we'll take a look at
+himself so hey Richard how you doing
 
 
+I'm doing good I'm doing good and I
 
 
-we're gonna do last seven days so
+guess most of the people no one says is
 
 
-here this is actually the API so what
+the duo right the cloud Duo so we do a
 
 
-Cloud definition uh it calls the API
-um I forgot to close my window that's
+lot together yeah yeah
 
 
-through essentially the
+um yeah we are back
 
 
-sort of like a road map or a guide right
+um and I think this is my first reactor
 
 
-how do you break this down some
+stream for this year
 
 
-there's no charge this isn't a boot camp
+oh wow I'm I'm honored yeah you do uh no
 
 
-individual projects if you want to get
+you take out with the reactor too as
 
 
-so let's go in here
+well rishab does a whole bunch of other
 
 
-people if it's like a personal site or
+stuff now with me
 
 
-think so yeah you have additional costs
+um but yeah for today uh I want to dive
 
 
-with just things that we're working on
+a little bit more onto Linux on Azure
 
 
-um and that's why it's looking like very
+we're going to talk a little bit more
 
 
-several languages yes English French
+about Open Source and then the history
 
 
-um the for a close folder
+of Open Source at Microsoft which was
 
 
-I believe there's like 2 000 minutes uh
+pretty interesting to read about
 
 
-branch you know that's a release and we
+um but we're gonna keep these things at
 
 
-know that runs on and Ubuntu container
+high level then we're gonna talk a
 
 
-project because we don't want that and
+little bit more about utilizing Linux on
 
 
-aren't familiar diff containers another
+Azure then we're gonna demo a little bit
 
 
-maybe like one of the best examples is
+about uh again showcasing our use of
 
 
-on board and clone the repo and like
+Linux on Azure and then also I want to
 
 
-we're using uh Linux once again for our
+actually I'm gonna do this right now
 
 
-the well we have an endpoint to create a
+because this might take a while so are
 
 
-from somewhere else and I'll be like I
+you all familiar with the Azure
 
 
+developer CLI Azure developer seal I
 
 
-the adding it to the you know
+don't know if anyone's used it before
 
 
-pretty sick uh that pretty much covers
+um also I just got access to the the
 
 
-are talking about can we make sure to
+Bing chat thing with uh open AI nice so
 
 
-in the bottom right so starting vs code
+freaking cool anyway
 
 
-Windows because it's yeah I mean it is
+um so the Azure developer CLI is it's a
 
 
-that in the next session which is the
-um I saw something about um and
+CLI that will enable you to essentially
 
 
-amount of tokens 4K per per query the
+deploy full-on
 
 
-Bing like I was I saw the email today I
+production ready applications to Azure
 
 
-need but why would you want to like
+with a simple command and they have a
 
 
-pretty sure many many more
+bunch of templates I asked um Savannah
 
 
-we will have hold on let me share we
+who is the PM for the Azure developer
 
 
-uh so the first one is just introducing
+CLI because I know a lot of their
 
 
-um you can switch to the bash shell on
+templates are I want to open up one of
 
 
-commands how to list content how to find
+these templates a lot of their templates
 
 
-filtering out that that is the beauty in
+are based off of like Linux images so if
 
 
-there too
+we look on like sushi sharp I know the
 
 
-that as well here and then we put it all
+these app service ones are based off
 
 
-expect this from Microsoft it's like
+Linux images and I know the one for the
 
 
-already that said that they're into the
+c-sharp and Azure functions is also
 
 
-time another couple months doing
+because I helped author that one but
 
 
-something that you can help with Gwen
+they also have like Java and OJ node.js
 
 
-you Richard for coming on last minute
+Python and I want to pick I don't know
+
+
+let's pick this Java one as an example
+
+
+it's off based off container apps and I
+
+
+asked her like well so what was the
+
+
+reasoning or can you give me like a
+
+
+statement because I want to share with
+
+
+the the people watching the streams like
+
+
+what was the reasoning behind
+
+
+[Music]
+
+
+um
+
+
+you know basing these templates off all
+
+
+like Linux images and then Savannah's
+
+
+great she's one of the funniest and
+
+
+coolest people to talk but she basically
+
+
+was like honestly Linux is where the
+
+
+people is at so that's super
+
+
+straightforward I was like I'm gonna use
+
+
+that exactly because it was it's just
+
+
+the truth it's like you know we'll see a
+
+
+couple more stats about uh why like
+
+
+that's sort of like back up the
+
+
+statement at first but I'm gonna do this
+
+
+deployment first because it's probably
+
+
+gonna take a while
+
+
+um oh look at this WSL which is Linux on
+
+
+on Windows
+and then we're gonna make deer we're
+
+
+gonna call this Howlin next Works demo
+
+
+and then we're gonna CD into this lovely
+
+
+directory name yeah love it uh and then
+
+
+we'll just do azd up
+
+
+and we're gonna call this
+
+
+which is called reactor demo
+
+
 TIMESTAMP: 00:01:09.5500000
-foreign
-
-
 first please take a moment to review our
+
+
+code of conduct Microsoft reactor seeks
+
+
+to provide a respectful environment for
+
+
+both our audience and our presenters we
+
+
+do encourage engagement in the chat but
+
+
+please be mindful of your commentary
+
+
+remain professional and on topic
+
+
+and secondly our event guidelines this
+
+
+session is being recorded and will be
+
+
+available on demand through the
+
+
+Microsoft reactor YouTube channel in
 
 
 about 24 to 48 hours I'll be sharing the
 
 
+link in the chat for our YouTube channel
+
+
+and if you have not been on a live
+
+
+stream through YouTube before please
+
+
+know that you must create an account on
+
+
+YouTube in order to access and interact
+
+
+in the chat you can set that up right
+
+
+now and if you're unable to use a chat
+
+
+but have questions feel free to reach
+
+
+out to us through the social media or
+
+
+Meetup
+which brings us to today's session Linux
+
+
+on Azure what is it how and when to use
+
+
+it this session will run approximately
+
+
+for 60 minutes and I'm going to bring in
+
+
+our speaker Gwen
+
+
+and our guest reshap as well welcome
 
 
 thank you so much Albina as always for
 
 
+the wonderful introduction hi everyone I
+
+
+see a couple people in the chat hanging
+
+
+out with us already awesome let us know
+
+
+where you are checking in uh also do let
+
+
+me know if you are on our our session
+
+
+last week where we talked all about how
+
+
+Linux works and today we're going to
+
+
+take it a step further and talk a little
+
+
+bit about more about utilizing Linux on
+
+
+Azure and I have my friend rishab here
+
+
 he he wasn't on the
 
 
-have heard of it so no one better than
-
-
-you take out with the reactor too as
-
-
-little bit more about utilizing Linux on
-
-
-freaking cool anyway
-
-
-are based off of like Linux images so if
-
-
-reasoning or can you give me like a
-
-
-people is at so that's super
-
-
-
-
-which is called reactor demo
-
-
-be running
-
-
-videos uh I think the longest one might
-
-
-think this is going to provision okay
-okay there's someone in the chat who
-
-
-like networking programming
-
-
-how things boot like you don't it's
-
-
-this uh our y-axis and then the level of
-
-
-it's like a managed service but you
-
-
-in any Cloud it doesn't really matter I
-
-
-uh in like two hours or so and then
-
-
-simulated with like software but I know
-
-
-because ultimately like the program
-example uh vs code Docker kubernetes SQL
-
-
-um but yeah so you say that it it can't
-
-
-agree yeah that's why I was trying to
-
-
-think so yeah yeah like bash is like
-
-
-one is better you shouldn't learn the
-
-
-stuff that I like so bash uh Azure and
-
-
-high level of talking about like open
-
-
-um but
-
-
-but there might be some gray area with
-
-
-two are very important too typically
-
-
-yeah yeah have you seen that I think I
-
-
-organizations that do utilize open
-
-
-I joined to Microsoft about a year and a
-
-
-this like the culture was completely
-
-
-or with Microsoft in general like what
-
-
-yeah
-
-
-probably get a lot more information
-
-
-yeah our position against open source
-
-
-it's just like not the right move from
-
-
-they grabbed.net and they pulled a lot
-
-
-like there's multiple things that
-
-
-you start to think like the AWS market
-
-
-is open source and the.net Foundation is
-
-
-build as well which I think is important
-
-
-Community has always been that part of
-
-
-about all about getting started with WSL
-
-
-um if you didn't know if you don't know
-
-
-native Computing Foundation cncf which
-
-
-let's move around here
-
-
-don't know why I still get the feeling
-
-
-Adam had like a really great had some
-
-
-still easy like because the other Ides I
-acquisition and I open Visual Studio and
-
-
-that where where Visual Studio is like a
-
-
-ubuntu-based distribution yes snap yep
-
-
-choco yeah choco yeah yeah there might
-
-
-embracing the ones that the majority of
-
-
-bunch of like Windows technology and
-
-
-and this whole like right shift in
-
-
-uh
-
-
-any kind of creative uh migrations it
-
-
-and over 47 000 customers using Azure
-
-
-in terms of leveraging Linux let me
-
-
-this technology in Azure you don't have
-
-
-you then kind of move your way down the
-
-
-um I'm pretty sure there's a lot of
-
-
-typically end up utilizing VMS for that
-
-
-and then I'm going to use open up my
-
-
-oh my goodness there's so many oh no
-
-
-straightforward not a straightforward
-
-
-that is you know as a way to interacts
-
-
-then they came up with this awesome
-
-
-based off Linux right
-
-
-fix blog post I just want to see how it
-
-
-and then we create like shopping I don't
-
-
-this hold on how do I move this can I no
-
-
-
-
-
-
-let's grab a shopping one let's grab
-
-
-uh yeah and I didn't do anything all I
-
-
-Docker running so
-
-
-going to see like yeah type like Linux
+let's switch to this so he wasn't on the
 
 
 um
 
 
-bicep but I don't know if it creates
+like the series information or the page
 
 
+or when you register you probably didn't
 
 
+see his name because last minute I was
 
 
-we know the most because you know if you
+like I really want to talk about uh an
 
 
-learner Cloud uh it is an open source
+app that we have in production that is
 
 
-people maintaining this website on our
+utilizing Linux and it's on Azure and
 
 
-know best performant uh SEO optimized
+it's an effort by both of us it's called
 
 
-only for February and we are just
+learn a cloud some of you may or may not
 
 
+have heard of it so no one better than
 
 
-maintain this with very very little uh
+talk about these things with than
 
 
-past I don't know we'll take a look at
+himself so hey Richard how you doing
 
 
+I'm doing good I'm doing good and I
 
 
-we're gonna do last seven days so
+guess most of the people no one says is
 
 
-here this is actually the API so what
+the duo right the cloud Duo so we do a
 
 
-Cloud definition uh it calls the API
-um I forgot to close my window that's
+lot together yeah yeah
 
 
-through essentially the
+um yeah we are back
 
 
-sort of like a road map or a guide right
+um and I think this is my first reactor
 
 
-how do you break this down some
+stream for this year
 
 
-there's no charge this isn't a boot camp
+oh wow I'm I'm honored yeah you do uh no
 
 
-individual projects if you want to get
+you take out with the reactor too as
 
 
-so let's go in here
+well rishab does a whole bunch of other
 
 
-people if it's like a personal site or
+stuff now with me
 
 
-think so yeah you have additional costs
+um but yeah for today uh I want to dive
 
 
-with just things that we're working on
+a little bit more onto Linux on Azure
 
 
-um and that's why it's looking like very
+we're going to talk a little bit more
 
 
-several languages yes English French
+about Open Source and then the history
 
 
-um the for a close folder
+of Open Source at Microsoft which was
 
 
-I believe there's like 2 000 minutes uh
+pretty interesting to read about
 
 
-branch you know that's a release and we
+um but we're gonna keep these things at
 
 
-know that runs on and Ubuntu container
+high level then we're gonna talk a
 
 
-project because we don't want that and
+little bit more about utilizing Linux on
 
 
-aren't familiar diff containers another
+Azure then we're gonna demo a little bit
 
 
-maybe like one of the best examples is
+about uh again showcasing our use of
 
 
-on board and clone the repo and like
+Linux on Azure and then also I want to
 
 
-we're using uh Linux once again for our
+actually I'm gonna do this right now
 
 
-the well we have an endpoint to create a
+because this might take a while so are
 
 
-from somewhere else and I'll be like I
+you all familiar with the Azure
 
 
+developer CLI Azure developer seal I
 
 
-the adding it to the you know
+don't know if anyone's used it before
 
 
-pretty sick uh that pretty much covers
+um also I just got access to the the
 
 
-are talking about can we make sure to
+Bing chat thing with uh open AI nice so
 
 
-in the bottom right so starting vs code
+freaking cool anyway
 
 
-Windows because it's yeah I mean it is
+um so the Azure developer CLI is it's a
 
 
-that in the next session which is the
-um I saw something about um and
+CLI that will enable you to essentially
 
 
-amount of tokens 4K per per query the
+deploy full-on
 
 
-Bing like I was I saw the email today I
+production ready applications to Azure
 
 
-need but why would you want to like
+with a simple command and they have a
 
 
-pretty sure many many more
+bunch of templates I asked um Savannah
 
 
-we will have hold on let me share we
+who is the PM for the Azure developer
 
 
-uh so the first one is just introducing
+CLI because I know a lot of their
 
 
-um you can switch to the bash shell on
+templates are I want to open up one of
 
 
-commands how to list content how to find
+these templates a lot of their templates
 
 
-filtering out that that is the beauty in
+are based off of like Linux images so if
 
 
-there too
+we look on like sushi sharp I know the
 
 
-that as well here and then we put it all
+these app service ones are based off
 
 
-expect this from Microsoft it's like
+Linux images and I know the one for the
 
 
-already that said that they're into the
+c-sharp and Azure functions is also
 
 
-time another couple months doing
+because I helped author that one but
 
 
-something that you can help with Gwen
+they also have like Java and OJ node.js
 
 
-you Richard for coming on last minute
+Python and I want to pick I don't know
+
+
+let's pick this Java one as an example
+
+
+it's off based off container apps and I
+
+
+asked her like well so what was the
+
+
+reasoning or can you give me like a
+
+
+statement because I want to share with
+
+
+the the people watching the streams like
+
+
+what was the reasoning behind
+
+
+[Music]
+
+
+um
+
+
+you know basing these templates off all
+
+
+like Linux images and then Savannah's
+
+
+great she's one of the funniest and
+
+
+coolest people to talk but she basically
+
+
+was like honestly Linux is where the
+
+
+people is at so that's super
+
+
+straightforward I was like I'm gonna use
+
+
+that exactly because it was it's just
+
+
+the truth it's like you know we'll see a
+
+
+couple more stats about uh why like
+
+
+that's sort of like back up the
+
+
+statement at first but I'm gonna do this
+
+
+deployment first because it's probably
+
+
+gonna take a while
+
+
+um oh look at this WSL which is Linux on
+
+
+on Windows
+and then we're gonna make deer we're
+
+
+gonna call this Howlin next Works demo
+
+
+and then we're gonna CD into this lovely
+
+
+directory name yeah love it uh and then
+
+
+we'll just do azd up
+
+
+and we're gonna call this
+
+
+which is called reactor demo
+
+
 TIMESTAMP: 00:01:21.2000000
-foreign
 
 
-first please take a moment to review our
+remain professional and on topic
+
+
+and secondly our event guidelines this
+
+
+session is being recorded and will be
+
+
+available on demand through the
+
+
+Microsoft reactor YouTube channel in
 
 
 about 24 to 48 hours I'll be sharing the
 
 
+link in the chat for our YouTube channel
+
+
+and if you have not been on a live
+
+
+stream through YouTube before please
+
+
+know that you must create an account on
+
+
+YouTube in order to access and interact
+
+
+in the chat you can set that up right
+
+
+now and if you're unable to use a chat
+
+
+but have questions feel free to reach
+
+
+out to us through the social media or
+
+
+Meetup
+which brings us to today's session Linux
+
+
+on Azure what is it how and when to use
+
+
+it this session will run approximately
+
+
+for 60 minutes and I'm going to bring in
+
+
+our speaker Gwen
+
+
+and our guest reshap as well welcome
 
 
 thank you so much Albina as always for
 
 
+the wonderful introduction hi everyone I
+
+
+see a couple people in the chat hanging
+
+
+out with us already awesome let us know
+
+
+where you are checking in uh also do let
+
+
+me know if you are on our our session
+
+
+last week where we talked all about how
+
+
+Linux works and today we're going to
+
+
+take it a step further and talk a little
+
+
+bit about more about utilizing Linux on
+
+
+Azure and I have my friend rishab here
+
+
 he he wasn't on the
 
 
-have heard of it so no one better than
-
-
-you take out with the reactor too as
-
-
-little bit more about utilizing Linux on
-
-
-freaking cool anyway
-
-
-are based off of like Linux images so if
-
-
-reasoning or can you give me like a
-
-
-people is at so that's super
-
-
-
-
-which is called reactor demo
-
-
-be running
-
-
-videos uh I think the longest one might
-
-
-think this is going to provision okay
-okay there's someone in the chat who
-
-
-like networking programming
-
-
-how things boot like you don't it's
-
-
-this uh our y-axis and then the level of
-
-
-it's like a managed service but you
-
-
-in any Cloud it doesn't really matter I
-
-
-uh in like two hours or so and then
-
-
-simulated with like software but I know
-
-
-because ultimately like the program
-example uh vs code Docker kubernetes SQL
-
-
-um but yeah so you say that it it can't
-
-
-agree yeah that's why I was trying to
-
-
-think so yeah yeah like bash is like
-
-
-one is better you shouldn't learn the
-
-
-stuff that I like so bash uh Azure and
-
-
-high level of talking about like open
-
-
-um but
-
-
-but there might be some gray area with
-
-
-two are very important too typically
-
-
-yeah yeah have you seen that I think I
-
-
-organizations that do utilize open
-
-
-I joined to Microsoft about a year and a
-
-
-this like the culture was completely
-
-
-or with Microsoft in general like what
-
-
-yeah
-
-
-probably get a lot more information
-
-
-yeah our position against open source
-
-
-it's just like not the right move from
-
-
-they grabbed.net and they pulled a lot
-
-
-like there's multiple things that
-
-
-you start to think like the AWS market
-
-
-is open source and the.net Foundation is
-
-
-build as well which I think is important
-
-
-Community has always been that part of
-
-
-about all about getting started with WSL
-
-
-um if you didn't know if you don't know
-
-
-native Computing Foundation cncf which
-
-
-let's move around here
-
-
-don't know why I still get the feeling
-
-
-Adam had like a really great had some
-
-
-still easy like because the other Ides I
-acquisition and I open Visual Studio and
-
-
-that where where Visual Studio is like a
-
-
-ubuntu-based distribution yes snap yep
-
-
-choco yeah choco yeah yeah there might
-
-
-embracing the ones that the majority of
-
-
-bunch of like Windows technology and
-
-
-and this whole like right shift in
-
-
-uh
-
-
-any kind of creative uh migrations it
-
-
-and over 47 000 customers using Azure
-
-
-in terms of leveraging Linux let me
-
-
-this technology in Azure you don't have
-
-
-you then kind of move your way down the
-
-
-um I'm pretty sure there's a lot of
-
-
-typically end up utilizing VMS for that
-
-
-and then I'm going to use open up my
-
-
-oh my goodness there's so many oh no
-
-
-straightforward not a straightforward
-
-
-that is you know as a way to interacts
-
-
-then they came up with this awesome
-
-
-based off Linux right
-
-
-fix blog post I just want to see how it
-
-
-and then we create like shopping I don't
-
-
-this hold on how do I move this can I no
-
-
-
-
-
-
-let's grab a shopping one let's grab
-
-
-uh yeah and I didn't do anything all I
-
-
-Docker running so
-
-
-going to see like yeah type like Linux
+let's switch to this so he wasn't on the
 
 
 um
 
 
-bicep but I don't know if it creates
+like the series information or the page
 
 
+or when you register you probably didn't
 
 
+see his name because last minute I was
 
 
-we know the most because you know if you
+like I really want to talk about uh an
 
 
-learner Cloud uh it is an open source
+app that we have in production that is
 
 
-people maintaining this website on our
+utilizing Linux and it's on Azure and
 
 
-know best performant uh SEO optimized
+it's an effort by both of us it's called
 
 
-only for February and we are just
+learn a cloud some of you may or may not
 
 
+have heard of it so no one better than
 
 
-maintain this with very very little uh
+talk about these things with than
 
 
-past I don't know we'll take a look at
+himself so hey Richard how you doing
 
 
+I'm doing good I'm doing good and I
 
 
-we're gonna do last seven days so
+guess most of the people no one says is
 
 
-here this is actually the API so what
+the duo right the cloud Duo so we do a
 
 
-Cloud definition uh it calls the API
-um I forgot to close my window that's
+lot together yeah yeah
 
 
-through essentially the
+um yeah we are back
 
 
-sort of like a road map or a guide right
+um and I think this is my first reactor
 
 
-how do you break this down some
+stream for this year
 
 
-there's no charge this isn't a boot camp
+oh wow I'm I'm honored yeah you do uh no
 
 
-individual projects if you want to get
+you take out with the reactor too as
 
 
-so let's go in here
+well rishab does a whole bunch of other
 
 
-people if it's like a personal site or
+stuff now with me
 
 
-think so yeah you have additional costs
+um but yeah for today uh I want to dive
 
 
-with just things that we're working on
+a little bit more onto Linux on Azure
 
 
-um and that's why it's looking like very
+we're going to talk a little bit more
 
 
-several languages yes English French
+about Open Source and then the history
 
 
-um the for a close folder
+of Open Source at Microsoft which was
 
 
-I believe there's like 2 000 minutes uh
+pretty interesting to read about
 
 
-branch you know that's a release and we
+um but we're gonna keep these things at
 
 
-know that runs on and Ubuntu container
+high level then we're gonna talk a
 
 
-project because we don't want that and
+little bit more about utilizing Linux on
 
 
-aren't familiar diff containers another
+Azure then we're gonna demo a little bit
 
 
-maybe like one of the best examples is
+about uh again showcasing our use of
 
 
-on board and clone the repo and like
+Linux on Azure and then also I want to
 
 
-we're using uh Linux once again for our
+actually I'm gonna do this right now
 
 
-the well we have an endpoint to create a
+because this might take a while so are
 
 
-from somewhere else and I'll be like I
+you all familiar with the Azure
 
 
+developer CLI Azure developer seal I
 
 
-the adding it to the you know
+don't know if anyone's used it before
 
 
-pretty sick uh that pretty much covers
+um also I just got access to the the
 
 
-are talking about can we make sure to
+Bing chat thing with uh open AI nice so
 
 
-in the bottom right so starting vs code
+freaking cool anyway
 
 
-Windows because it's yeah I mean it is
+um so the Azure developer CLI is it's a
 
 
-that in the next session which is the
-um I saw something about um and
+CLI that will enable you to essentially
 
 
-amount of tokens 4K per per query the
+deploy full-on
 
 
-Bing like I was I saw the email today I
+production ready applications to Azure
 
 
-need but why would you want to like
+with a simple command and they have a
 
 
-pretty sure many many more
+bunch of templates I asked um Savannah
 
 
-we will have hold on let me share we
+who is the PM for the Azure developer
 
 
-uh so the first one is just introducing
+CLI because I know a lot of their
 
 
-um you can switch to the bash shell on
+templates are I want to open up one of
 
 
-commands how to list content how to find
+these templates a lot of their templates
 
 
-filtering out that that is the beauty in
+are based off of like Linux images so if
 
 
-there too
+we look on like sushi sharp I know the
 
 
-that as well here and then we put it all
+these app service ones are based off
 
 
-expect this from Microsoft it's like
+Linux images and I know the one for the
 
 
-already that said that they're into the
+c-sharp and Azure functions is also
 
 
-time another couple months doing
+because I helped author that one but
 
 
-something that you can help with Gwen
+they also have like Java and OJ node.js
 
 
-you Richard for coming on last minute
+Python and I want to pick I don't know
+
+
+let's pick this Java one as an example
+
+
+it's off based off container apps and I
+
+
+asked her like well so what was the
+
+
+reasoning or can you give me like a
+
+
+statement because I want to share with
+
+
+the the people watching the streams like
+
+
+what was the reasoning behind
+
+
+[Music]
+
+
+um
+
+
+you know basing these templates off all
+
+
+like Linux images and then Savannah's
+
+
+great she's one of the funniest and
+
+
+coolest people to talk but she basically
+
+
+was like honestly Linux is where the
+
+
+people is at so that's super
+
+
+straightforward I was like I'm gonna use
+
+
+that exactly because it was it's just
+
+
+the truth it's like you know we'll see a
+
+
+couple more stats about uh why like
+
+
+that's sort of like back up the
+
+
+statement at first but I'm gonna do this
+
+
+deployment first because it's probably
+
+
+gonna take a while
+
+
+um oh look at this WSL which is Linux on
+
+
+on Windows
+and then we're gonna make deer we're
+
+
+gonna call this Howlin next Works demo
+
+
+and then we're gonna CD into this lovely
+
+
+directory name yeah love it uh and then
+
+
+we'll just do azd up
+
+
+and we're gonna call this
+
+
+which is called reactor demo
+
+
 TIMESTAMP: 00:01:24.5600000
-foreign
-
-
-first please take a moment to review our
-
-
 about 24 to 48 hours I'll be sharing the
 
 
+link in the chat for our YouTube channel
+
+
+and if you have not been on a live
+
+
+stream through YouTube before please
+
+
+know that you must create an account on
+
+
+YouTube in order to access and interact
+
+
+in the chat you can set that up right
+
+
+now and if you're unable to use a chat
+
+
+but have questions feel free to reach
+
+
+out to us through the social media or
+
+
+Meetup
+which brings us to today's session Linux
+
+
+on Azure what is it how and when to use
+
+
+it this session will run approximately
+
+
+for 60 minutes and I'm going to bring in
+
+
+our speaker Gwen
+
+
+and our guest reshap as well welcome
 
 
 thank you so much Albina as always for
 
 
+the wonderful introduction hi everyone I
+
+
+see a couple people in the chat hanging
+
+
+out with us already awesome let us know
+
+
+where you are checking in uh also do let
+
+
+me know if you are on our our session
+
+
+last week where we talked all about how
+
+
+Linux works and today we're going to
+
+
+take it a step further and talk a little
+
+
+bit about more about utilizing Linux on
+
+
+Azure and I have my friend rishab here
+
+
 he he wasn't on the
 
 
-have heard of it so no one better than
-
-
-you take out with the reactor too as
-
-
-little bit more about utilizing Linux on
-
-
-freaking cool anyway
-
-
-are based off of like Linux images so if
-
-
-reasoning or can you give me like a
-
-
-people is at so that's super
-
-
-
-
-which is called reactor demo
-
-
-be running
-
-
-videos uh I think the longest one might
-
-
-think this is going to provision okay
-okay there's someone in the chat who
-
-
-like networking programming
-
-
-how things boot like you don't it's
-
-
-this uh our y-axis and then the level of
-
-
-it's like a managed service but you
-
-
-in any Cloud it doesn't really matter I
-
-
-uh in like two hours or so and then
-
-
-simulated with like software but I know
-
-
-because ultimately like the program
-example uh vs code Docker kubernetes SQL
-
-
-um but yeah so you say that it it can't
-
-
-agree yeah that's why I was trying to
-
-
-think so yeah yeah like bash is like
-
-
-one is better you shouldn't learn the
-
-
-stuff that I like so bash uh Azure and
-
-
-high level of talking about like open
-
-
-um but
-
-
-but there might be some gray area with
-
-
-two are very important too typically
-
-
-yeah yeah have you seen that I think I
-
-
-organizations that do utilize open
-
-
-I joined to Microsoft about a year and a
-
-
-this like the culture was completely
-
-
-or with Microsoft in general like what
-
-
-yeah
-
-
-probably get a lot more information
-
-
-yeah our position against open source
-
-
-it's just like not the right move from
-
-
-they grabbed.net and they pulled a lot
-
-
-like there's multiple things that
-
-
-you start to think like the AWS market
-
-
-is open source and the.net Foundation is
-
-
-build as well which I think is important
-
-
-Community has always been that part of
-
-
-about all about getting started with WSL
-
-
-um if you didn't know if you don't know
-
-
-native Computing Foundation cncf which
-
-
-let's move around here
-
-
-don't know why I still get the feeling
-
-
-Adam had like a really great had some
-
-
-still easy like because the other Ides I
-acquisition and I open Visual Studio and
-
-
-that where where Visual Studio is like a
-
-
-ubuntu-based distribution yes snap yep
-
-
-choco yeah choco yeah yeah there might
-
-
-embracing the ones that the majority of
-
-
-bunch of like Windows technology and
-
-
-and this whole like right shift in
-
-
-uh
-
-
-any kind of creative uh migrations it
-
-
-and over 47 000 customers using Azure
-
-
-in terms of leveraging Linux let me
-
-
-this technology in Azure you don't have
-
-
-you then kind of move your way down the
-
-
-um I'm pretty sure there's a lot of
-
-
-typically end up utilizing VMS for that
-
-
-and then I'm going to use open up my
-
-
-oh my goodness there's so many oh no
-
-
-straightforward not a straightforward
-
-
-that is you know as a way to interacts
-
-
-then they came up with this awesome
-
-
-based off Linux right
-
-
-fix blog post I just want to see how it
-
-
-and then we create like shopping I don't
-
-
-this hold on how do I move this can I no
-
-
-
-
-
-
-let's grab a shopping one let's grab
-
-
-uh yeah and I didn't do anything all I
-
-
-Docker running so
-
-
-going to see like yeah type like Linux
+let's switch to this so he wasn't on the
 
 
 um
 
 
-bicep but I don't know if it creates
+like the series information or the page
 
 
+or when you register you probably didn't
 
 
+see his name because last minute I was
 
 
-we know the most because you know if you
+like I really want to talk about uh an
 
 
-learner Cloud uh it is an open source
+app that we have in production that is
 
 
-people maintaining this website on our
+utilizing Linux and it's on Azure and
 
 
-know best performant uh SEO optimized
+it's an effort by both of us it's called
 
 
-only for February and we are just
+learn a cloud some of you may or may not
 
 
+have heard of it so no one better than
 
 
-maintain this with very very little uh
+talk about these things with than
 
 
-past I don't know we'll take a look at
+himself so hey Richard how you doing
 
 
+I'm doing good I'm doing good and I
 
 
-we're gonna do last seven days so
+guess most of the people no one says is
 
 
-here this is actually the API so what
+the duo right the cloud Duo so we do a
 
 
-Cloud definition uh it calls the API
-um I forgot to close my window that's
+lot together yeah yeah
 
 
-through essentially the
+um yeah we are back
 
 
-sort of like a road map or a guide right
+um and I think this is my first reactor
 
 
-how do you break this down some
+stream for this year
 
 
-there's no charge this isn't a boot camp
+oh wow I'm I'm honored yeah you do uh no
 
 
-individual projects if you want to get
+you take out with the reactor too as
 
 
-so let's go in here
+well rishab does a whole bunch of other
 
 
-people if it's like a personal site or
+stuff now with me
 
 
-think so yeah you have additional costs
+um but yeah for today uh I want to dive
 
 
-with just things that we're working on
+a little bit more onto Linux on Azure
 
 
-um and that's why it's looking like very
+we're going to talk a little bit more
 
 
-several languages yes English French
+about Open Source and then the history
 
 
-um the for a close folder
+of Open Source at Microsoft which was
 
 
-I believe there's like 2 000 minutes uh
+pretty interesting to read about
 
 
-branch you know that's a release and we
+um but we're gonna keep these things at
 
 
-know that runs on and Ubuntu container
+high level then we're gonna talk a
 
 
-project because we don't want that and
+little bit more about utilizing Linux on
 
 
-aren't familiar diff containers another
+Azure then we're gonna demo a little bit
 
 
-maybe like one of the best examples is
+about uh again showcasing our use of
 
 
-on board and clone the repo and like
+Linux on Azure and then also I want to
 
 
-we're using uh Linux once again for our
+actually I'm gonna do this right now
 
 
-the well we have an endpoint to create a
+because this might take a while so are
 
 
-from somewhere else and I'll be like I
+you all familiar with the Azure
 
 
+developer CLI Azure developer seal I
 
 
-the adding it to the you know
+don't know if anyone's used it before
 
 
-pretty sick uh that pretty much covers
+um also I just got access to the the
 
 
-are talking about can we make sure to
+Bing chat thing with uh open AI nice so
 
 
-in the bottom right so starting vs code
+freaking cool anyway
 
 
-Windows because it's yeah I mean it is
+um so the Azure developer CLI is it's a
 
 
-that in the next session which is the
-um I saw something about um and
+CLI that will enable you to essentially
 
 
-amount of tokens 4K per per query the
+deploy full-on
 
 
-Bing like I was I saw the email today I
+production ready applications to Azure
 
 
-need but why would you want to like
+with a simple command and they have a
 
 
-pretty sure many many more
+bunch of templates I asked um Savannah
 
 
-we will have hold on let me share we
+who is the PM for the Azure developer
 
 
-uh so the first one is just introducing
+CLI because I know a lot of their
 
 
-um you can switch to the bash shell on
+templates are I want to open up one of
 
 
-commands how to list content how to find
+these templates a lot of their templates
 
 
-filtering out that that is the beauty in
+are based off of like Linux images so if
 
 
-there too
+we look on like sushi sharp I know the
 
 
-that as well here and then we put it all
+these app service ones are based off
 
 
-expect this from Microsoft it's like
+Linux images and I know the one for the
 
 
-already that said that they're into the
+c-sharp and Azure functions is also
 
 
-time another couple months doing
+because I helped author that one but
 
 
-something that you can help with Gwen
+they also have like Java and OJ node.js
 
 
-you Richard for coming on last minute
+Python and I want to pick I don't know
+
+
+let's pick this Java one as an example
+
+
+it's off based off container apps and I
+
+
+asked her like well so what was the
+
+
+reasoning or can you give me like a
+
+
+statement because I want to share with
+
+
+the the people watching the streams like
+
+
+what was the reasoning behind
+
+
+[Music]
+
+
+um
+
+
+you know basing these templates off all
+
+
+like Linux images and then Savannah's
+
+
+great she's one of the funniest and
+
+
+coolest people to talk but she basically
+
+
+was like honestly Linux is where the
+
+
+people is at so that's super
+
+
+straightforward I was like I'm gonna use
+
+
+that exactly because it was it's just
+
+
+the truth it's like you know we'll see a
+
+
+couple more stats about uh why like
+
+
+that's sort of like back up the
+
+
+statement at first but I'm gonna do this
+
+
+deployment first because it's probably
+
+
+gonna take a while
+
+
+um oh look at this WSL which is Linux on
+
+
+on Windows
+and then we're gonna make deer we're
+
+
+gonna call this Howlin next Works demo
+
+
+and then we're gonna CD into this lovely
+
+
+directory name yeah love it uh and then
+
+
+we'll just do azd up
+
+
+and we're gonna call this
+
+
+which is called reactor demo
+
+
 TIMESTAMP: 00:01:27.7100000
-foreign
 
 
-first please take a moment to review our
+in the chat you can set that up right
 
 
-about 24 to 48 hours I'll be sharing the
+now and if you're unable to use a chat
 
 
+but have questions feel free to reach
+
+
+out to us through the social media or
+
+
+Meetup
+which brings us to today's session Linux
+
+
+on Azure what is it how and when to use
+
+
+it this session will run approximately
+
+
+for 60 minutes and I'm going to bring in
+
+
+our speaker Gwen
+
+
+and our guest reshap as well welcome
 
 
 thank you so much Albina as always for
 
 
+the wonderful introduction hi everyone I
+
+
+see a couple people in the chat hanging
+
+
+out with us already awesome let us know
+
+
+where you are checking in uh also do let
+
+
+me know if you are on our our session
+
+
+last week where we talked all about how
+
+
+Linux works and today we're going to
+
+
+take it a step further and talk a little
+
+
+bit about more about utilizing Linux on
+
+
+Azure and I have my friend rishab here
+
+
 he he wasn't on the
 
 
-have heard of it so no one better than
-
-
-you take out with the reactor too as
-
-
-little bit more about utilizing Linux on
-
-
-freaking cool anyway
-
-
-are based off of like Linux images so if
-
-
-reasoning or can you give me like a
-
-
-people is at so that's super
-
-
-
-
-which is called reactor demo
-
-
-be running
-
-
-videos uh I think the longest one might
-
-
-think this is going to provision okay
-okay there's someone in the chat who
-
-
-like networking programming
-
-
-how things boot like you don't it's
-
-
-this uh our y-axis and then the level of
-
-
-it's like a managed service but you
-
-
-in any Cloud it doesn't really matter I
-
-
-uh in like two hours or so and then
-
-
-simulated with like software but I know
-
-
-because ultimately like the program
-example uh vs code Docker kubernetes SQL
-
-
-um but yeah so you say that it it can't
-
-
-agree yeah that's why I was trying to
-
-
-think so yeah yeah like bash is like
-
-
-one is better you shouldn't learn the
-
-
-stuff that I like so bash uh Azure and
-
-
-high level of talking about like open
-
-
-um but
-
-
-but there might be some gray area with
-
-
-two are very important too typically
-
-
-yeah yeah have you seen that I think I
-
-
-organizations that do utilize open
-
-
-I joined to Microsoft about a year and a
-
-
-this like the culture was completely
-
-
-or with Microsoft in general like what
-
-
-yeah
-
-
-probably get a lot more information
-
-
-yeah our position against open source
-
-
-it's just like not the right move from
-
-
-they grabbed.net and they pulled a lot
-
-
-like there's multiple things that
-
-
-you start to think like the AWS market
-
-
-is open source and the.net Foundation is
-
-
-build as well which I think is important
-
-
-Community has always been that part of
-
-
-about all about getting started with WSL
-
-
-um if you didn't know if you don't know
-
-
-native Computing Foundation cncf which
-
-
-let's move around here
-
-
-don't know why I still get the feeling
-
-
-Adam had like a really great had some
-
-
-still easy like because the other Ides I
-acquisition and I open Visual Studio and
-
-
-that where where Visual Studio is like a
-
-
-ubuntu-based distribution yes snap yep
-
-
-choco yeah choco yeah yeah there might
-
-
-embracing the ones that the majority of
-
-
-bunch of like Windows technology and
-
-
-and this whole like right shift in
-
-
-uh
-
-
-any kind of creative uh migrations it
-
-
-and over 47 000 customers using Azure
-
-
-in terms of leveraging Linux let me
-
-
-this technology in Azure you don't have
-
-
-you then kind of move your way down the
-
-
-um I'm pretty sure there's a lot of
-
-
-typically end up utilizing VMS for that
-
-
-and then I'm going to use open up my
-
-
-oh my goodness there's so many oh no
-
-
-straightforward not a straightforward
-
-
-that is you know as a way to interacts
-
-
-then they came up with this awesome
-
-
-based off Linux right
-
-
-fix blog post I just want to see how it
-
-
-and then we create like shopping I don't
-
-
-this hold on how do I move this can I no
-
-
-
-
-
-
-let's grab a shopping one let's grab
-
-
-uh yeah and I didn't do anything all I
-
-
-Docker running so
-
-
-going to see like yeah type like Linux
+let's switch to this so he wasn't on the
 
 
 um
 
 
-bicep but I don't know if it creates
+like the series information or the page
 
 
+or when you register you probably didn't
 
 
+see his name because last minute I was
 
 
-we know the most because you know if you
+like I really want to talk about uh an
 
 
-learner Cloud uh it is an open source
+app that we have in production that is
 
 
-people maintaining this website on our
+utilizing Linux and it's on Azure and
 
 
-know best performant uh SEO optimized
+it's an effort by both of us it's called
 
 
-only for February and we are just
+learn a cloud some of you may or may not
 
 
+have heard of it so no one better than
 
 
-maintain this with very very little uh
+talk about these things with than
 
 
-past I don't know we'll take a look at
+himself so hey Richard how you doing
 
 
+I'm doing good I'm doing good and I
 
 
-we're gonna do last seven days so
+guess most of the people no one says is
 
 
-here this is actually the API so what
+the duo right the cloud Duo so we do a
 
 
-Cloud definition uh it calls the API
-um I forgot to close my window that's
+lot together yeah yeah
 
 
-through essentially the
+um yeah we are back
 
 
-sort of like a road map or a guide right
+um and I think this is my first reactor
 
 
-how do you break this down some
+stream for this year
 
 
-there's no charge this isn't a boot camp
+oh wow I'm I'm honored yeah you do uh no
 
 
-individual projects if you want to get
+you take out with the reactor too as
 
 
-so let's go in here
+well rishab does a whole bunch of other
 
 
-people if it's like a personal site or
+stuff now with me
 
 
-think so yeah you have additional costs
+um but yeah for today uh I want to dive
 
 
-with just things that we're working on
+a little bit more onto Linux on Azure
 
 
-um and that's why it's looking like very
+we're going to talk a little bit more
 
 
-several languages yes English French
+about Open Source and then the history
 
 
-um the for a close folder
+of Open Source at Microsoft which was
 
 
-I believe there's like 2 000 minutes uh
+pretty interesting to read about
 
 
-branch you know that's a release and we
+um but we're gonna keep these things at
 
 
-know that runs on and Ubuntu container
+high level then we're gonna talk a
 
 
-project because we don't want that and
+little bit more about utilizing Linux on
 
 
-aren't familiar diff containers another
+Azure then we're gonna demo a little bit
 
 
-maybe like one of the best examples is
+about uh again showcasing our use of
 
 
-on board and clone the repo and like
+Linux on Azure and then also I want to
 
 
-we're using uh Linux once again for our
+actually I'm gonna do this right now
 
 
-the well we have an endpoint to create a
+because this might take a while so are
 
 
-from somewhere else and I'll be like I
+you all familiar with the Azure
 
 
+developer CLI Azure developer seal I
 
 
-the adding it to the you know
+don't know if anyone's used it before
 
 
-pretty sick uh that pretty much covers
+um also I just got access to the the
 
 
-are talking about can we make sure to
+Bing chat thing with uh open AI nice so
 
 
-in the bottom right so starting vs code
+freaking cool anyway
 
 
-Windows because it's yeah I mean it is
+um so the Azure developer CLI is it's a
 
 
-that in the next session which is the
-um I saw something about um and
+CLI that will enable you to essentially
 
 
-amount of tokens 4K per per query the
+deploy full-on
 
 
-Bing like I was I saw the email today I
+production ready applications to Azure
 
 
-need but why would you want to like
+with a simple command and they have a
 
 
-pretty sure many many more
+bunch of templates I asked um Savannah
 
 
-we will have hold on let me share we
+who is the PM for the Azure developer
 
 
-uh so the first one is just introducing
+CLI because I know a lot of their
 
 
-um you can switch to the bash shell on
+templates are I want to open up one of
 
 
-commands how to list content how to find
+these templates a lot of their templates
 
 
-filtering out that that is the beauty in
+are based off of like Linux images so if
 
 
-there too
+we look on like sushi sharp I know the
 
 
-that as well here and then we put it all
+these app service ones are based off
 
 
-expect this from Microsoft it's like
+Linux images and I know the one for the
 
 
-already that said that they're into the
+c-sharp and Azure functions is also
 
 
-time another couple months doing
+because I helped author that one but
 
 
-something that you can help with Gwen
+they also have like Java and OJ node.js
 
 
-you Richard for coming on last minute
+Python and I want to pick I don't know
+
+
+let's pick this Java one as an example
+
+
+it's off based off container apps and I
+
+
+asked her like well so what was the
+
+
+reasoning or can you give me like a
+
+
+statement because I want to share with
+
+
+the the people watching the streams like
+
+
+what was the reasoning behind
+
+
+[Music]
+
+
+um
+
+
+you know basing these templates off all
+
+
+like Linux images and then Savannah's
+
+
+great she's one of the funniest and
+
+
+coolest people to talk but she basically
+
+
+was like honestly Linux is where the
+
+
+people is at so that's super
+
+
+straightforward I was like I'm gonna use
+
+
+that exactly because it was it's just
+
+
+the truth it's like you know we'll see a
+
+
+couple more stats about uh why like
+
+
+that's sort of like back up the
+
+
+statement at first but I'm gonna do this
+
+
+deployment first because it's probably
+
+
+gonna take a while
+
+
+um oh look at this WSL which is Linux on
+
+
+on Windows
+and then we're gonna make deer we're
+
+
+gonna call this Howlin next Works demo
+
+
+and then we're gonna CD into this lovely
+
+
+directory name yeah love it uh and then
+
+
+we'll just do azd up
+
+
+and we're gonna call this
+
+
+which is called reactor demo
+
+
 TIMESTAMP: 00:01:27.7200000
-foreign
 
 
-first please take a moment to review our
+on Azure what is it how and when to use
 
 
-about 24 to 48 hours I'll be sharing the
+it this session will run approximately
 
 
+for 60 minutes and I'm going to bring in
+
+
+our speaker Gwen
+
+
+and our guest reshap as well welcome
 
 
 thank you so much Albina as always for
 
 
+the wonderful introduction hi everyone I
+
+
+see a couple people in the chat hanging
+
+
+out with us already awesome let us know
+
+
+where you are checking in uh also do let
+
+
+me know if you are on our our session
+
+
+last week where we talked all about how
+
+
+Linux works and today we're going to
+
+
+take it a step further and talk a little
+
+
+bit about more about utilizing Linux on
+
+
+Azure and I have my friend rishab here
+
+
 he he wasn't on the
 
 
-have heard of it so no one better than
-
-
-you take out with the reactor too as
-
-
-little bit more about utilizing Linux on
-
-
-freaking cool anyway
-
-
-are based off of like Linux images so if
-
-
-reasoning or can you give me like a
-
-
-people is at so that's super
-
-
-
-
-which is called reactor demo
-
-
-be running
-
-
-videos uh I think the longest one might
-
-
-think this is going to provision okay
-okay there's someone in the chat who
-
-
-like networking programming
-
-
-how things boot like you don't it's
-
-
-this uh our y-axis and then the level of
-
-
-it's like a managed service but you
-
-
-in any Cloud it doesn't really matter I
-
-
-uh in like two hours or so and then
-
-
-simulated with like software but I know
-
-
-because ultimately like the program
-example uh vs code Docker kubernetes SQL
-
-
-um but yeah so you say that it it can't
-
-
-agree yeah that's why I was trying to
-
-
-think so yeah yeah like bash is like
-
-
-one is better you shouldn't learn the
-
-
-stuff that I like so bash uh Azure and
-
-
-high level of talking about like open
-
-
-um but
-
-
-but there might be some gray area with
-
-
-two are very important too typically
-
-
-yeah yeah have you seen that I think I
-
-
-organizations that do utilize open
-
-
-I joined to Microsoft about a year and a
-
-
-this like the culture was completely
-
-
-or with Microsoft in general like what
-
-
-yeah
-
-
-probably get a lot more information
-
-
-yeah our position against open source
-
-
-it's just like not the right move from
-
-
-they grabbed.net and they pulled a lot
-
-
-like there's multiple things that
-
-
-you start to think like the AWS market
-
-
-is open source and the.net Foundation is
-
-
-build as well which I think is important
-
-
-Community has always been that part of
-
-
-about all about getting started with WSL
-
-
-um if you didn't know if you don't know
-
-
-native Computing Foundation cncf which
-
-
-let's move around here
-
-
-don't know why I still get the feeling
-
-
-Adam had like a really great had some
-
-
-still easy like because the other Ides I
-acquisition and I open Visual Studio and
-
-
-that where where Visual Studio is like a
-
-
-ubuntu-based distribution yes snap yep
-
-
-choco yeah choco yeah yeah there might
-
-
-embracing the ones that the majority of
-
-
-bunch of like Windows technology and
-
-
-and this whole like right shift in
-
-
-uh
-
-
-any kind of creative uh migrations it
-
-
-and over 47 000 customers using Azure
-
-
-in terms of leveraging Linux let me
-
-
-this technology in Azure you don't have
-
-
-you then kind of move your way down the
-
-
-um I'm pretty sure there's a lot of
-
-
-typically end up utilizing VMS for that
-
-
-and then I'm going to use open up my
-
-
-oh my goodness there's so many oh no
-
-
-straightforward not a straightforward
-
-
-that is you know as a way to interacts
-
-
-then they came up with this awesome
-
-
-based off Linux right
-
-
-fix blog post I just want to see how it
-
-
-and then we create like shopping I don't
-
-
-this hold on how do I move this can I no
-
-
-
-
-
-
-let's grab a shopping one let's grab
-
-
-uh yeah and I didn't do anything all I
-
-
-Docker running so
-
-
-going to see like yeah type like Linux
+let's switch to this so he wasn't on the
 
 
 um
 
 
-bicep but I don't know if it creates
+like the series information or the page
 
 
+or when you register you probably didn't
 
 
+see his name because last minute I was
 
 
-we know the most because you know if you
+like I really want to talk about uh an
 
 
-learner Cloud uh it is an open source
+app that we have in production that is
 
 
-people maintaining this website on our
+utilizing Linux and it's on Azure and
 
 
-know best performant uh SEO optimized
+it's an effort by both of us it's called
 
 
-only for February and we are just
+learn a cloud some of you may or may not
 
 
+have heard of it so no one better than
 
 
-maintain this with very very little uh
+talk about these things with than
 
 
-past I don't know we'll take a look at
+himself so hey Richard how you doing
 
 
+I'm doing good I'm doing good and I
 
 
-we're gonna do last seven days so
+guess most of the people no one says is
 
 
-here this is actually the API so what
+the duo right the cloud Duo so we do a
 
 
-Cloud definition uh it calls the API
-um I forgot to close my window that's
+lot together yeah yeah
 
 
-through essentially the
+um yeah we are back
 
 
-sort of like a road map or a guide right
+um and I think this is my first reactor
 
 
-how do you break this down some
+stream for this year
 
 
-there's no charge this isn't a boot camp
+oh wow I'm I'm honored yeah you do uh no
 
 
-individual projects if you want to get
+you take out with the reactor too as
 
 
-so let's go in here
+well rishab does a whole bunch of other
 
 
-people if it's like a personal site or
+stuff now with me
 
 
-think so yeah you have additional costs
+um but yeah for today uh I want to dive
 
 
-with just things that we're working on
+a little bit more onto Linux on Azure
 
 
-um and that's why it's looking like very
+we're going to talk a little bit more
 
 
-several languages yes English French
+about Open Source and then the history
 
 
-um the for a close folder
+of Open Source at Microsoft which was
 
 
-I believe there's like 2 000 minutes uh
+pretty interesting to read about
 
 
-branch you know that's a release and we
+um but we're gonna keep these things at
 
 
-know that runs on and Ubuntu container
+high level then we're gonna talk a
 
 
-project because we don't want that and
+little bit more about utilizing Linux on
 
 
-aren't familiar diff containers another
+Azure then we're gonna demo a little bit
 
 
-maybe like one of the best examples is
+about uh again showcasing our use of
 
 
-on board and clone the repo and like
+Linux on Azure and then also I want to
 
 
-we're using uh Linux once again for our
+actually I'm gonna do this right now
 
 
-the well we have an endpoint to create a
+because this might take a while so are
 
 
-from somewhere else and I'll be like I
+you all familiar with the Azure
 
 
+developer CLI Azure developer seal I
 
 
-the adding it to the you know
+don't know if anyone's used it before
 
 
-pretty sick uh that pretty much covers
+um also I just got access to the the
 
 
-are talking about can we make sure to
+Bing chat thing with uh open AI nice so
 
 
-in the bottom right so starting vs code
+freaking cool anyway
 
 
-Windows because it's yeah I mean it is
+um so the Azure developer CLI is it's a
 
 
-that in the next session which is the
-um I saw something about um and
+CLI that will enable you to essentially
 
 
-amount of tokens 4K per per query the
+deploy full-on
 
 
-Bing like I was I saw the email today I
+production ready applications to Azure
 
 
-need but why would you want to like
+with a simple command and they have a
 
 
-pretty sure many many more
+bunch of templates I asked um Savannah
 
 
-we will have hold on let me share we
+who is the PM for the Azure developer
 
 
-uh so the first one is just introducing
+CLI because I know a lot of their
 
 
-um you can switch to the bash shell on
+templates are I want to open up one of
 
 
-commands how to list content how to find
+these templates a lot of their templates
 
 
-filtering out that that is the beauty in
+are based off of like Linux images so if
 
 
-there too
+we look on like sushi sharp I know the
 
 
-that as well here and then we put it all
+these app service ones are based off
 
 
-expect this from Microsoft it's like
+Linux images and I know the one for the
 
 
-already that said that they're into the
+c-sharp and Azure functions is also
 
 
-time another couple months doing
+because I helped author that one but
 
 
-something that you can help with Gwen
+they also have like Java and OJ node.js
 
 
-you Richard for coming on last minute
+Python and I want to pick I don't know
+
+
+let's pick this Java one as an example
+
+
+it's off based off container apps and I
+
+
+asked her like well so what was the
+
+
+reasoning or can you give me like a
+
+
+statement because I want to share with
+
+
+the the people watching the streams like
+
+
+what was the reasoning behind
+
+
+[Music]
+
+
+um
+
+
+you know basing these templates off all
+
+
+like Linux images and then Savannah's
+
+
+great she's one of the funniest and
+
+
+coolest people to talk but she basically
+
+
+was like honestly Linux is where the
+
+
+people is at so that's super
+
+
+straightforward I was like I'm gonna use
+
+
+that exactly because it was it's just
+
+
+the truth it's like you know we'll see a
+
+
+couple more stats about uh why like
+
+
+that's sort of like back up the
+
+
+statement at first but I'm gonna do this
+
+
+deployment first because it's probably
+
+
+gonna take a while
+
+
+um oh look at this WSL which is Linux on
+
+
+on Windows
+and then we're gonna make deer we're
+
+
+gonna call this Howlin next Works demo
+
+
+and then we're gonna CD into this lovely
+
+
+directory name yeah love it uh and then
+
+
+we'll just do azd up
+
+
+and we're gonna call this
+
+
+which is called reactor demo
+
+
 TIMESTAMP: 00:01:29.6900000
-foreign
-
-
-first please take a moment to review our
-
-
-about 24 to 48 hours I'll be sharing the
-
-
-
-
 thank you so much Albina as always for
+
+
+the wonderful introduction hi everyone I
+
+
+see a couple people in the chat hanging
+
+
+out with us already awesome let us know
+
+
+where you are checking in uh also do let
+
+
+me know if you are on our our session
+
+
+last week where we talked all about how
+
+
+Linux works and today we're going to
+
+
+take it a step further and talk a little
+
+
+bit about more about utilizing Linux on
+
+
+Azure and I have my friend rishab here
 
 
 he he wasn't on the
 
 
-have heard of it so no one better than
-
-
-you take out with the reactor too as
-
-
-little bit more about utilizing Linux on
-
-
-freaking cool anyway
-
-
-are based off of like Linux images so if
-
-
-reasoning or can you give me like a
-
-
-people is at so that's super
-
-
-
-
-which is called reactor demo
-
-
-be running
-
-
-videos uh I think the longest one might
-
-
-think this is going to provision okay
-okay there's someone in the chat who
-
-
-like networking programming
-
-
-how things boot like you don't it's
-
-
-this uh our y-axis and then the level of
-
-
-it's like a managed service but you
-
-
-in any Cloud it doesn't really matter I
-
-
-uh in like two hours or so and then
-
-
-simulated with like software but I know
-
-
-because ultimately like the program
-example uh vs code Docker kubernetes SQL
-
-
-um but yeah so you say that it it can't
-
-
-agree yeah that's why I was trying to
-
-
-think so yeah yeah like bash is like
-
-
-one is better you shouldn't learn the
-
-
-stuff that I like so bash uh Azure and
-
-
-high level of talking about like open
-
-
-um but
-
-
-but there might be some gray area with
-
-
-two are very important too typically
-
-
-yeah yeah have you seen that I think I
-
-
-organizations that do utilize open
-
-
-I joined to Microsoft about a year and a
-
-
-this like the culture was completely
-
-
-or with Microsoft in general like what
-
-
-yeah
-
-
-probably get a lot more information
-
-
-yeah our position against open source
-
-
-it's just like not the right move from
-
-
-they grabbed.net and they pulled a lot
-
-
-like there's multiple things that
-
-
-you start to think like the AWS market
-
-
-is open source and the.net Foundation is
-
-
-build as well which I think is important
-
-
-Community has always been that part of
-
-
-about all about getting started with WSL
-
-
-um if you didn't know if you don't know
-
-
-native Computing Foundation cncf which
-
-
-let's move around here
-
-
-don't know why I still get the feeling
-
-
-Adam had like a really great had some
-
-
-still easy like because the other Ides I
-acquisition and I open Visual Studio and
-
-
-that where where Visual Studio is like a
-
-
-ubuntu-based distribution yes snap yep
-
-
-choco yeah choco yeah yeah there might
-
-
-embracing the ones that the majority of
-
-
-bunch of like Windows technology and
-
-
-and this whole like right shift in
-
-
-uh
-
-
-any kind of creative uh migrations it
-
-
-and over 47 000 customers using Azure
-
-
-in terms of leveraging Linux let me
-
-
-this technology in Azure you don't have
-
-
-you then kind of move your way down the
-
-
-um I'm pretty sure there's a lot of
-
-
-typically end up utilizing VMS for that
-
-
-and then I'm going to use open up my
-
-
-oh my goodness there's so many oh no
-
-
-straightforward not a straightforward
-
-
-that is you know as a way to interacts
-
-
-then they came up with this awesome
-
-
-based off Linux right
-
-
-fix blog post I just want to see how it
-
-
-and then we create like shopping I don't
-
-
-this hold on how do I move this can I no
-
-
-
-
-
-
-let's grab a shopping one let's grab
-
-
-uh yeah and I didn't do anything all I
-
-
-Docker running so
-
-
-going to see like yeah type like Linux
+let's switch to this so he wasn't on the
 
 
 um
 
 
-bicep but I don't know if it creates
+like the series information or the page
 
 
+or when you register you probably didn't
 
 
+see his name because last minute I was
 
 
-we know the most because you know if you
+like I really want to talk about uh an
 
 
-learner Cloud uh it is an open source
+app that we have in production that is
 
 
-people maintaining this website on our
+utilizing Linux and it's on Azure and
 
 
-know best performant uh SEO optimized
+it's an effort by both of us it's called
 
 
-only for February and we are just
+learn a cloud some of you may or may not
 
 
+have heard of it so no one better than
 
 
-maintain this with very very little uh
+talk about these things with than
 
 
-past I don't know we'll take a look at
+himself so hey Richard how you doing
 
 
+I'm doing good I'm doing good and I
 
 
-we're gonna do last seven days so
+guess most of the people no one says is
 
 
-here this is actually the API so what
+the duo right the cloud Duo so we do a
 
 
-Cloud definition uh it calls the API
-um I forgot to close my window that's
+lot together yeah yeah
 
 
-through essentially the
+um yeah we are back
 
 
-sort of like a road map or a guide right
+um and I think this is my first reactor
 
 
-how do you break this down some
+stream for this year
 
 
-there's no charge this isn't a boot camp
+oh wow I'm I'm honored yeah you do uh no
 
 
-individual projects if you want to get
+you take out with the reactor too as
 
 
-so let's go in here
+well rishab does a whole bunch of other
 
 
-people if it's like a personal site or
+stuff now with me
 
 
-think so yeah you have additional costs
+um but yeah for today uh I want to dive
 
 
-with just things that we're working on
+a little bit more onto Linux on Azure
 
 
-um and that's why it's looking like very
+we're going to talk a little bit more
 
 
-several languages yes English French
+about Open Source and then the history
 
 
-um the for a close folder
+of Open Source at Microsoft which was
 
 
-I believe there's like 2 000 minutes uh
+pretty interesting to read about
 
 
-branch you know that's a release and we
+um but we're gonna keep these things at
 
 
-know that runs on and Ubuntu container
+high level then we're gonna talk a
 
 
-project because we don't want that and
+little bit more about utilizing Linux on
 
 
-aren't familiar diff containers another
+Azure then we're gonna demo a little bit
 
 
-maybe like one of the best examples is
+about uh again showcasing our use of
 
 
-on board and clone the repo and like
+Linux on Azure and then also I want to
 
 
-we're using uh Linux once again for our
+actually I'm gonna do this right now
 
 
-the well we have an endpoint to create a
+because this might take a while so are
 
 
-from somewhere else and I'll be like I
+you all familiar with the Azure
 
 
+developer CLI Azure developer seal I
 
 
-the adding it to the you know
+don't know if anyone's used it before
 
 
-pretty sick uh that pretty much covers
+um also I just got access to the the
 
 
-are talking about can we make sure to
+Bing chat thing with uh open AI nice so
 
 
-in the bottom right so starting vs code
+freaking cool anyway
 
 
-Windows because it's yeah I mean it is
+um so the Azure developer CLI is it's a
 
 
-that in the next session which is the
-um I saw something about um and
+CLI that will enable you to essentially
 
 
-amount of tokens 4K per per query the
+deploy full-on
 
 
-Bing like I was I saw the email today I
+production ready applications to Azure
 
 
-need but why would you want to like
+with a simple command and they have a
 
 
-pretty sure many many more
+bunch of templates I asked um Savannah
 
 
-we will have hold on let me share we
+who is the PM for the Azure developer
 
 
-uh so the first one is just introducing
+CLI because I know a lot of their
 
 
-um you can switch to the bash shell on
+templates are I want to open up one of
 
 
-commands how to list content how to find
+these templates a lot of their templates
 
 
-filtering out that that is the beauty in
+are based off of like Linux images so if
 
 
-there too
+we look on like sushi sharp I know the
 
 
-that as well here and then we put it all
+these app service ones are based off
 
 
-expect this from Microsoft it's like
+Linux images and I know the one for the
 
 
-already that said that they're into the
+c-sharp and Azure functions is also
 
 
-time another couple months doing
+because I helped author that one but
 
 
-something that you can help with Gwen
+they also have like Java and OJ node.js
 
 
-you Richard for coming on last minute
+Python and I want to pick I don't know
+
+
+let's pick this Java one as an example
+
+
+it's off based off container apps and I
+
+
+asked her like well so what was the
+
+
+reasoning or can you give me like a
+
+
+statement because I want to share with
+
+
+the the people watching the streams like
+
+
+what was the reasoning behind
+
+
+[Music]
+
+
+um
+
+
+you know basing these templates off all
+
+
+like Linux images and then Savannah's
+
+
+great she's one of the funniest and
+
+
+coolest people to talk but she basically
+
+
+was like honestly Linux is where the
+
+
+people is at so that's super
+
+
+straightforward I was like I'm gonna use
+
+
+that exactly because it was it's just
+
+
+the truth it's like you know we'll see a
+
+
+couple more stats about uh why like
+
+
+that's sort of like back up the
+
+
+statement at first but I'm gonna do this
+
+
+deployment first because it's probably
+
+
+gonna take a while
+
+
+um oh look at this WSL which is Linux on
+
+
+on Windows
+and then we're gonna make deer we're
+
+
+gonna call this Howlin next Works demo
+
+
+and then we're gonna CD into this lovely
+
+
+directory name yeah love it uh and then
+
+
+we'll just do azd up
+
+
+and we're gonna call this
+
+
+which is called reactor demo
+
+
 TIMESTAMP: 00:01:29.7000000
-foreign
 
 
-first please take a moment to review our
+last week where we talked all about how
 
 
-about 24 to 48 hours I'll be sharing the
+Linux works and today we're going to
 
 
+take it a step further and talk a little
 
 
-thank you so much Albina as always for
+bit about more about utilizing Linux on
+
+
+Azure and I have my friend rishab here
 
 
 he he wasn't on the
 
 
-have heard of it so no one better than
-
-
-you take out with the reactor too as
-
-
-little bit more about utilizing Linux on
-
-
-freaking cool anyway
-
-
-are based off of like Linux images so if
-
-
-reasoning or can you give me like a
-
-
-people is at so that's super
-
-
-
-
-which is called reactor demo
-
-
-be running
-
-
-videos uh I think the longest one might
-
-
-think this is going to provision okay
-okay there's someone in the chat who
-
-
-like networking programming
-
-
-how things boot like you don't it's
-
-
-this uh our y-axis and then the level of
-
-
-it's like a managed service but you
-
-
-in any Cloud it doesn't really matter I
-
-
-uh in like two hours or so and then
-
-
-simulated with like software but I know
-
-
-because ultimately like the program
-example uh vs code Docker kubernetes SQL
-
-
-um but yeah so you say that it it can't
-
-
-agree yeah that's why I was trying to
-
-
-think so yeah yeah like bash is like
-
-
-one is better you shouldn't learn the
-
-
-stuff that I like so bash uh Azure and
-
-
-high level of talking about like open
-
-
-um but
-
-
-but there might be some gray area with
-
-
-two are very important too typically
-
-
-yeah yeah have you seen that I think I
-
-
-organizations that do utilize open
-
-
-I joined to Microsoft about a year and a
-
-
-this like the culture was completely
-
-
-or with Microsoft in general like what
-
-
-yeah
-
-
-probably get a lot more information
-
-
-yeah our position against open source
-
-
-it's just like not the right move from
-
-
-they grabbed.net and they pulled a lot
-
-
-like there's multiple things that
-
-
-you start to think like the AWS market
-
-
-is open source and the.net Foundation is
-
-
-build as well which I think is important
-
-
-Community has always been that part of
-
-
-about all about getting started with WSL
-
-
-um if you didn't know if you don't know
-
-
-native Computing Foundation cncf which
-
-
-let's move around here
-
-
-don't know why I still get the feeling
-
-
-Adam had like a really great had some
-
-
-still easy like because the other Ides I
-acquisition and I open Visual Studio and
-
-
-that where where Visual Studio is like a
-
-
-ubuntu-based distribution yes snap yep
-
-
-choco yeah choco yeah yeah there might
-
-
-embracing the ones that the majority of
-
-
-bunch of like Windows technology and
-
-
-and this whole like right shift in
-
-
-uh
-
-
-any kind of creative uh migrations it
-
-
-and over 47 000 customers using Azure
-
-
-in terms of leveraging Linux let me
-
-
-this technology in Azure you don't have
-
-
-you then kind of move your way down the
-
-
-um I'm pretty sure there's a lot of
-
-
-typically end up utilizing VMS for that
-
-
-and then I'm going to use open up my
-
-
-oh my goodness there's so many oh no
-
-
-straightforward not a straightforward
-
-
-that is you know as a way to interacts
-
-
-then they came up with this awesome
-
-
-based off Linux right
-
-
-fix blog post I just want to see how it
-
-
-and then we create like shopping I don't
-
-
-this hold on how do I move this can I no
-
-
-
-
-
-
-let's grab a shopping one let's grab
-
-
-uh yeah and I didn't do anything all I
-
-
-Docker running so
-
-
-going to see like yeah type like Linux
+let's switch to this so he wasn't on the
 
 
 um
 
 
-bicep but I don't know if it creates
+like the series information or the page
 
 
+or when you register you probably didn't
 
 
+see his name because last minute I was
 
 
-we know the most because you know if you
+like I really want to talk about uh an
 
 
-learner Cloud uh it is an open source
+app that we have in production that is
 
 
-people maintaining this website on our
+utilizing Linux and it's on Azure and
 
 
-know best performant uh SEO optimized
+it's an effort by both of us it's called
 
 
-only for February and we are just
+learn a cloud some of you may or may not
 
 
+have heard of it so no one better than
 
 
-maintain this with very very little uh
+talk about these things with than
 
 
-past I don't know we'll take a look at
+himself so hey Richard how you doing
 
 
+I'm doing good I'm doing good and I
 
 
-we're gonna do last seven days so
+guess most of the people no one says is
 
 
-here this is actually the API so what
+the duo right the cloud Duo so we do a
 
 
-Cloud definition uh it calls the API
-um I forgot to close my window that's
+lot together yeah yeah
 
 
-through essentially the
+um yeah we are back
 
 
-sort of like a road map or a guide right
+um and I think this is my first reactor
 
 
-how do you break this down some
+stream for this year
 
 
-there's no charge this isn't a boot camp
+oh wow I'm I'm honored yeah you do uh no
 
 
-individual projects if you want to get
+you take out with the reactor too as
 
 
-so let's go in here
+well rishab does a whole bunch of other
 
 
-people if it's like a personal site or
+stuff now with me
 
 
-think so yeah you have additional costs
+um but yeah for today uh I want to dive
 
 
-with just things that we're working on
+a little bit more onto Linux on Azure
 
 
-um and that's why it's looking like very
+we're going to talk a little bit more
 
 
-several languages yes English French
+about Open Source and then the history
 
 
-um the for a close folder
+of Open Source at Microsoft which was
 
 
-I believe there's like 2 000 minutes uh
+pretty interesting to read about
 
 
-branch you know that's a release and we
+um but we're gonna keep these things at
 
 
-know that runs on and Ubuntu container
+high level then we're gonna talk a
 
 
-project because we don't want that and
+little bit more about utilizing Linux on
 
 
-aren't familiar diff containers another
+Azure then we're gonna demo a little bit
 
 
-maybe like one of the best examples is
+about uh again showcasing our use of
 
 
-on board and clone the repo and like
+Linux on Azure and then also I want to
 
 
-we're using uh Linux once again for our
+actually I'm gonna do this right now
 
 
-the well we have an endpoint to create a
+because this might take a while so are
 
 
-from somewhere else and I'll be like I
+you all familiar with the Azure
 
 
+developer CLI Azure developer seal I
 
 
-the adding it to the you know
+don't know if anyone's used it before
 
 
-pretty sick uh that pretty much covers
+um also I just got access to the the
 
 
-are talking about can we make sure to
+Bing chat thing with uh open AI nice so
 
 
-in the bottom right so starting vs code
+freaking cool anyway
 
 
-Windows because it's yeah I mean it is
+um so the Azure developer CLI is it's a
 
 
-that in the next session which is the
-um I saw something about um and
+CLI that will enable you to essentially
 
 
-amount of tokens 4K per per query the
+deploy full-on
 
 
-Bing like I was I saw the email today I
+production ready applications to Azure
 
 
-need but why would you want to like
+with a simple command and they have a
 
 
-pretty sure many many more
+bunch of templates I asked um Savannah
 
 
-we will have hold on let me share we
+who is the PM for the Azure developer
 
 
-uh so the first one is just introducing
+CLI because I know a lot of their
 
 
-um you can switch to the bash shell on
+templates are I want to open up one of
 
 
-commands how to list content how to find
+these templates a lot of their templates
 
 
-filtering out that that is the beauty in
+are based off of like Linux images so if
 
 
-there too
+we look on like sushi sharp I know the
 
 
-that as well here and then we put it all
+these app service ones are based off
 
 
-expect this from Microsoft it's like
+Linux images and I know the one for the
 
 
-already that said that they're into the
+c-sharp and Azure functions is also
 
 
-time another couple months doing
+because I helped author that one but
 
 
-something that you can help with Gwen
+they also have like Java and OJ node.js
 
 
-you Richard for coming on last minute
+Python and I want to pick I don't know
+
+
+let's pick this Java one as an example
+
+
+it's off based off container apps and I
+
+
+asked her like well so what was the
+
+
+reasoning or can you give me like a
+
+
+statement because I want to share with
+
+
+the the people watching the streams like
+
+
+what was the reasoning behind
+
+
+[Music]
+
+
+um
+
+
+you know basing these templates off all
+
+
+like Linux images and then Savannah's
+
+
+great she's one of the funniest and
+
+
+coolest people to talk but she basically
+
+
+was like honestly Linux is where the
+
+
+people is at so that's super
+
+
+straightforward I was like I'm gonna use
+
+
+that exactly because it was it's just
+
+
+the truth it's like you know we'll see a
+
+
+couple more stats about uh why like
+
+
+that's sort of like back up the
+
+
+statement at first but I'm gonna do this
+
+
+deployment first because it's probably
+
+
+gonna take a while
+
+
+um oh look at this WSL which is Linux on
+
+
+on Windows
+and then we're gonna make deer we're
+
+
+gonna call this Howlin next Works demo
+
+
+and then we're gonna CD into this lovely
+
+
+directory name yeah love it uh and then
+
+
+we'll just do azd up
+
+
+and we're gonna call this
+
+
+which is called reactor demo
+
+
 TIMESTAMP: 00:01:32.4500000
-foreign
-
-
-first please take a moment to review our
-
-
-about 24 to 48 hours I'll be sharing the
-
-
-
-
-thank you so much Albina as always for
-
-
 he he wasn't on the
 
 
-have heard of it so no one better than
-
-
-you take out with the reactor too as
-
-
-little bit more about utilizing Linux on
-
-
-freaking cool anyway
-
-
-are based off of like Linux images so if
-
-
-reasoning or can you give me like a
-
-
-people is at so that's super
-
-
-
-
-which is called reactor demo
-
-
-be running
-
-
-videos uh I think the longest one might
-
-
-think this is going to provision okay
-okay there's someone in the chat who
-
-
-like networking programming
-
-
-how things boot like you don't it's
-
-
-this uh our y-axis and then the level of
-
-
-it's like a managed service but you
-
-
-in any Cloud it doesn't really matter I
-
-
-uh in like two hours or so and then
-
-
-simulated with like software but I know
-
-
-because ultimately like the program
-example uh vs code Docker kubernetes SQL
-
-
-um but yeah so you say that it it can't
-
-
-agree yeah that's why I was trying to
-
-
-think so yeah yeah like bash is like
-
-
-one is better you shouldn't learn the
-
-
-stuff that I like so bash uh Azure and
-
-
-high level of talking about like open
-
-
-um but
-
-
-but there might be some gray area with
-
-
-two are very important too typically
-
-
-yeah yeah have you seen that I think I
-
-
-organizations that do utilize open
-
-
-I joined to Microsoft about a year and a
-
-
-this like the culture was completely
-
-
-or with Microsoft in general like what
-
-
-yeah
-
-
-probably get a lot more information
-
-
-yeah our position against open source
-
-
-it's just like not the right move from
-
-
-they grabbed.net and they pulled a lot
-
-
-like there's multiple things that
-
-
-you start to think like the AWS market
-
-
-is open source and the.net Foundation is
-
-
-build as well which I think is important
-
-
-Community has always been that part of
-
-
-about all about getting started with WSL
-
-
-um if you didn't know if you don't know
-
-
-native Computing Foundation cncf which
-
-
-let's move around here
-
-
-don't know why I still get the feeling
-
-
-Adam had like a really great had some
-
-
-still easy like because the other Ides I
-acquisition and I open Visual Studio and
-
-
-that where where Visual Studio is like a
-
-
-ubuntu-based distribution yes snap yep
-
-
-choco yeah choco yeah yeah there might
-
-
-embracing the ones that the majority of
-
-
-bunch of like Windows technology and
-
-
-and this whole like right shift in
-
-
-uh
-
-
-any kind of creative uh migrations it
-
-
-and over 47 000 customers using Azure
-
-
-in terms of leveraging Linux let me
-
-
-this technology in Azure you don't have
-
-
-you then kind of move your way down the
-
-
-um I'm pretty sure there's a lot of
-
-
-typically end up utilizing VMS for that
-
-
-and then I'm going to use open up my
-
-
-oh my goodness there's so many oh no
-
-
-straightforward not a straightforward
-
-
-that is you know as a way to interacts
-
-
-then they came up with this awesome
-
-
-based off Linux right
-
-
-fix blog post I just want to see how it
-
-
-and then we create like shopping I don't
-
-
-this hold on how do I move this can I no
-
-
-
-
-
-
-let's grab a shopping one let's grab
-
-
-uh yeah and I didn't do anything all I
-
-
-Docker running so
-
-
-going to see like yeah type like Linux
+let's switch to this so he wasn't on the
 
 
 um
 
 
-bicep but I don't know if it creates
+like the series information or the page
 
 
+or when you register you probably didn't
 
 
+see his name because last minute I was
 
 
-we know the most because you know if you
+like I really want to talk about uh an
 
 
-learner Cloud uh it is an open source
+app that we have in production that is
 
 
-people maintaining this website on our
+utilizing Linux and it's on Azure and
 
 
-know best performant uh SEO optimized
+it's an effort by both of us it's called
 
 
-only for February and we are just
+learn a cloud some of you may or may not
 
 
+have heard of it so no one better than
 
 
-maintain this with very very little uh
+talk about these things with than
 
 
-past I don't know we'll take a look at
+himself so hey Richard how you doing
 
 
+I'm doing good I'm doing good and I
 
 
-we're gonna do last seven days so
+guess most of the people no one says is
 
 
-here this is actually the API so what
+the duo right the cloud Duo so we do a
 
 
-Cloud definition uh it calls the API
-um I forgot to close my window that's
+lot together yeah yeah
 
 
-through essentially the
+um yeah we are back
 
 
-sort of like a road map or a guide right
+um and I think this is my first reactor
 
 
-how do you break this down some
+stream for this year
 
 
-there's no charge this isn't a boot camp
+oh wow I'm I'm honored yeah you do uh no
 
 
-individual projects if you want to get
+you take out with the reactor too as
 
 
-so let's go in here
+well rishab does a whole bunch of other
 
 
-people if it's like a personal site or
+stuff now with me
 
 
-think so yeah you have additional costs
+um but yeah for today uh I want to dive
 
 
-with just things that we're working on
+a little bit more onto Linux on Azure
 
 
-um and that's why it's looking like very
+we're going to talk a little bit more
 
 
-several languages yes English French
+about Open Source and then the history
 
 
-um the for a close folder
+of Open Source at Microsoft which was
 
 
-I believe there's like 2 000 minutes uh
+pretty interesting to read about
 
 
-branch you know that's a release and we
+um but we're gonna keep these things at
 
 
-know that runs on and Ubuntu container
+high level then we're gonna talk a
 
 
-project because we don't want that and
+little bit more about utilizing Linux on
 
 
-aren't familiar diff containers another
+Azure then we're gonna demo a little bit
 
 
-maybe like one of the best examples is
+about uh again showcasing our use of
 
 
-on board and clone the repo and like
+Linux on Azure and then also I want to
 
 
-we're using uh Linux once again for our
+actually I'm gonna do this right now
 
 
-the well we have an endpoint to create a
+because this might take a while so are
 
 
-from somewhere else and I'll be like I
+you all familiar with the Azure
 
 
+developer CLI Azure developer seal I
 
 
-the adding it to the you know
+don't know if anyone's used it before
 
 
-pretty sick uh that pretty much covers
+um also I just got access to the the
 
 
-are talking about can we make sure to
+Bing chat thing with uh open AI nice so
 
 
-in the bottom right so starting vs code
+freaking cool anyway
 
 
-Windows because it's yeah I mean it is
+um so the Azure developer CLI is it's a
 
 
-that in the next session which is the
-um I saw something about um and
+CLI that will enable you to essentially
 
 
-amount of tokens 4K per per query the
+deploy full-on
 
 
-Bing like I was I saw the email today I
+production ready applications to Azure
 
 
-need but why would you want to like
+with a simple command and they have a
 
 
-pretty sure many many more
+bunch of templates I asked um Savannah
 
 
-we will have hold on let me share we
+who is the PM for the Azure developer
 
 
-uh so the first one is just introducing
+CLI because I know a lot of their
 
 
-um you can switch to the bash shell on
+templates are I want to open up one of
 
 
-commands how to list content how to find
+these templates a lot of their templates
 
 
-filtering out that that is the beauty in
+are based off of like Linux images so if
 
 
-there too
+we look on like sushi sharp I know the
 
 
-that as well here and then we put it all
+these app service ones are based off
 
 
-expect this from Microsoft it's like
+Linux images and I know the one for the
 
 
-already that said that they're into the
+c-sharp and Azure functions is also
 
 
-time another couple months doing
+because I helped author that one but
 
 
-something that you can help with Gwen
+they also have like Java and OJ node.js
 
 
-you Richard for coming on last minute
+Python and I want to pick I don't know
+
+
+let's pick this Java one as an example
+
+
+it's off based off container apps and I
+
+
+asked her like well so what was the
+
+
+reasoning or can you give me like a
+
+
+statement because I want to share with
+
+
+the the people watching the streams like
+
+
+what was the reasoning behind
+
+
+[Music]
+
+
+um
+
+
+you know basing these templates off all
+
+
+like Linux images and then Savannah's
+
+
+great she's one of the funniest and
+
+
+coolest people to talk but she basically
+
+
+was like honestly Linux is where the
+
+
+people is at so that's super
+
+
+straightforward I was like I'm gonna use
+
+
+that exactly because it was it's just
+
+
+the truth it's like you know we'll see a
+
+
+couple more stats about uh why like
+
+
+that's sort of like back up the
+
+
+statement at first but I'm gonna do this
+
+
+deployment first because it's probably
+
+
+gonna take a while
+
+
+um oh look at this WSL which is Linux on
+
+
+on Windows
+and then we're gonna make deer we're
+
+
+gonna call this Howlin next Works demo
+
+
+and then we're gonna CD into this lovely
+
+
+directory name yeah love it uh and then
+
+
+we'll just do azd up
+
+
+and we're gonna call this
+
+
+which is called reactor demo
+
+
 TIMESTAMP: 00:01:32.4600000
-foreign
 
 
-first please take a moment to review our
+like I really want to talk about uh an
 
 
-about 24 to 48 hours I'll be sharing the
+app that we have in production that is
 
 
+utilizing Linux and it's on Azure and
 
 
-thank you so much Albina as always for
+it's an effort by both of us it's called
 
 
-he he wasn't on the
+learn a cloud some of you may or may not
 
 
 have heard of it so no one better than
 
 
-you take out with the reactor too as
+talk about these things with than
 
 
-little bit more about utilizing Linux on
+himself so hey Richard how you doing
 
 
-freaking cool anyway
+I'm doing good I'm doing good and I
 
 
-are based off of like Linux images so if
+guess most of the people no one says is
 
 
-reasoning or can you give me like a
+the duo right the cloud Duo so we do a
 
 
-people is at so that's super
+lot together yeah yeah
 
 
+um yeah we are back
 
 
-which is called reactor demo
+um and I think this is my first reactor
 
 
-be running
+stream for this year
 
 
-videos uh I think the longest one might
-
-
-think this is going to provision okay
-okay there's someone in the chat who
-
-
-like networking programming
-
-
-how things boot like you don't it's
-
-
-this uh our y-axis and then the level of
-
-
-it's like a managed service but you
-
-
-in any Cloud it doesn't really matter I
-
-
-uh in like two hours or so and then
-
-
-simulated with like software but I know
-
-
-because ultimately like the program
-example uh vs code Docker kubernetes SQL
-
-
-um but yeah so you say that it it can't
-
-
-agree yeah that's why I was trying to
-
-
-think so yeah yeah like bash is like
-
-
-one is better you shouldn't learn the
-
-
-stuff that I like so bash uh Azure and
-
-
-high level of talking about like open
-
-
-um but
-
-
-but there might be some gray area with
-
-
-two are very important too typically
-
-
-yeah yeah have you seen that I think I
-
-
-organizations that do utilize open
-
-
-I joined to Microsoft about a year and a
-
-
-this like the culture was completely
-
-
-or with Microsoft in general like what
-
-
-yeah
-
-
-probably get a lot more information
-
-
-yeah our position against open source
-
-
-it's just like not the right move from
-
-
-they grabbed.net and they pulled a lot
-
-
-like there's multiple things that
-
-
-you start to think like the AWS market
-
-
-is open source and the.net Foundation is
-
-
-build as well which I think is important
-
-
-Community has always been that part of
-
-
-about all about getting started with WSL
-
-
-um if you didn't know if you don't know
-
-
-native Computing Foundation cncf which
-
-
-let's move around here
-
-
-don't know why I still get the feeling
-
-
-Adam had like a really great had some
-
-
-still easy like because the other Ides I
-acquisition and I open Visual Studio and
-
-
-that where where Visual Studio is like a
-
-
-ubuntu-based distribution yes snap yep
-
-
-choco yeah choco yeah yeah there might
-
-
-embracing the ones that the majority of
-
-
-bunch of like Windows technology and
-
-
-and this whole like right shift in
-
-
-uh
-
-
-any kind of creative uh migrations it
-
-
-and over 47 000 customers using Azure
-
-
-in terms of leveraging Linux let me
-
-
-this technology in Azure you don't have
-
-
-you then kind of move your way down the
-
-
-um I'm pretty sure there's a lot of
-
-
-typically end up utilizing VMS for that
-
-
-and then I'm going to use open up my
-
-
-oh my goodness there's so many oh no
-
-
-straightforward not a straightforward
-
-
-that is you know as a way to interacts
-
-
-then they came up with this awesome
-
-
-based off Linux right
-
-
-fix blog post I just want to see how it
-
-
-and then we create like shopping I don't
-
-
-this hold on how do I move this can I no
-
-
-
-
-
-
-let's grab a shopping one let's grab
-
-
-uh yeah and I didn't do anything all I
-
-
-Docker running so
-
-
-going to see like yeah type like Linux
-
-
-um
-
-
-bicep but I don't know if it creates
-
-
-
-
-
-
-we know the most because you know if you
-
-
-learner Cloud uh it is an open source
-
-
-people maintaining this website on our
-
-
-know best performant uh SEO optimized
-
-
-only for February and we are just
-
-
-
-
-maintain this with very very little uh
-
-
-past I don't know we'll take a look at
-
-
-
-
-we're gonna do last seven days so
-
-
-here this is actually the API so what
-
-
-Cloud definition uh it calls the API
-um I forgot to close my window that's
-
-
-through essentially the
-
-
-sort of like a road map or a guide right
-
-
-how do you break this down some
-
-
-there's no charge this isn't a boot camp
-
-
-individual projects if you want to get
-
-
-so let's go in here
-
-
-people if it's like a personal site or
-
-
-think so yeah you have additional costs
-
-
-with just things that we're working on
-
-
-um and that's why it's looking like very
-
-
-several languages yes English French
-
-
-um the for a close folder
-
-
-I believe there's like 2 000 minutes uh
-
-
-branch you know that's a release and we
-
-
-know that runs on and Ubuntu container
-
-
-project because we don't want that and
-
-
-aren't familiar diff containers another
-
-
-maybe like one of the best examples is
-
-
-on board and clone the repo and like
-
-
-we're using uh Linux once again for our
-
-
-the well we have an endpoint to create a
-
-
-from somewhere else and I'll be like I
-
-
-
-
-the adding it to the you know
-
-
-pretty sick uh that pretty much covers
-
-
-are talking about can we make sure to
-
-
-in the bottom right so starting vs code
-
-
-Windows because it's yeah I mean it is
-
-
-that in the next session which is the
-um I saw something about um and
-
-
-amount of tokens 4K per per query the
-
-
-Bing like I was I saw the email today I
-
-
-need but why would you want to like
-
-
-pretty sure many many more
-
-
-we will have hold on let me share we
-
-
-uh so the first one is just introducing
-
-
-um you can switch to the bash shell on
-
-
-commands how to list content how to find
-
-
-filtering out that that is the beauty in
-
-
-there too
-
-
-that as well here and then we put it all
-
-
-expect this from Microsoft it's like
-
-
-already that said that they're into the
-
-
-time another couple months doing
-
-
-something that you can help with Gwen
-
-
-you Richard for coming on last minute
-TIMESTAMP: 00:01:34.3700000
-foreign
-
-
-first please take a moment to review our
-
-
-about 24 to 48 hours I'll be sharing the
-
-
-
-
-thank you so much Albina as always for
-
-
-he he wasn't on the
-
-
-have heard of it so no one better than
+oh wow I'm I'm honored yeah you do uh no
 
 
 you take out with the reactor too as
 
 
+well rishab does a whole bunch of other
+
+
+stuff now with me
+
+
+um but yeah for today uh I want to dive
+
+
+a little bit more onto Linux on Azure
+
+
+we're going to talk a little bit more
+
+
+about Open Source and then the history
+
+
+of Open Source at Microsoft which was
+
+
+pretty interesting to read about
+
+
+um but we're gonna keep these things at
+
+
+high level then we're gonna talk a
+
+
 little bit more about utilizing Linux on
+
+
+Azure then we're gonna demo a little bit
+
+
+about uh again showcasing our use of
+
+
+Linux on Azure and then also I want to
+
+
+actually I'm gonna do this right now
+
+
+because this might take a while so are
+
+
+you all familiar with the Azure
+
+
+developer CLI Azure developer seal I
+
+
+don't know if anyone's used it before
+
+
+um also I just got access to the the
+
+
+Bing chat thing with uh open AI nice so
 
 
 freaking cool anyway
 
 
+um so the Azure developer CLI is it's a
+
+
+CLI that will enable you to essentially
+
+
+deploy full-on
+
+
+production ready applications to Azure
+
+
+with a simple command and they have a
+
+
+bunch of templates I asked um Savannah
+
+
+who is the PM for the Azure developer
+
+
+CLI because I know a lot of their
+
+
+templates are I want to open up one of
+
+
+these templates a lot of their templates
+
+
 are based off of like Linux images so if
+
+
+we look on like sushi sharp I know the
+
+
+these app service ones are based off
+
+
+Linux images and I know the one for the
+
+
+c-sharp and Azure functions is also
+
+
+because I helped author that one but
+
+
+they also have like Java and OJ node.js
+
+
+Python and I want to pick I don't know
+
+
+let's pick this Java one as an example
+
+
+it's off based off container apps and I
+
+
+asked her like well so what was the
 
 
 reasoning or can you give me like a
 
 
-people is at so that's super
+statement because I want to share with
 
 
+the the people watching the streams like
 
 
-which is called reactor demo
+what was the reasoning behind
 
 
-be running
-
-
-videos uh I think the longest one might
-
-
-think this is going to provision okay
-okay there's someone in the chat who
-
-
-like networking programming
-
-
-how things boot like you don't it's
-
-
-this uh our y-axis and then the level of
-
-
-it's like a managed service but you
-
-
-in any Cloud it doesn't really matter I
-
-
-uh in like two hours or so and then
-
-
-simulated with like software but I know
-
-
-because ultimately like the program
-example uh vs code Docker kubernetes SQL
-
-
-um but yeah so you say that it it can't
-
-
-agree yeah that's why I was trying to
-
-
-think so yeah yeah like bash is like
-
-
-one is better you shouldn't learn the
-
-
-stuff that I like so bash uh Azure and
-
-
-high level of talking about like open
-
-
-um but
-
-
-but there might be some gray area with
-
-
-two are very important too typically
-
-
-yeah yeah have you seen that I think I
-
-
-organizations that do utilize open
-
-
-I joined to Microsoft about a year and a
-
-
-this like the culture was completely
-
-
-or with Microsoft in general like what
-
-
-yeah
-
-
-probably get a lot more information
-
-
-yeah our position against open source
-
-
-it's just like not the right move from
-
-
-they grabbed.net and they pulled a lot
-
-
-like there's multiple things that
-
-
-you start to think like the AWS market
-
-
-is open source and the.net Foundation is
-
-
-build as well which I think is important
-
-
-Community has always been that part of
-
-
-about all about getting started with WSL
-
-
-um if you didn't know if you don't know
-
-
-native Computing Foundation cncf which
-
-
-let's move around here
-
-
-don't know why I still get the feeling
-
-
-Adam had like a really great had some
-
-
-still easy like because the other Ides I
-acquisition and I open Visual Studio and
-
-
-that where where Visual Studio is like a
-
-
-ubuntu-based distribution yes snap yep
-
-
-choco yeah choco yeah yeah there might
-
-
-embracing the ones that the majority of
-
-
-bunch of like Windows technology and
-
-
-and this whole like right shift in
-
-
-uh
-
-
-any kind of creative uh migrations it
-
-
-and over 47 000 customers using Azure
-
-
-in terms of leveraging Linux let me
-
-
-this technology in Azure you don't have
-
-
-you then kind of move your way down the
-
-
-um I'm pretty sure there's a lot of
-
-
-typically end up utilizing VMS for that
-
-
-and then I'm going to use open up my
-
-
-oh my goodness there's so many oh no
-
-
-straightforward not a straightforward
-
-
-that is you know as a way to interacts
-
-
-then they came up with this awesome
-
-
-based off Linux right
-
-
-fix blog post I just want to see how it
-
-
-and then we create like shopping I don't
-
-
-this hold on how do I move this can I no
-
-
-
-
-
-
-let's grab a shopping one let's grab
-
-
-uh yeah and I didn't do anything all I
-
-
-Docker running so
-
-
-going to see like yeah type like Linux
+[Music]
 
 
 um
 
 
-bicep but I don't know if it creates
+you know basing these templates off all
 
 
+like Linux images and then Savannah's
 
 
+great she's one of the funniest and
 
 
-we know the most because you know if you
+coolest people to talk but she basically
 
 
-learner Cloud uh it is an open source
+was like honestly Linux is where the
 
 
-people maintaining this website on our
+people is at so that's super
 
 
-know best performant uh SEO optimized
+straightforward I was like I'm gonna use
 
 
-only for February and we are just
+that exactly because it was it's just
 
 
+the truth it's like you know we'll see a
 
 
-maintain this with very very little uh
+couple more stats about uh why like
 
 
-past I don't know we'll take a look at
+that's sort of like back up the
 
 
+statement at first but I'm gonna do this
 
 
-we're gonna do last seven days so
+deployment first because it's probably
 
 
-here this is actually the API so what
+gonna take a while
 
 
-Cloud definition uh it calls the API
-um I forgot to close my window that's
+um oh look at this WSL which is Linux on
 
 
-through essentially the
+on Windows
+and then we're gonna make deer we're
 
 
-sort of like a road map or a guide right
+gonna call this Howlin next Works demo
 
 
-how do you break this down some
+and then we're gonna CD into this lovely
 
 
-there's no charge this isn't a boot camp
+directory name yeah love it uh and then
 
 
-individual projects if you want to get
+we'll just do azd up
 
 
-so let's go in here
+and we're gonna call this
 
 
-people if it's like a personal site or
+which is called reactor demo
 
 
-think so yeah you have additional costs
-
-
-with just things that we're working on
-
-
-um and that's why it's looking like very
-
-
-several languages yes English French
-
-
-um the for a close folder
-
-
-I believe there's like 2 000 minutes uh
-
-
-branch you know that's a release and we
-
-
-know that runs on and Ubuntu container
-
-
-project because we don't want that and
-
-
-aren't familiar diff containers another
-
-
-maybe like one of the best examples is
-
-
-on board and clone the repo and like
-
-
-we're using uh Linux once again for our
-
-
-the well we have an endpoint to create a
-
-
-from somewhere else and I'll be like I
-
-
-
-
-the adding it to the you know
-
-
-pretty sick uh that pretty much covers
-
-
-are talking about can we make sure to
-
-
-in the bottom right so starting vs code
-
-
-Windows because it's yeah I mean it is
-
-
-that in the next session which is the
-um I saw something about um and
-
-
-amount of tokens 4K per per query the
-
-
-Bing like I was I saw the email today I
-
-
-need but why would you want to like
-
-
-pretty sure many many more
-
-
-we will have hold on let me share we
-
-
-uh so the first one is just introducing
-
-
-um you can switch to the bash shell on
-
-
-commands how to list content how to find
-
-
-filtering out that that is the beauty in
-
-
-there too
-
-
-that as well here and then we put it all
-
-
-expect this from Microsoft it's like
-
-
-already that said that they're into the
-
-
-time another couple months doing
-
-
-something that you can help with Gwen
-
-
-you Richard for coming on last minute
