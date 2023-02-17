@@ -428,7 +428,7 @@ and we're gonna call this
 which is called reactor demo
 
 
-TIMESTAMP: 00:00:41.5200000
+TIMESTAMP: 00:06:38.2200000
 cool it's also way too big and the
 
 
@@ -860,7 +860,7 @@ um but yeah so you say that it it can't
 be it just doesn't have to be software
 
 
-TIMESTAMP: 00:01:09.5500000
+TIMESTAMP: 00:11:22.2000000
 it can be you know educational content
 
 
@@ -1293,7 +1293,7 @@ what era did you start using Microsoft
 or know about Microsoft Technologies and
 
 
-TIMESTAMP: 00:01:21.2000000
+TIMESTAMP: 00:16:15.8390000
 have you seen this shift as well
 
 
@@ -1726,7 +1726,7 @@ essentially like pushing promoting
 supporting all of these open source
 
 
-TIMESTAMP: 00:01:24.5600000
+TIMESTAMP: 00:21:16.6200000
 projects that are around uh Cloud native
 
 
@@ -2158,7 +2158,7 @@ same so in the next that here is 60 of
 
 
 azure Marketplace images are Linux based
-TIMESTAMP: 00:01:27.7100000
+TIMESTAMP: 00:26:41.2890000
 
 
 and over 47 000 customers using Azure
@@ -2591,7 +2591,7 @@ maybe we call this content
 
 
 and then we create like shopping I don't
-TIMESTAMP: 00:01:27.7200000
+TIMESTAMP: 00:31:45.7100000
 
 
 know shopping I just love that how the
@@ -3022,7 +3022,7 @@ know best performant uh SEO optimized
 
 
 thing right and for this year since we
-TIMESTAMP: 00:01:29.6900000
+TIMESTAMP: 00:37:21.0500000
 
 
 moved as Gwen was saying to static web
@@ -3454,7 +3454,7 @@ uh we have a road map in terms of like
 the content that's on here that's pretty
 
 
-TIMESTAMP: 00:01:29.7000000
+TIMESTAMP: 00:42:27.3590000
 much what we're working with but yeah we
 
 
@@ -3887,7 +3887,7 @@ especially when we you know saw that
 there's so much Community contribution
 
 
-TIMESTAMP: 00:01:32.4500000
+TIMESTAMP: 00:48:07.0790000
 we wanted it to be easy to for people to
 
 
@@ -4319,7 +4319,7 @@ consumer use that's what uh AKs is built
 I mean you can go in and build it like
 
 
-TIMESTAMP: 00:01:32.4600000
+TIMESTAMP: 00:53:20.7000000
 they have all the instructions if you
 
 
