@@ -1,0 +1,4767 @@
+TIMESTAMP: 00:00:34.0790000
+foreign
+[Music]
+[Music]
+thank you
+hello everyone and welcome thank you all
+
+
+for joining us today for this live
+
+
+stream event my name is Albina and I'm
+
+
+the program manager of the Microsoft
+
+
+reactor San Francisco I will be sharing
+
+
+session Resources with you in the chat
+
+
+but before we begin I would like to
+
+
+quickly review two items with you our
+
+
+code of contact and our event guidelines
+
+
+first please take a moment to review our
+
+
+code of conduct Microsoft reactor seeks
+
+
+to provide a respectful environment for
+
+
+both our audience and our presenters we
+
+
+do encourage engagement in the chat but
+
+
+please be mindful of your commentary
+
+
+remain professional and on topic
+
+
+and secondly our event guidelines this
+
+
+session is being recorded and will be
+
+
+available on demand through the
+
+
+Microsoft reactor YouTube channel in
+
+
+about 24 to 48 hours I'll be sharing the
+
+
+link in the chat for our YouTube channel
+
+
+and if you have not been on a live
+
+
+stream through YouTube before please
+
+
+know that you must create an account on
+
+
+YouTube in order to access and interact
+
+
+in the chat you can set that up right
+
+
+now and if you're unable to use a chat
+
+
+but have questions feel free to reach
+
+
+out to us through the social media or
+
+
+Meetup
+which brings us to today's session Linux
+
+
+on Azure what is it how and when to use
+
+
+it this session will run approximately
+
+
+for 60 minutes and I'm going to bring in
+
+
+our speaker Gwen
+
+
+and our guest reshap as well welcome
+
+
+thank you so much Albina as always for
+
+
+the wonderful introduction hi everyone I
+
+
+see a couple people in the chat hanging
+
+
+out with us already awesome let us know
+
+
+where you are checking in uh also do let
+
+
+me know if you are on our our session
+
+
+last week where we talked all about how
+
+
+Linux works and today we're going to
+
+
+take it a step further and talk a little
+
+
+bit about more about utilizing Linux on
+
+
+Azure and I have my friend rishab here
+
+
+he he wasn't on the
+
+
+let's switch to this so he wasn't on the
+
+
+um
+
+
+like the series information or the page
+
+
+or when you register you probably didn't
+
+
+see his name because last minute I was
+
+
+like I really want to talk about uh an
+
+
+app that we have in production that is
+
+
+utilizing Linux and it's on Azure and
+
+
+it's an effort by both of us it's called
+
+
+learn a cloud some of you may or may not
+
+
+have heard of it so no one better than
+
+
+talk about these things with than
+
+
+himself so hey Richard how you doing
+
+
+I'm doing good I'm doing good and I
+
+
+guess most of the people no one says is
+
+
+the duo right the cloud Duo so we do a
+
+
+lot together yeah yeah
+
+
+um yeah we are back
+
+
+um and I think this is my first reactor
+
+
+stream for this year
+
+
+oh wow I'm I'm honored yeah you do uh no
+
+
+you take out with the reactor too as
+
+
+well rishab does a whole bunch of other
+
+
+stuff now with me
+
+
+um but yeah for today uh I want to dive
+
+
+a little bit more onto Linux on Azure
+
+
+we're going to talk a little bit more
+
+
+about Open Source and then the history
+
+
+of Open Source at Microsoft which was
+
+
+pretty interesting to read about
+
+
+um but we're gonna keep these things at
+
+
+high level then we're gonna talk a
+
+
+little bit more about utilizing Linux on
+
+
+Azure then we're gonna demo a little bit
+
+
+about uh again showcasing our use of
+
+
+Linux on Azure and then also I want to
+
+
+actually I'm gonna do this right now
+
+
+because this might take a while so are
+
+
+you all familiar with the Azure
+
+
+developer CLI Azure developer seal I
+
+
+don't know if anyone's used it before
+
+
+um also I just got access to the the
+
+
+Bing chat thing with uh open AI nice so
+
+
+freaking cool anyway
+
+
+um so the Azure developer CLI is it's a
+
+
+CLI that will enable you to essentially
+
+
+deploy full-on
+
+
+production ready applications to Azure
+
+
+with a simple command and they have a
+
+
+bunch of templates I asked um Savannah
+
+
+who is the PM for the Azure developer
+
+
+CLI because I know a lot of their
+
+
+templates are I want to open up one of
+
+
+these templates a lot of their templates
+
+
+are based off of like Linux images so if
+
+
+we look on like sushi sharp I know the
+
+
+these app service ones are based off
+
+
+Linux images and I know the one for the
+
+
+c-sharp and Azure functions is also
+
+
+because I helped author that one but
+
+
+they also have like Java and OJ node.js
+
+
+Python and I want to pick I don't know
+
+
+let's pick this Java one as an example
+
+
+it's off based off container apps and I
+
+
+asked her like well so what was the
+
+
+reasoning or can you give me like a
+
+
+statement because I want to share with
+
+
+the the people watching the streams like
+
+
+what was the reasoning behind
+
+
+[Music]
+
+
+um
+
+
+you know basing these templates off all
+
+
+like Linux images and then Savannah's
+
+
+great she's one of the funniest and
+
+
+coolest people to talk but she basically
+
+
+was like honestly Linux is where the
+
+
+people is at so that's super
+
+
+straightforward I was like I'm gonna use
+
+
+that exactly because it was it's just
+
+
+the truth it's like you know we'll see a
+
+
+couple more stats about uh why like
+
+
+that's sort of like back up the
+
+
+statement at first but I'm gonna do this
+
+
+deployment first because it's probably
+
+
+gonna take a while
+
+
+um oh look at this WSL which is Linux on
+
+
+on Windows
+and then we're gonna make deer we're
+
+
+gonna call this Howlin next Works demo
+
+
+and then we're gonna CD into this lovely
+
+
+directory name yeah love it uh and then
+
+
+we'll just do azd up
+
+
+and we're gonna call this
+
+
+which is called reactor demo
+
+
+TIMESTAMP: 00:00:41.5200000
+cool it's also way too big and the
+
+
+reason I'm running this now is because
+
+
+it might take a few moments and yeah I
+
+
+don't want us to wait towards the end
+
+
+because we might have a lot too oh my
+
+
+goodness oh docker's not running if I
+
+
+run Docker will it
+
+
+will it give me issues because because
+
+
+this is using uh container app so
+
+
+obviously the docker technology needs to
+
+
+be running
+
+
+give me a second I will get this running
+
+
+and then we'll run this command again
+
+
+and as long as it's running in the
+
+
+background we should totally be fine I
+
+
+do want to add while we're waiting
+
+
+you think Linux you got to think Bash
+
+
+if you're not familiar with bash lucky
+
+
+for you today we released bash for
+
+
+beginners uh we can drop the link into
+
+
+the chat for you all but it is 20 20
+
+
+videos uh I think the longest one might
+
+
+be 11 but the majority of them are
+
+
+anywhere from like five to six minutes
+
+
+long it covers all your fundamentals for
+
+
+learning bash utilizing bash in the
+
+
+context of like scripting for clis and
+
+
+things like that I think this is running
+
+
+now okay and it's free it's on YouTube I
+
+
+helped author that as well so be sure to
+
+
+check that out
+
+
+and we're going to hit yes here and I
+
+
+think this is going to provision okay
+
+
+cool all right back to the content here
+
+
+so anyway open source uh switch over
+
+
+here
+
+
+switch this way actually
+
+
+uh I think it's this one here
+okay there's someone in the chat who
+
+
+said I was just going through the bash
+
+
+course before this stream started
+
+
+perfect timing I got people multitasking
+
+
+yeah yeah oh I wanted to okay just to
+
+
+back up that point that I was saying and
+
+
+I shared this on on Twitter earlier
+
+
+today but
+
+
+so you know when we think of Linux uh
+
+
+and we think of cloud so cloud has done
+
+
+like this amazing job of abstracting
+
+
+like networking programming
+
+
+um Hardware secure oh maybe yeah
+
+
+security to an extent and then you know
+
+
+the cloud is is nothing more than a
+
+
+bunch of beautiful Linux service network
+
+
+together right but that doesn't mean
+
+
+that
+
+
+you need to know uh how Linux works like
+
+
+for example all the stuff that we
+
+
+covered in the session last time kernel
+
+
+user space uh the the the file system
+
+
+how things boot like you don't it's
+
+
+those things are interesting to know for
+
+
+sure
+
+
+um if you're a nerd and you like to know
+
+
+like what's under the engine and whatnot
+
+
+but it's absolutely not necessary when
+
+
+you're trying to like work in the cloud
+
+
+right but the cool thing is like
+
+
+realizing like okay so this is the chart
+
+
+that I kind of quickly made today is
+
+
+like well it's we have the services on
+
+
+this uh our y-axis and then the level of
+
+
+Linux extraction on the x-axis so uh
+
+
+when we think about like knowing the
+
+
+absolute most about Linux which would be
+
+
+like the lower level uh bash is
+
+
+definitely useful there but you go like
+
+
+a level up and you're working with like
+
+
+virtual machines and Bash is useful
+
+
+there too you go level higher you're
+
+
+thinking like Azure kubernetes Service
+
+
+uh or you know something like that where
+
+
+it's like a managed service but you
+
+
+still get access you can get access to
+
+
+like the underlying yes infrastructure
+
+
+if you needed to like mess with the apis
+
+
+or whatnot bash is useful there too uh
+
+
+but then if you go like a level up
+
+
+higher I put like container apps here
+
+
+yeah coincidentally I'm using that for
+
+
+the demo as well but if you do like
+
+
+functions or and then you can swap these
+
+
+out for whatever their equivalents are
+
+
+in any Cloud it doesn't really matter I
+
+
+just know the Azure one so I put them
+
+
+there like
+
+
+CLI skill set bash Powershell skill set
+
+
+here and like no matter what like no
+
+
+matter what service you throw at what
+
+
+level of instruction you throw it at
+
+
+it's going to be very useful so
+
+
+hopefully people find that uh something
+
+
+to add I think you can probably get
+
+
+through the whole thing just watching it
+
+
+uh in like two hours or so and then
+
+
+obviously it's going to take you some
+
+
+time to get Hands-On and whatnot but I
+
+
+think you could spend like a weekend and
+
+
+get uh pretty comfortable there as well
+
+
+so keep that in mind okay cool back to
+
+
+what I was actually supposed to talk
+
+
+about today
+
+
+so what is open source a very brief uh I
+
+
+guess one-liner on the topic is
+
+
+So Soft it's primarily a like a
+
+
+simulated with like software but I know
+
+
+there are other products that um like
+
+
+like literature and things like that
+
+
+that are also associated with open
+
+
+source but primarily when we speak about
+
+
+open source we're talking about software
+
+
+code projects related to code and things
+
+
+like that
+
+
+where the source code
+
+
+so if you think of like an application
+
+
+whatever makes up the application
+
+
+because ultimately like the program
+
+
+everything comes down to code uh is made
+
+
+available for anyone to use modify and
+
+
+share freely so that's pretty much just
+
+
+like the the most vague
+yeah and then some some examples so for
+
+
+example uh vs code Docker kubernetes SQL
+
+
+Server we I put learn to Cloud there
+
+
+free code Camp is an example of because
+
+
+they they open source or other
+
+
+curriculum so that is an example of not
+
+
+necessarily being software but it is
+
+
+tied to something like that so they also
+
+
+open source I think they might be one of
+
+
+the largest GitHub repos also like in
+
+
+terms of popularity which is pretty cool
+
+
+yeah
+
+
+um but yeah so you say that it it can't
+
+
+be it just doesn't have to be software
+
+
+TIMESTAMP: 00:01:09.5500000
+it can be you know educational content
+
+
+it can be you know your notes and like
+
+
+tools that you build
+
+
+um exactly so everything can be part of
+
+
+this ecosystem uh that we know as of
+
+
+Open Source cool absolutely we have a
+
+
+couple comments here that I wanted to
+
+
+address the same can be said for
+
+
+Powershell plus a bunch more I would
+
+
+agree yeah that's why I was trying to
+
+
+say like CLI in general term like a CLI
+
+
+skill set in general Powershell is built
+
+
+not built into Linux so not recommended
+
+
+so this is like this is where like the
+
+
+bonus Point goes to bash where it's like
+
+
+essentially a universal language like a
+
+
+lot a lot of Linux distros cover Bash
+
+
+from like scratch you don't have to
+
+
+install it like I mean even python
+
+
+sometimes comes but it's not like no I
+
+
+think so yeah yeah like bash is like
+
+
+you'll know you can go in there and use
+
+
+it without having like any in additional
+
+
+dependencies
+
+
+um but both are great right
+
+
+um
+
+
+so cool we were talking about okay some
+
+
+more open so yeah we're going through
+
+
+some examples here uh more open source
+
+
+facts and also I would just like to say
+
+
+this isn't a Powershell versus bash like
+
+
+one is better you shouldn't learn the
+
+
+other one if you know anything about
+
+
+like my background as someone who
+
+
+delivers technical content is I truly
+
+
+don't care what people select I really
+
+
+just want you to learn whatever it is is
+
+
+that is going to enable you to land a
+
+
+job or upskill and that oftentimes is
+
+
+sort of reverse engineering like a job
+
+
+description or whatever it is I just
+
+
+tend to like to cover things around the
+
+
+stuff that I like so bash uh Azure and
+
+
+whatever but ultimately if you decide to
+
+
+go learn Powershell and AWS which would
+
+
+be an interesting combination more power
+
+
+to you I don't I don't really enjoy
+
+
+these like AWS version Azure like these
+
+
+com like the conversations yeah the
+
+
+debates of conversations that tend to go
+
+
+viral and enter that's not where
+
+
+um I like to dedicate my time but anyway
+
+
+Okay cool so that's kind of like sort of
+
+
+high level of talking about like open
+
+
+source uh can be used for commercial not
+
+
+commercial non-commercial purposes often
+
+
+distributed for free but it's not always
+
+
+like it could be open source but have
+
+
+some sort of cost Associated to it maybe
+
+
+it's not directly through like paying
+
+
+for access to it or something like that
+
+
+but it's often Associated free with open
+
+
+source whether that is good or not
+
+
+is a totally different type of question
+
+
+um but
+
+
+that's just the way that it is right
+
+
+yeah and I think that's where you know
+
+
+we would have to like dive really deep
+
+
+into like licensing and stuff there are
+
+
+different kind of Open Source licenses
+
+
+like where you can
+
+
+not for the repo and customize it in to
+
+
+some way where you make it profitable
+
+
+but yeah yeah I I hope the audience get
+
+
+the point that you know it can be free
+
+
+but there might be some gray area with
+
+
+certain softwares yeah and also just
+
+
+because something is free not as again
+
+
+the licensing detail really does matter
+
+
+because it's not like oh just because
+
+
+it's free I can reutilize it for
+
+
+absolutely anything no but that would
+
+
+require a whole different type of talk
+
+
+where you just you can write a book on
+
+
+different languages yeah uh so typically
+
+
+this is also not important these last
+
+
+two are very important too typically
+
+
+developed and maintained by a community
+
+
+or individual sometimes it's just
+
+
+there's that funny meme where it's like
+
+
+a bunch of I don't remember what it is
+
+
+but a bunch of things stacked or it's
+
+
+like these massive corporations and at
+
+
+the bottom it's like one tiny brick
+
+
+that's holding absolutely everything up
+
+
+and it's like one little one Library
+
+
+that's maintained by a single person
+
+
+yeah yeah have you seen that I think I
+
+
+saw it earlier I've seen it or something
+
+
+like that and it's like yeah the reality
+
+
+is a lot of like
+
+
+packages or applications libraries
+
+
+things like that that are used in like a
+
+
+lot of like web are often open source
+
+
+and maintained by a small amount of
+
+
+people or a single person but there is a
+
+
+bigger push I've noticed to get
+
+
+um support from companies or
+
+
+organizations that do utilize open
+
+
+source to you know continue backing
+
+
+these uh these projects you know GitHub
+
+
+sponsors and things like that it does
+
+
+need to be significantly more for sure
+
+
+yes uh but it's getting better
+
+
+so those are some interesting uh open
+
+
+source facts there uh let's talk more
+
+
+about Open Source at Microsoft which was
+
+
+quite an interesting
+
+
+thing to read about now just for context
+
+
+I joined to Microsoft about a year and a
+
+
+half ago so I'm way into like the Satya
+
+
+Nadella phase way into like Microsoft
+
+
+embracing Linux Microsoft embracing open
+
+
+source but I know it hasn't always been
+
+
+around here I have like the privilege to
+
+
+be around a lot of people who have had
+
+
+like 15 20 years of of being at
+
+
+Microsoft and then they they like will
+
+
+tell me first time from first-hand
+
+
+experience like it used to not be like
+
+
+this like the culture was completely
+
+
+different now we're in at Microsoft
+
+
+we're definitely at a place where it's
+
+
+like open first and then there needs to
+
+
+be a discussion whereas if something
+
+
+needs to be closed or not open source
+
+
+instead it used to be like close first
+
+
+we'll see we'll see we'll consider open
+
+
+source later on right so I'd curious
+
+
+just to know about other people's
+
+
+experience with Microsoft Technologies
+
+
+or with Microsoft in general like what
+
+
+what era did you start using Microsoft
+
+
+or know about Microsoft Technologies and
+
+
+TIMESTAMP: 00:01:21.2000000
+have you seen this shift as well
+
+
+um so let me let me know about that
+
+
+right so anyway Beginnings I like to
+
+
+classify this as the wrong side of
+
+
+History and I have like two phrases here
+
+
+that kind of stick out that I wanted to
+
+
+share these are quotes this is not
+
+
+something I'm saying do not cut this off
+
+
+yeah
+
+
+so Linux is a cancer that attaches
+
+
+itself in an intellectual property sense
+
+
+to everything it touches so this was by
+
+
+a next CEO of Microsoft Steve Ballmer uh
+
+
+and this article is called the well
+
+
+talking about like Linux is a Cancer and
+
+
+this was like early 2000s I believe or
+
+
+mid-2000s around that time
+
+
+um if you Google I mean if you Bing if
+
+
+you search this with chat gbt you'll
+
+
+probably get a lot more information
+
+
+around a lot a lot of Articles this was
+
+
+covered extensively pretty interesting
+
+
+right
+
+
+um another thing that I saw in this uh
+
+
+this talk that's called it's like an MIT
+
+
+talk the second one here a conversation
+
+
+with Microsoft president Brad Smith uh
+
+
+Microsoft was on the wrong side of
+
+
+history when open source exploded at the
+
+
+beginning of the century meaning like
+
+
+yeah our position against open source
+
+
+against Linux in general
+
+
+um was the right one because when you
+
+
+think of Open Source and you think of
+
+
+what it stands for the culture around it
+
+
+like the end results and things like
+
+
+that it's like very very powerful and
+
+
+very very enabling and when you think of
+
+
+like technology and the things that can
+
+
+change because of embracing that type of
+
+
+culture obviously being against it
+
+
+it's just like not the right move from
+
+
+any from any Viewpoint so
+
+
+some interesting dates when it comes to
+
+
+I guess Microsoft's relationship with
+
+
+with uh open sources 2001 bad attempt at
+
+
+opensourcing.net if you're familiar.net
+
+
+is this entire ecosystem uh it was
+
+
+originally made by Microsoft uh to
+
+
+develop like desktop apps web
+
+
+applications and things like that and in
+
+
+2001 essentially what they did was like
+
+
+they grabbed.net and they pulled a lot
+
+
+of stuff out of it and then they sort of
+
+
+Open Source the rest of it but a lot of
+
+
+the stuff that they took out was like
+
+
+really important and really these two
+
+
+types of things so that's why I put bad
+
+
+attempt at opensourcing.net
+
+
+uh 2009 they began contributing to the
+
+
+Linux kernel which I was surprised it's
+
+
+earlier than I thought 2012. I mean
+
+
+there's a lot more that happens between
+
+
+like there's multiple things that
+
+
+happened yeah in many of these years but
+
+
+I just sort of cut out the ones that
+
+
+kind of stuck out to me
+
+
+um me being someone who works in the
+
+
+Azure space works in the done at space
+
+
+works in the cloud native space and
+
+
+whatever okay
+
+
+so okay uh 2012 Azure begins hosting
+
+
+Linux virtual machines that is a lot
+
+
+later than I thought and when you when
+
+
+you start to think like the AWS market
+
+
+share versus the Azure market share
+
+
+having the Linux virtual machine images
+
+
+available in 2012 definitely contribute
+
+
+to that obviously AWS was around earlier
+
+
+but I feel like when Azure started and
+
+
+if you immediately have these images
+
+
+available you could have gained a little
+
+
+bit of Leverage there but so be it
+
+
+history is uh
+
+
+is already a thing there 2014 full.net
+
+
+is open source and the.net Foundation is
+
+
+created and then the notorious quote
+
+
+from satyana Della Microsoft life loves
+
+
+the Linux it becomes a thing and um you
+
+
+know that is quoted all the time now and
+
+
+it's big it's a big part of like
+
+
+the open source code so now that
+
+
+Microsoft is just you're reminded
+
+
+constantly Microsoft loves clinics um
+
+
+cool 2015 Visual Studio code released
+
+
+and then they released with a Linux
+
+
+build as well which I think is important
+
+
+also I think about just the
+
+
+the adoption that that clinic that
+
+
+Visual Studio code has had is 100 thanks
+
+
+to uh releasing a Linux build and making
+
+
+it available across platform whereas
+
+
+like you compare like you know the
+
+
+adoption of azure versus like Visual
+
+
+Studio code only with a couple years
+
+
+apart right you see
+
+
+um so it just goes to show that
+
+
+Community has always been that part of
+
+
+the community has always been very
+
+
+important 2016. WSL has announced system
+
+
+actually joins the Linux foundation and
+
+
+Powershell is open source shout out to
+
+
+all my Powershell uh Fanatics in there
+
+
+uh but it's also open source
+
+
+uh 2017 I think WSL was also a massive
+
+
+massive move I don't want to talk more
+
+
+about WSL in the next
+
+
+the the next session we're going to talk
+
+
+about all about getting started with WSL
+
+
+I want to talk a little bit about the
+
+
+architecture as well because I think
+
+
+it's just fascinating how it went from
+
+
+WSL to wsl2 so the just was like a quick
+
+
+like one-liners WSL is was essentially
+
+
+using some sort of like we could call it
+
+
+like emulation or like
+
+
+um whereas like wsl2 has a full like
+
+
+Linux kernel so very big difference yeah
+
+
+yeah yeah
+
+
+um if you didn't know if you don't know
+
+
+really much about what the Linux kernel
+
+
+is it's it's code that sits in main
+
+
+memory when your machine is running and
+
+
+its goal is to assign the next task to
+
+
+the CPU and the CPU will go to main
+
+
+memory and kind of work with those tasks
+
+
+right so obviously having that in wsl2
+
+
+is a game changer
+
+
+um but anyway 2017 Microsoft joins the
+
+
+open source initiative and the cloud
+
+
+native Computing Foundation cncf which
+
+
+is the foundation that is in charge of
+
+
+essentially like pushing promoting
+
+
+supporting all of these open source
+
+
+TIMESTAMP: 00:01:24.5600000
+projects that are around uh Cloud native
+
+
+technology yeah like kubernetes
+
+
+is probably one of the biggest ones
+
+
+there but like Maxwell has a lot of
+
+
+Technologies in there too like functions
+
+
+and things like that as well uh another
+
+
+massive move
+
+
+let's move around here
+
+
+2018 GitHub acquisition big big move
+
+
+when you think of like open source where
+
+
+to where to host your code like yeah
+
+
+GitHub right there are a bunch of other
+
+
+players there too there's like gitlab
+
+
+there's um bit bucket right but get some
+
+
+is just it has like market share there
+
+
+uh and then wsl2 with an actual Linux
+
+
+kernel is released in 2018 too so this
+
+
+was also a couple years ago like I I
+
+
+don't know why I still get the feeling
+
+
+of like it was only a couple years ago
+
+
+but no yeah it felt like this was more
+
+
+recent and now that you know in 2023
+
+
+it's like five years oh my God hmm
+
+
+yeah
+
+
+um oh this one this is an interesting
+
+
+point here
+
+
+don't forget about Sublime and Adam but
+
+
+vs code is pretty much taken over
+
+
+brackets was abandoned I know I remember
+
+
+Adam had like a really great had some
+
+
+great momentum yeah and I think I think
+
+
+it was like that first move to towards a
+
+
+more like lightweight more customizable
+
+
+type of editor and then vs code just
+
+
+definitely yeah yeah I think that's what
+
+
+I got like just talking about the
+
+
+experience like I used Adam before and
+
+
+then as soon as we as code came in it
+
+
+gave me more power in a certain sense
+
+
+but the adapt like the adaptability was
+
+
+still easy like because the other Ides I
+
+
+get that I just makes beginners or like
+
+
+people who are starting to overwhelmed
+
+
+with all the buttons and think about
+
+
+Visual Studio
+I've been 18 so since the GitHub
+
+
+acquisition and I open Visual Studio and
+
+
+I'm like
+
+
+I have no idea so I I use vs code given
+
+
+I guess what's different is my
+
+
+experience with.net has always been like
+
+
+after it's been open source so a lot of
+
+
+like Cloud functionalities so we're
+
+
+thinking like serverless all that like
+
+
+my experience with net was serverless
+
+
+first and I didn't do any of like done
+
+
+it framework things or anything like
+
+
+that where where Visual Studio is like a
+
+
+massive Game Changer but when I open it
+
+
+I'm like this is a lot this is way too
+
+
+much I I enjoy vs code a lot more but
+
+
+again you know different tools for
+
+
+different types of jobs right
+
+
+uh 2019 Visual Studio code releases as a
+
+
+snap which is a way of installing
+
+
+packages like you have like Snap Store
+
+
+like Snap CLI uh tool where you can
+
+
+install packages and uh what is it
+
+
+ubuntu-based distribution yes snap yep
+
+
+cool uh which is important because you
+
+
+know uh when you think of how you
+
+
+install things via CLI like uh Mac has
+
+
+Brew it's one of the most popular ones
+
+
+yeah Homebrew where you do like Brew
+
+
+install and you find the package that
+
+
+you want to saw
+
+
+um Windows has winget uh what's that
+
+
+that's game changing too yeah
+
+
+um chocolatey I think prior to yeah
+
+
+choco yeah choco yeah yeah there might
+
+
+be another one I think Windows has
+
+
+lagged in that aspect of like package
+
+
+management yeah because like brew has
+
+
+been great forever but then you think of
+
+
+like Linux and you have snap you have
+
+
+like What APK
+
+
+um so many different options but like
+
+
+the thing about being a different Linux
+
+
+this show is like different ones will
+
+
+have different yeah their own right and
+
+
+embracing the ones that the majority of
+
+
+the users in that dish show are using is
+
+
+it shows that you care it shows that
+
+
+you're not like ignoring it's not you're
+
+
+not just doing what favors you as a
+
+
+company so embracing something like
+
+
+Snaps are very very important
+
+
+and then Linux surpasses Windows usage
+
+
+on azure
+
+
+very important so when you think of
+
+
+azure you might think like oh it's a
+
+
+bunch of like Windows technology and
+
+
+like it's Windows servers and you're
+
+
+going to be stuck on Windows 2008 R2 or
+
+
+something like that no Linux actually is
+
+
+the most popular type of infrastructure
+
+
+when it comes to uses on Azure and that
+
+
+will bring us over to
+
+
+um the open first mindset so like I
+
+
+mentioned we went from going to
+
+
+uh Linux is a cancer to Linux is like
+
+
+the most popular thing used on aperture
+
+
+and this whole like right shift in
+
+
+mindset right so it likes on Azure a
+
+
+couple of interesting stats that I found
+
+
+uh 50 over 50 of VM cores in that are
+
+
+deployed into Azure are Linux based I
+
+
+know I mean chat can you let me know
+
+
+like if you're deploying stuff in Azure
+
+
+like what is it always Linux based like
+
+
+from I don't think I ever I don't think
+
+
+I've ever deployed anything Windows
+
+
+based
+
+
+uh
+
+
+for me not in a while
+
+
+when was the last time
+
+
+um there was a.net
+
+
+framework 4.5 app
+
+
+um at one of the previous companies I
+
+
+worked for and it needed to be moved
+
+
+from on-prem to you know like
+
+
+and it was lift and shift that you need
+
+
+any kind of
+
+
+you know
+
+
+any kind of creative uh migrations it
+
+
+was just okay we're gonna move this from
+
+
+data center to a VM in the cloud and
+
+
+that's where then did it back in 2019 I
+
+
+guess I guess yeah for supporting stuff
+
+
+maybe like lift and shift like you
+
+
+mentioned it might you might have to but
+
+
+I think anything new the default is like
+
+
+people just people just use Linux the
+
+
+same so in the next that here is 60 of
+
+
+azure Marketplace images are Linux based
+TIMESTAMP: 00:01:27.7100000
+
+
+and over 47 000 customers using Azure
+
+
+open source databases so these are
+
+
+things like Azure database for postgres
+
+
+nice space here Azure database for my uh
+
+
+my singing L here Azure Cosmos DB I do
+
+
+oh my goodness let me fix this right now
+
+
+because I want to make these notes
+
+
+available for y'all if you all are
+
+
+interested so
+
+
+let me just quickly fix these on the
+
+
+spot Azure Cosmos TV and there we go so
+
+
+in terms of leveraging Linux let me
+
+
+show you all we we were already on here
+
+
+before but this is more so talking about
+
+
+the importance of bash but let me wait
+
+
+where is it here here so if we like hold
+
+
+on I don't want to erase this but yeah
+
+
+so in terms of leveraging Linux like you
+
+
+don't have to start
+
+
+right here like you don't you like if
+
+
+you are like new company or like a new
+
+
+developer trying to Leverage
+
+
+this technology in Azure you don't have
+
+
+to always do like a VM or even like AKs
+
+
+like I think a very like
+
+
+maybe like a good first starter would be
+
+
+like go and see like the highest level
+
+
+of obstruction services like what they
+
+
+have to offer and then if you need any
+
+
+more granularity acts granular Axis or
+
+
+you need more customization for whatever
+
+
+or you need to manage something more and
+
+
+like a managed service won't work for
+
+
+you then kind of move your way down the
+
+
+ladder to like okay so maybe like um
+
+
+Azure container apps like you need more
+
+
+access to the underlying infrastructure
+
+
+go AKs if you can't if you can't do AKs
+
+
+go to like standard kubernetes deployed
+
+
+on Virtual machines or something like
+
+
+that but try to start more up here
+
+
+mainly because you're not going to be in
+
+
+charge of a lot of stuff that makes a
+
+
+lot of these things tedious
+
+
+um I'm pretty sure there's a lot of
+
+
+kubernetes admins out there that are
+
+
+like I wish I wouldn't have to I wish we
+
+
+could have this managed and then they
+
+
+could dedicate themselves more to the
+
+
+business logic more to the fun stuff I'm
+
+
+sure there's people out there that like
+
+
+it too but maybe if like start up in
+
+
+here I think
+
+
+for situations like a lift and shift
+
+
+that might be more difficult you
+
+
+typically end up utilizing VMS for that
+
+
+kind of stuff yeah but a lot of the
+
+
+cloud native stuff starts up here anyway
+
+
+right so
+
+
+uh let's see yeah so let me see if this
+
+
+thing is done deploying
+
+
+uh okay looks like it did so our API
+
+
+service is here I actually have used
+
+
+this image before template before so
+
+
+let's see what happens when we load it
+
+
+up
+
+
+and then I'm going to use open up my
+
+
+portal as well ah so it's a to-do app
+
+
+and thanks to plural Dot and it's on
+
+
+it's in Java right yeah so it's written
+
+
+in Java we're gonna actually to open up
+
+
+the template here so
+
+
+it's written in Java so this is our
+
+
+source for our API here I don't really
+
+
+know too much about Java so where would
+
+
+I find it in here source
+
+
+Maine Maine
+
+
+oh my goodness there's so many oh no
+
+
+that's not it there's so yeah I think
+
+
+it's the the to-do
+
+
+okay here it is I'm starting to find
+
+
+some dot Java files that's the one thing
+
+
+about Java that is all the scaffolding
+
+
+is hard to get uh especially if you're
+
+
+coming from maybe like a python
+
+
+background or something like that
+
+
+getting into like oh until all the like
+
+
+scaffolding is might be a little
+
+
+straightforward not a straightforward
+
+
+but anyway so yeah it is a Java code and
+
+
+then if we go into the infra and then we
+
+
+go into like the core we can see it's
+
+
+probably hosts
+
+
+I want to see where it's calling a Linux
+
+
+based image
+
+
+yeah here we go so this is bicep for
+
+
+those who are not familiar bicep is an
+
+
+abstraction on top of arm which stands
+
+
+for Azure resource manager arm is Json
+
+
+that is you know as a way to interacts
+
+
+with the Azure API Azure is
+
+
+essentially a massive API and that's how
+
+
+you create resources and things like
+
+
+that but working with Json is
+
+
+notoriously difficult I'm not sure if
+
+
+you all have worked with Json but it's
+
+
+more so a language that's great for
+
+
+work from computers working to computers
+
+
+or computers talking with computers it's
+
+
+not very human friendly to look at so
+
+
+then they came up with this awesome
+
+
+thing called bicep which has been around
+
+
+for I think a couple of years which is
+
+
+an abstraction on top of it and it's
+
+
+ways for you to like like this is a lot
+
+
+more friendly than working with you know
+
+
+straight up Jason right so yeah
+
+
+parameters and you've got like there's a
+
+
+lot you can make it as modular as
+
+
+possible uh but anyway yeah they're
+
+
+basing this off uh this app service plan
+
+
+based off Linux right
+
+
+so the API has deployed look at all this
+
+
+uh Swagger open API here nice you can
+
+
+hold on let's take a look at this so you
+
+
+have an items uh and you have lists you
+
+
+list API items API you get your schema
+
+
+there and then you have your front in
+
+
+here and then I'm gonna open this up in
+
+
+the portal and we'll take a look at it
+
+
+in a second
+
+
+but if I write down here fix I have to
+
+
+fix blog post I just want to see how it
+
+
+works pick the blog post that is
+
+
+actually a task that I have to do and
+
+
+then if I click on here I can do in
+
+
+progress I think due date when is this
+
+
+due let's say let's do I think they told
+
+
+me it's due on Monday so we'll save that
+
+
+there
+
+
+completed okay cool and then you can
+
+
+have I think additional lists so like
+
+
+maybe we call this content
+
+
+and then we create like shopping I don't
+TIMESTAMP: 00:01:27.7200000
+
+
+know shopping I just love that how the
+
+
+UI is really
+
+
+similar to Azure portal oh that's right
+
+
+I didn't notice that yeah I'm like I've
+
+
+seen this
+
+
+you're right I wonder if they I bet I
+
+
+bet they did it on purpose they're smart
+
+
+that's smart I gotta ask Savannah if
+
+
+they did that on purpose
+
+
+uh where's like oh can I move can I move
+
+
+this hold on how do I move this can I no
+
+
+I can't
+
+
+interesting okay anyway so yeah it's a
+
+
+to-do list right so if I probably
+
+
+refresh my API
+
+
+and then I go to
+
+
+items I guess get the items can I just
+
+
+run this I don't feel like I need to
+
+
+put anything in try it out
+oh hold on I got no this is not the
+
+
+right one this item id items no I just
+
+
+want to get all the items
+
+
+or maybe let's get all the lists first
+
+
+okay because is that
+
+
+try it out
+execute
+
+
+why it lists ID oh get a specific list
+
+
+oh here we go sorry that was wrong okay
+
+
+now I'll do this here cool so we're
+
+
+seeing that it does a curl
+
+
+and then we have our list that we just
+
+
+created my list content description so
+
+
+if I grab one of
+
+
+let's grab a shopping one let's grab
+
+
+this ID so now I can list by
+
+
+list items by let's see lists this ID
+
+
+items I know I just want
+
+
+lists
+
+
+this one this one here list ID
+
+
+try it out paste this in here execute
+
+
+and then I have my items bananas cool so
+
+
+it works uh and hold on a second let me
+
+
+log in first without everyone looking at
+
+
+my email address
+
+
+uh yeah and I didn't do anything all I
+
+
+did was run uh let me share my thing
+
+
+again
+
+
+ACD
+
+
+template name and then up
+
+
+easyd up oh my
+
+
+top of this
+
+
+I did this easyd up template to do Dash
+
+
+Java mango Dash a CA who stands for
+
+
+Azure container apps and it asked me for
+
+
+a couple of parameters and I didn't have
+
+
+Docker running so
+
+
+there's that I'm going to delete it in a
+
+
+little bit but let me show you what it
+
+
+looks like in the portal so yeah you can
+
+
+essentially deploy something with one
+
+
+command straight to Azure now what did I
+
+
+call it does anyone remember react or
+
+
+demo I think yeah cool so let's take a
+
+
+look at what actually gets deployed here
+
+
+so remember I talked about the level of
+
+
+abstraction like obviously you're not
+
+
+going to see like yeah type like Linux
+
+
+right but it's like a container app we
+
+
+have one container app to container two
+
+
+container apps container up environment
+
+
+we've got a cosmos DB for oh this uses
+
+
+ to be nice
+
+
+container registry it's deployed also a
+
+
+shared dashboard key Vault log analytics
+
+
+workspace and application insights let's
+
+
+open one of these let's open this
+
+
+environment thing here
+
+
+um
+
+
+let's go on to oh Dapper components I
+
+
+need to look at like where do I find the
+
+
+image that it's based that is a good
+
+
+question it's the container
+
+
+I think it should be
+
+
+um
+
+
+I I
+
+
+I know what
+
+
+um the developer CLI does but I just
+
+
+don't know like what I know it uses
+
+
+bicep but I don't know if it creates
+
+
+like a new container image
+
+
+um too it should it'd be based off so
+
+
+this is the image ah oh here it is yeah
+
+
+there we go perfect next right so anyway
+
+
+a bunch of resources get deployed thanks
+
+
+to that uh someone said here
+
+
+terraform does the same thing it's just
+
+
+cross platform independent correct uh
+arm bicep is like Cloud promotion
+
+
+correct yes it is an infrastructure as
+
+
+code Tool uh IAC but bicep is just the
+
+
+one that the no actually the developer
+
+
+template uses by except right in the
+
+
+back end but it also has support for
+
+
+terraform I believe
+use their form right here so you can
+
+
+hear from our bicep like we're I again
+
+
+this pushes the whole mindset of like
+
+
+we're gonna Embrace what the people want
+
+
+people want Linux people want terraform
+
+
+we're going to do it obviously we're
+
+
+going to start with like the stuff that
+
+
+we know the most because you know if you
+
+
+want to like get developed stuff quickly
+
+
+that's where you're gonna head to right
+
+
+um but then we're gonna Embrace what the
+
+
+people want all right so I wanted to
+
+
+talk to you all about and this is why I
+
+
+brought Rich up here
+
+
+so how we actually leverage actually
+
+
+hold on now we can start here
+
+
+so I stuck the learn to Cloud logo here
+
+
+I don't know if people are familiar with
+
+
+learner Cloud uh it is an open source
+
+
+guide to learn the fundamentals of cloud
+
+
+computing and it probably sits like if
+
+
+we go back here in the context of web
+
+
+like you could have VM and then you
+
+
+probably have something like
+
+
+a static site maybe on job storage and
+
+
+then you can have something up here like
+
+
+Azure static web apps so we decided to
+
+
+go like let's go high top in terms of
+
+
+abstraction as I can because we're two
+
+
+people maintaining this website on our
+
+
+free on our free time we get like do you
+
+
+have data on how many users we get yeah
+
+
+like
+
+
+yep I do have it so for context last
+
+
+year we had 73
+
+
+000 users
+
+
+um and around
+
+
+150k sessions so 150 000 sessions on our
+
+
+website which was earlier just a static
+
+
+page hosted on GitHub pages so not you
+
+
+know best performant uh SEO optimized
+
+
+thing right and for this year since we
+TIMESTAMP: 00:01:29.6900000
+
+
+moved as Gwen was saying to static web
+
+
+apps right and then we'll I'm guessing
+
+
+go and we'll talk more about the
+
+
+architecture side of things for January
+
+
+itself we had 6 000 users
+
+
+um we had around yep we had around 12
+
+
+000 sessions for just one month
+
+
+um and sorry my bad
+
+
+that's for oh my God okay 6 000 users
+
+
+only for February and we are just
+
+
+halfway through February oh my goodness
+
+
+okay let's just do Feb here Feb Feb 2023
+
+
+and then wait what were the static the
+
+
+stats for 20 I guess 2022
+
+
+um 73 000 users
+
+
+73 73
+
+
+000 users how many sessions
+
+
+150 okay
+for all the whole year and then to now
+
+
+we're at our Azure static web apps just
+
+
+the month of February we have 6 000
+
+
+users in 12 000 sessions yeah that's
+
+
+like 15 days
+
+
+yeah so we get some traffic that's what
+
+
+I'm trying to say
+
+
+um and we've been able to sort of
+
+
+maintain this with very very little uh
+
+
+very little management I'll keep like a
+
+
+lot of the work we've been doing is
+
+
+implementing stuff like GitHub actions
+
+
+building apis like a lot of the fun
+
+
+stuff and we haven't really been worried
+
+
+about our our traffic or scaling or
+
+
+anything like that so here's like this
+
+
+is my portal this is where I log into
+
+
+every single day and I check like some
+
+
+side hits uh as you can see like for the
+
+
+past I don't know we'll take a look at
+
+
+sight hits are not the same as site
+
+
+visits I should say but it kind of gives
+
+
+you an idea of like oh like what kind of
+
+
+traffic you're getting like let's look
+
+
+at the last like seven days
+
+
+in the last seven days an average uh
+
+
+hold on where'd it go
+127
+
+
+430 uh
+
+
+side hits
+
+
+and then we also have an API running uh
+
+
+that serves our Cloud dictionary which
+
+
+I'll show you in a second as well and
+
+
+just so we can get a feel for the
+
+
+uh we'll do like I don't know how long
+
+
+I've had this I'm just gonna no hold on
+
+
+we're gonna do last seven days so
+
+
+compare the same we've had four thousand
+
+
+wow that is surprising four thousand
+
+
+seven four thousand seven hundred and
+
+
+sixty uh hits to this API in the last
+
+
+seven days so again just so you can get
+
+
+a feel for what kind of traffic we're
+
+
+we're working on uh for context learn to
+
+
+why don't I have it in my history learn
+
+
+to Cloud this is the site that we
+
+
+maintain that thing that loaded right
+
+
+here this is actually the API so what
+
+
+gets refreshed here like that traffic
+
+
+that I showed you which is like four
+
+
+thousand something
+
+
+is the this little box that fills in
+
+
+here so if I refresh this I feel like
+
+
+it's an ambulance coming hold on you
+
+
+want to talk about this while I mute
+
+
+myself sure
+
+
+yep so the the box that you see in the
+
+
+Middle where it says here's a random
+
+
+Cloud definition uh it calls the API
+
+
+that Gwen has built and is hosted in
+
+
+Azure functions
+
+
+um every time you refresh the page so
+
+
+that you get a random Cloud definition
+thank you
+
+
+um I forgot to close my window that's
+
+
+why it's so loud uh my mistake yeah but
+
+
+anyway we have this API here people can
+
+
+contribute if you're interested in
+
+
+contributing it's very
+
+
+low-hanging fruit wave contributing to
+
+
+open source you can hit submitted
+
+
+definition it'll take you to GitHub
+
+
+right the the rest of I guess the meat
+
+
+and potatoes of the site itself is if
+
+
+you click on guide it'll guide you
+
+
+through essentially the
+
+
+I want I like to call the pillars of
+
+
+getting into Cloud engineering and it's
+
+
+a guide written by the both like the
+
+
+both of us taken from the experiences
+
+
+that we did coming from like
+
+
+non-traditional educational backgrounds
+
+
+meaning we didn't go to college uh and
+
+
+then working our way into a cloud role
+
+
+and sort of we look back at it how would
+
+
+we sort of distill this information in
+
+
+sort of like a road map or a guide right
+
+
+so what it is is
+
+
+um we have like different phases we talk
+
+
+about bash and the importance of
+
+
+networking programming fundamentals
+
+
+Cloud platform mentals devops
+
+
+fundamentals and Cloud security
+
+
+fundamentals and if you just sort of
+
+
+work your way through each phase uh each
+
+
+phase will give you like why does this
+
+
+face matter in the context of cloud like
+
+
+how do you break this down some
+
+
+resources that we recommend we try to
+
+
+keep a lot of these uh again resources
+
+
+again open source and free some of them
+
+
+might be paid but I don't think there's
+
+
+anything over like 100 and I think the
+
+
+appeal of it being like an open source
+
+
+like a compilation of Open Source type
+
+
+of information is also what encourages
+
+
+others to like give it a shot because
+
+
+you know we're not selling anything
+
+
+there's no charge this isn't a boot camp
+
+
+or something like that that's more smart
+
+
+seeing power it's more so to empower
+
+
+people to go and learn right so again
+
+
+you gotta you gotta feel for uh the
+
+
+projects and then things that you should
+
+
+be familiar so you can test your
+
+
+knowledge and you know certifications
+
+
+that might be useful and all that kind
+
+
+of stuff right uh we have a page for
+
+
+projects where you can look at
+
+
+individual projects if you want to get
+
+
+Hands-On more study researchers are in
+
+
+here so okay right we have have uh this
+
+
+is a new addition a search we can search
+
+
+for here
+
+
+um what else do we have here
+
+
+uh we have a road map in terms of like
+
+
+the content that's on here that's pretty
+
+
+TIMESTAMP: 00:01:29.7000000
+much what we're working with but yeah we
+
+
+get a decent amount of traffic and all
+
+
+this is hosted on
+
+
+so let's go in here
+
+
+um I have so many groups to clean up and
+
+
+you can do better at this everything is
+
+
+hosted on inside of one Resource Group
+
+
+it's called RG Dash learn to Cloud
+
+
+because we're very creative and the meat
+
+
+and potatoes is this static web app we
+
+
+are paying for a
+
+
+Premium plan so I think there's like a
+
+
+like a free tier for static web apps
+
+
+which for probably the majority of
+
+
+people if it's like a personal site or
+
+
+something like that uh the free tier is
+
+
+more than enough but we figured that
+
+
+given the kind of traffic that we're
+
+
+getting we most likely need to host
+
+
+something with a little bit more power
+
+
+and scalability and things like that so
+
+
+we decided to go with it I think it's
+
+
+like
+
+
+10 starts at ten dollars a month
+
+
+something like that and then it will I
+
+
+think so yeah you have additional costs
+
+
+depending on like certain parameters we
+
+
+also have
+
+
+uh whatever we have in here environs
+
+
+yeah we have a staging environment yeah
+
+
+we encourage I'm going to open up our
+
+
+GitHub we encourage new people or just I
+
+
+don't know people trying to get Hands-On
+
+
+in general to contribute to the project
+
+
+as much as we can so we let me open up
+
+
+our project so we have a backlog here
+
+
+with just things that we're working on
+
+
+uh and the the preview part the staging
+
+
+parts I'll show you in a little second
+
+
+uh is really really helpful for us to
+
+
+get other people to help to work on
+
+
+these things with us uh so for example
+
+
+these we're gonna have to add some more
+
+
+tickets to the ship because we're
+
+
+looking a little low here yes we
+
+
+we just finished our first print of the
+
+
+year
+
+
+um and that's why it's looking like very
+
+
+less issues I think we had like yeah we
+
+
+had like 13 or 14 issues open last month
+
+
+and we just went through them
+
+
+um and there were a lot of community
+
+
+members too who took like who
+
+
+participated in helping us you know
+
+
+clean this up
+
+
+um so I'll add some more issues that we
+
+
+plan on having in in learn to Cloud yeah
+
+
+oh I also forgot to add that we have
+
+
+several languages yes English French
+
+
+Portuguese and what's the last one
+
+
+Nepali Nepali so that is a community
+
+
+contribution as well so anyway we have
+
+
+our backlog right so we try to con
+
+
+contribute as much as we can to
+
+
+get others to help out uh and get
+
+
+Hands-On and the cool part is you want
+
+
+to talk about because this is also Linux
+
+
+based our workflows
+
+
+yep sure which which one should I open
+
+
+um the for a close folder
+
+
+this one yeah okay and which one and
+
+
+then static web apps is good
+
+
+cool
+
+
+yeah so this also runs on a container so
+
+
+if you don't know what GitHub actions
+
+
+are they are basically
+
+
+cicd like they help you enable CI CD on
+
+
+your open source project so you get
+
+
+there's a generous free tier I think I
+
+
+don't remember the numbers correctly but
+
+
+I believe there's like 2 000 minutes uh
+
+
+for a public repo for a month and
+
+
+basically you can run GitHub actions to
+
+
+either build or deploy your websites
+
+
+artifacts releases
+
+
+we use GitHub actions for three things
+
+
+one of them is publishing two are Azure
+
+
+static web apps whenever a new you know
+
+
+pull request is merged to the staging
+
+
+Branch then it goes to the staging
+
+
+environment and if it goes to the main
+
+
+branch you know that's a release and we
+
+
+use Ubuntu latest as our container as
+
+
+you can see right on the line 17 it says
+
+
+runs on Ubuntu latest so it uses that
+
+
+container to you know do a bunch of
+
+
+actions steps jobs that we need to build
+
+
+this so this is based on docusary which
+
+
+is again an abstraction from react so
+
+
+yeah yeah this uses react
+
+
+and so whenever we do npm run build
+
+
+which you might be familiar with you
+
+
+know that runs on and Ubuntu container
+
+
+so yeah
+
+
+we are using Linux here too yeah so this
+
+
+deploys to Azure which is Linux the
+
+
+hostess site what else do we have what
+
+
+is this code ql so code ql is it also
+
+
+runs on ubuntulet everything runs on
+
+
+Ubuntu latest for for our actions
+
+
+um this just does a code scanning so no
+
+
+malicious uh PRS are normally just code
+
+
+is merged to our beautiful open source
+
+
+project because we don't want that and
+
+
+every time a new PR is created this just
+
+
+does analysis and it's a tool made
+
+
+available from GitHub
+
+
+very cool yeah and uh let me see
+
+
+it's kind of all the I guess that's
+
+
+we have work queued up to leverage uh
+
+
+Linux stuff so for example let me go to
+
+
+our project here yeah I was going to say
+
+
+we have Dev container support now so
+
+
+that oh we do yes we do for those who
+
+
+aren't familiar diff containers another
+
+
+abstraction on top of limits essentially
+
+
+it emulates your so if you use like vs
+
+
+code you open up a Dev container uh and
+
+
+what it does is it your vs code will act
+
+
+as if it exists in whatever environment
+
+
+you've described in your Dev container
+
+
+so you don't have to install things
+
+
+locally uh you don't have to like or
+
+
+like generally across your entire system
+
+
+and like you like I think of um
+
+
+maybe like one of the best examples is
+
+
+you know how python uses environments
+
+
+yeah
+
+
+Dev container is essentially
+
+
+will would replace that kind of
+
+
+functionality right yeah and it's like
+
+
+for the complete project and like we
+
+
+especially when we you know saw that
+
+
+there's so much Community contribution
+
+
+TIMESTAMP: 00:01:32.4500000
+we wanted it to be easy to for people to
+
+
+like
+
+
+on board and clone the repo and like
+
+
+just get started working with and they
+
+
+don't have to deal with npm packages you
+
+
+know broken Dev dependencies so I think
+
+
+that was the thought behind it
+
+
+absolutely our and here is where our API
+
+
+lives our API is let me actually show
+
+
+you all that
+
+
+oh where is that RG Cloud dictionary our
+
+
+API watch it be on a Linux based uh like
+
+
+a Windows based image apps okay sorry
+
+
+we're using uh Linux once again for our
+
+
+API that powers or our function our our
+
+
+Cloud dictionary we have in this
+
+
+function app we have a couple uh
+
+
+endpoints here and then people can
+
+
+contribute to that versus we have to
+
+
+automate this I just
+
+
+the issue I'm coming into with this like
+
+
+people will submit their definitions and
+
+
+like a Json format I manually have to uh
+
+
+look at them and then we can add it to
+
+
+the well we have an endpoint to create a
+
+
+definition uh so we just send it as post
+
+
+but the issue is like we could easily
+
+
+automate this with a GitHub action again
+
+
+based ubuntu-based type of action but I
+
+
+don't know of a good way to avoid
+
+
+uh plagiarism because what I do is like
+
+
+I read the definition that they've
+
+
+provided and then I kind of like search
+
+
+the internet like really quick and see
+
+
+if like if it's literally a copy paste
+
+
+from somewhere else and I'll be like I
+
+
+don't want this is something valid like
+
+
+it needs to be a definition that you've
+
+
+come up with originally so I don't
+
+
+really know how we can automate that I'm
+
+
+thinking we could potentially leverage
+
+
+durable functions
+to help the process a little bit but I
+
+
+still think there's going to be manual
+
+
+Intervention which yeah
+
+
+I think
+
+
+um like the first part of the problem
+
+
+that you mentioned with GitHub actions
+
+
+can be done and we can still have that
+
+
+manual check where you go in and see if
+
+
+nobody is copying and pasting but as
+
+
+soon as you hit merge pull request like
+
+
+the adding it to the you know
+
+
+the database is done automatically by a
+
+
+GitHub action and then we can figure out
+
+
+if there are apis that exist for you
+
+
+know sentiment analysis and plagiarism
+
+
+that we can leverage to perform certain
+
+
+checks before it's merged
+
+
+once open openai API is available we can
+
+
+just say like is this copied from
+
+
+somewhere and it gives us a yes or no we
+
+
+can do it off off of that that would be
+
+
+pretty sick uh that pretty much covers
+
+
+what I wanted to talk about uh Linux on
+
+
+Azure again there's so many more
+
+
+potentials I just use the use case of
+
+
+like Azure container apps with Java and
+
+
+then our own use case which Azure static
+
+
+web apps Linux base Azure functions
+
+
+Linux base but depending on like your
+
+
+workflow you're going to want to
+
+
+probably use something different but the
+
+
+options are there next uh next week we
+
+
+are talking about can we make sure to
+
+
+drop the link session for next week
+
+
+we're going to be talking about WSL WSL
+
+
+is magical we should use WSL as well for
+
+
+like your day-to-day so this is WSL as
+
+
+you can see I have the windows terminal
+
+
+Ubuntu image open here and then if I do
+
+
+like am I inside of the yeah I'm
+
+
+probably inside of this if I just open
+
+
+this up like code dot here this will
+
+
+also open up in the context like you see
+
+
+in the bottom right so starting vs code
+
+
+in WSL so it opened up you're
+
+
+essentially working within
+
+
+um like your whatever you have you're
+
+
+using some of my case Ubuntu within wsl2
+
+
+well it's telling me I have to install a
+
+
+bunch of things here too
+
+
+but this is different from working off
+
+
+like
+
+
+like vs code working in
+
+
+in
+
+
+Windows because it's yeah I mean it is
+
+
+working in Windows but it's in a WSL
+
+
+right
+
+
+um yeah especially with wsl2 it's really
+
+
+native yeah like really close to Native
+
+
+XP really cool yeah especially with
+
+
+something like uh what is it system D
+
+
+like the the initial but there are a
+
+
+couple tools that you install like
+
+
+um to improve this kind of experience
+
+
+but we're going to be talking more about
+
+
+that in the next session which is the
+
+
+last session for Linux related stuff so
+
+
+be sure to check that out uh and do we
+
+
+have any questions that we can
+
+
+talk about or answer before we leave a
+
+
+lot of people were talking about
+um I saw something about um and
+
+
+yeah a lot of people talking about bicep
+
+
+the technicalities of arm and bicep oh
+
+
+is a great a great conversation let me
+
+
+see here
+
+
+oh
+
+
+[Music]
+
+
+I feel like it's just like people asking
+
+
+talking to each other which is great
+
+
+answering their own questions yeah open
+
+
+AI has an API available for a limited
+
+
+amount of tokens 4K per per query the
+
+
+way they divide tokens is interesting
+
+
+too because like
+
+
+one token isn't necessarily a word and
+
+
+also like the more complex a word is the
+
+
+more tokens it can it's very interesting
+
+
+I was reading about it yesterday or like
+
+
+the day before because we were thinking
+
+
+about leveraging it for uh some learning
+
+
+cloud stuff
+
+
+um yeah and now that I have it in my
+
+
+Bing like I was I saw the email today I
+
+
+was like you're approved Oh no you're
+
+
+off the waitlist like
+
+
+um so that's great let me see here what
+
+
+do we got there's also a lot of comments
+
+
+about people want to use Mariner the
+
+
+Microsoft Linux distro oh the yeah yeah
+
+
+I don't think it's available for
+
+
+consumer use that's what uh AKs is built
+
+
+I mean you can go in and build it like
+
+
+TIMESTAMP: 00:01:32.4600000
+they have all the instructions if you
+
+
+need but why would you want to like
+
+
+definitely don't use it like definitely
+
+
+don't use it as like your desktop like
+
+
+definitely definitely not um I don't
+
+
+even think it has like I mean you could
+
+
+slap a UI component on top of it but I
+
+
+don't see why anyone would want to do it
+
+
+but I think that's a like interesting to
+
+
+learn like the nitty-gritty of how
+
+
+something like AKs I don't really know
+
+
+what else is built on top of it I'm
+
+
+pretty sure many many more
+
+
+um services but I know AKs is
+
+
+um
+
+
+yeah I think I saw the repo once I was
+
+
+like this is freaking cool I would it's
+
+
+like one of those things on like your
+
+
+endless to-do list to check out yeah
+
+
+yeah but yeah also just for those who
+
+
+um um joins
+
+
+at the sort of later half I mentioned
+
+
+Bachelor beginner series is out
+
+
+we will have hold on let me share we
+
+
+have a few more minutes I'm gonna take
+
+
+advantage of this to just share what we
+
+
+actually cover in the
+
+
+wait send this over here uh one second
+
+
+I'm gonna open up my
+
+
+screen
+
+
+AKA dot Ms bash for beginners beginners
+
+
+did I spell that right yes so 20 videos
+
+
+it should take you
+
+
+a couple hours to get through
+
+
+uh so the first one is just introducing
+
+
+yourself setting up the environment we
+
+
+opted to go for GitHub code spaces
+
+
+because GitHub is free anyone can have a
+
+
+GitHub account and then you get up to 60
+
+
+hours of free code space use per month
+
+
+and that is plenty to cover what we're
+
+
+covering the series but if you have bash
+
+
+available to you uh somehow which is
+
+
+probably pretty easy to get like WSL
+
+
+Ubuntu you have bash available
+
+
+um you can switch to the bash shell on
+
+
+Mac OS if you want to I think the
+
+
+default is like f
+
+
+right up shell official but if you don't
+
+
+want to you don't want to smell locally
+
+
+you don't want to change anything
+
+
+locally you can use code spaces and we
+
+
+give you instructions on that
+
+
+uh we talk about how to get help so man
+
+
+and help commands we talk about
+
+
+navigating so CD PWD pop D push D
+
+
+commands how to list content how to find
+
+
+files which where is comments like that
+
+
+how to work with directories make deer
+
+
+uh remove D or copy move things like
+
+
+that view contents more or less tail
+
+
+head grep environment variables we
+
+
+covered yeah EnV we covered the path
+
+
+apartment variable export redirection
+
+
+and pipeline grabbing the input or the
+
+
+output of a certain command sending it
+
+
+over to another command for the
+
+
+filtering out that that is the beauty in
+
+
+the creativity and just plain Arts
+
+
+utilizing a command line and reduction
+
+
+pipeline is all about that modifying
+
+
+permissions how many times have you gone
+
+
+to a tutorial and you put chmod 777
+
+
+without knowing what you're doing gone
+
+
+are the days of you not knowing what
+
+
+you're doing because you're going to
+
+
+watch this video and you're going to
+
+
+understand what you're actually doing
+
+
+there too
+
+
+we talk about shebang's comments we talk
+
+
+about commands in bash scripts variables
+
+
+how to set them Scopes initial
+
+
+statements if then else case statements
+
+
+so that's to be the case statement to
+
+
+match patterns what are functions so how
+
+
+to make your code more modular functions
+
+
+parameters defining functions what are
+
+
+Loops while until uh I think there's
+
+
+three different Loops in bash we cover
+
+
+that as well here and then we put it all
+
+
+together in that final video on how to
+
+
+order bash script where we actually
+
+
+deploy a resource Group to Azure which
+
+
+is a free thing you're not going to pay
+
+
+for anything and if you don't want to do
+
+
+it don't do it you can just watch it to
+
+
+get the understanding what it actually
+
+
+does uh 20 videos released today I still
+
+
+get the comments of like I can't believe
+
+
+Microsoft is doing this like I did not
+
+
+expect this from Microsoft it's like
+
+
+yeah and they they supported me for the
+
+
+past couple months being like yeah go
+
+
+dedicate as much time as you want to go
+
+
+do this so it's really really cool nice
+
+
+um so hopefully people don't have any
+
+
+plans for the weekend and they can go
+
+
+watch it
+
+
+look at this I just saw the bachelor
+
+
+beginners and amazing for a person like
+
+
+me I think I've heard three people
+
+
+already that said that they're into the
+
+
+course I'm like wow that is impressive
+
+
+um thank you all for the endless support
+
+
+and hopefully we can do more if we're
+
+
+beginners series
+
+
+um depending on I have to get a feel for
+
+
+what people want I know the bachelor was
+
+
+one that was requested a lot so that's
+
+
+why I ended up doing it but I'll get a
+
+
+better feel and we'll see maybe towards
+
+
+the end of the year I'll spend another
+
+
+time another couple months doing
+
+
+something like that yes any final words
+
+
+if anyone wants to contribute to learn
+
+
+to Cloud just go to learn to cloud.guide
+
+
+our roadmap is on the top and we have a
+
+
+bunch of and if there's something like
+
+
+there that you don't see but you still
+
+
+want to help out with let us know we'd
+
+
+be happy to we have a Discord as well
+
+
+yeah if especially if the the issues
+
+
+that are there already and that is not
+
+
+something that you can help with Gwen
+
+
+just showed you the cloud definition
+
+
+um so contribute to the definitions
+
+
+definition yep 10 minutes it'll take you
+
+
+10 minutes I promise and if you need
+
+
+help submit the definition tell me what
+
+
+you need help and I'll help you out we
+
+
+check these every single day
+
+
+because we don't care about work-life
+
+
+balance unfortunately all right thank
+
+
+you everyone for praying and out thank
+
+
+you Richard for coming on last minute
+
+
+always appreciate you and for everyone
+
+
+else I will see you next week where we
+
+
+talk about WSL too
+
+
+peace out peace
