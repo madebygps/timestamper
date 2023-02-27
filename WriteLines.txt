@@ -20,3 +20,27 @@ TIMESTAMP: 00:48:07.0790000
 ChoiceResponse { Text =  We use Linux for API, automated with GitHub Actions, manual checks for plagiarism, WSL2 for native experience, OpenAI API for limited tokens., Index = 0, FinishReason = stop, LogProbs =  }
 TIMESTAMP: 00:53:20.7000000
 ChoiceResponse { Text =  Microsoft released a Bash for Beginners series with 20 videos to help users learn the basics of Bash., Index = 0, FinishReason = stop, LogProbs =  }
+TIMESTAMP: 00:00:34.0790000
+ChoiceResponse { Text =  Utilizing Linux on Azure for production-ready applications., Index = 0, FinishReason = stop, LogProbs =  }
+TIMESTAMP: 00:06:38.2200000
+ChoiceResponse { Text =  Open source is primarily software code projects which can be freely modified, used, and shared. Examples include VS Code, Docker, Kubernetes, SQL Server, and Free Code Camp., Index = 0, FinishReason = stop, LogProbs =  }
+TIMESTAMP: 00:11:22.2000000
+ChoiceResponse { Text = 
+
+Open source can be used for free or for a cost and is often developed and maintained by a community or individual. Microsoft has embraced open source in recent years, shifting from a closed first to an open first attitude., Index = 0, FinishReason = stop, LogProbs =  }
+TIMESTAMP: 00:16:15.8390000
+ChoiceResponse { Text =  Microsoft has changed stance on open source, from "Linux is a cancer" to joining open source initiatives and supporting Linux., Index = 0, FinishReason = stop, LogProbs =  }
+TIMESTAMP: 00:21:16.6200000
+ChoiceResponse { Text =  Projects around Cloud native tech, 2018 GitHub acquisition, VS Code took over, Linux popular on Azure, Open first mindset., Index = 0, FinishReason = stop, LogProbs =  }
+TIMESTAMP: 00:26:41.2890000
+ChoiceResponse { Text =  Over 47,000 customers using Azure open source databases such as Azure Database for Postgres, Azure Database for MySQL, Azure Cosmos DB and Bash., Index = 0, FinishReason = stop, LogProbs =  }
+TIMESTAMP: 00:31:45.7100000
+ChoiceResponse { Text =  Cloud computing guide with 73K users, 150K sessions., Index = 0, FinishReason = stop, LogProbs =  }
+TIMESTAMP: 00:37:21.0500000
+ChoiceResponse { Text =  Two created a Cloud engineering guide with open source resources, 6,000 users and 12,000 sessions in February, 73,000 users and 150,000 sessions in 2022, API with 4,760 hits in 7 days., Index = 0, FinishReason = stop, LogProbs =  }
+TIMESTAMP: 00:42:27.3590000
+ChoiceResponse { Text =  Leveraging Linux for CI/CD, Dev container, code scanning, hosted on Azure, multi-language, open source project, and generous free tier., Index = 0, FinishReason = stop, LogProbs =  }
+TIMESTAMP: 00:48:07.0790000
+ChoiceResponse { Text =  We are using Linux for API, API has endpoints for contributions, automated GitHub action, manual checks for plagiarism, Azure container apps, WSL2, OpenAI API 4K per query., Index = 0, FinishReason = stop, LogProbs =  }
+TIMESTAMP: 00:53:20.7000000
+ChoiceResponse { Text =  Microsoft offers Bash for beginners series with 20 videos to learn basics of Bash shell, using GitHub Code Spaces, navigating, using commands, setting variables, functions and loops, and deploying a resource group to Azure., Index = 0, FinishReason = stop, LogProbs =  }
