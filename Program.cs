@@ -60,7 +60,7 @@ internal class Program
         {
             var caption = track.Captions[startIndex];
 
-            Console.Write(caption.Offset.ToString().Split('.')[0] + ": ");
+            Console.Write(caption.Offset.ToString().Split('.')[0] + " ");
             captions = "";
 
             for (int k = startIndex; k < endIndex; k++)
