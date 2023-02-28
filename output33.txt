@@ -1,3 +1,0 @@
-/Users/gps/Developer/timestamper/timestamper/Program.cs(17,14): warning CS8629: Nullable value type may be null. [/Users/gps/Developer/timestamper/timestamper/timestamper.csproj]
-/Users/gps/Developer/timestamper/timestamper/Program.cs(38,6): warning CS0219: The variable 'startIndex' is assigned but its value is never used [/Users/gps/Developer/timestamper/timestamper/timestamper.csproj]
-The amount of captions is 3177

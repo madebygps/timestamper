@@ -23,13 +23,12 @@ internal class Program
             Console.WriteLine("  timestamper <videoUrl>");
             return;
         }
-        await GenerateCaptions(string.Join(' ', args));
+        await GenerateCaptions(args[0], Int32.Parse(args[1]));
     }
 
-    public static async Task GenerateCaptions(string message)
+    public static async Task GenerateCaptions(string videoUrl, int slices)
     {
-        Console.WriteLine("youtubeUrl: " + message);
-        string youtubeUrl = message;
+        Console.WriteLine($"Generating {slices} timestamps for " + videoUrl);
         var youtube = new YoutubeClient();
 
         var openAiService = new OpenAIService(new OpenAI.GPT3.OpenAiOptions()
@@ -38,7 +37,7 @@ internal class Program
         });
 
         var trackManifest = await youtube.Videos.ClosedCaptions.GetManifestAsync(
-            youtubeUrl
+            videoUrl
         );
 
         // Find closed caption track in English
@@ -46,7 +45,7 @@ internal class Program
 
         var track = await youtube.Videos.ClosedCaptions.GetAsync(trackInfo);
 
-        int slices = 20;
+        //int slices = 20;
         int captionsPerSlice = track.Captions.Count / slices;
 
         int startIndex = 0;
@@ -62,35 +61,30 @@ internal class Program
 
             for (int k = startIndex; k < endIndex; k++)
             {
-
                 caption = track.Captions[k];
                 if (!string.IsNullOrWhiteSpace(caption.Text))
                 {
                     words += $"{caption.Text}";
                 }
-
             }
             var completionResult = await openAiService.Completions.CreateCompletion(new CompletionCreateRequest()
             {
-                Prompt = $"(Summarize the following in 10 words: {words} Summary:",
+                Prompt = $"(Summarize the following in 5 words: {words} Summary:",
                 Model = Models.TextDavinciV3,
                 Temperature = (float?)0.67,
                 TopP = 1,
                 MaxTokens = 256,
                 FrequencyPenalty = 0,
                 PresencePenalty = 0
-
             });
 
             if (completionResult.Successful)
             {
-
                 string summary = completionResult.Choices.FirstOrDefault().ToString().Remove(0, 25);
                 int index = summary.IndexOf("Index =");
                 if (index >= 0)
                 {
                     summary = summary.Substring(0, index);
-
                 }
                 Console.WriteLine(summary);
             }
