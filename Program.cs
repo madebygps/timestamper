@@ -9,6 +9,7 @@ namespace TeleprompterConsole;
 
 internal class Program
 {
+
     public static async Task Main(string[] args)
     {
         if (args.Length == 0)
@@ -20,56 +21,59 @@ internal class Program
             Console.WriteLine($"timestamper v{versionString}");
             Console.WriteLine("-------------");
             Console.WriteLine("\nUsage:");
-            Console.WriteLine("  timestamper <videoUrl>");
+            Console.WriteLine("  timestamper <videoUrl> <slices>");
             return;
         }
-        await GenerateCaptions(args[0], Int32.Parse(args[1]));
+
+        YoutubeExplode.Videos.ClosedCaptions.ClosedCaptionTrack track = await SetUpServices(args[0], Int32.Parse(args[1]));
+        await GenerateCaptions(args[0], Int32.Parse(args[1]), track);
     }
 
-    public static async Task GenerateCaptions(string videoUrl, int slices)
+    static async Task<YoutubeExplode.Videos.ClosedCaptions.ClosedCaptionTrack> SetUpServices(string videoUrl, int slices)
+    {
+        var youtube = new YoutubeClient();
+
+        var trackManifest = await youtube.Videos.ClosedCaptions.GetManifestAsync(
+            videoUrl
+        );
+        var trackInfo = trackManifest.GetByLanguage("en");
+        var track = await youtube.Videos.ClosedCaptions.GetAsync(trackInfo);
+
+        return track;
+    }
+
+    static async Task GenerateCaptions(string videoUrl, int slices, YoutubeExplode.Videos.ClosedCaptions.ClosedCaptionTrack track)
     {
         Console.WriteLine($"Generating {slices} timestamps for " + videoUrl);
-        var youtube = new YoutubeClient();
+
+        int captionsPerSlice = track.Captions.Count / slices;
+        int startIndex = 0;
+        int endIndex = captionsPerSlice;
+        string captions = "";
 
         var openAiService = new OpenAIService(new OpenAI.GPT3.OpenAiOptions()
         {
             ApiKey = "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"
         });
 
-        var trackManifest = await youtube.Videos.ClosedCaptions.GetManifestAsync(
-            videoUrl
-        );
-
-        // Find closed caption track in English
-        var trackInfo = trackManifest.GetByLanguage("en");
-
-        var track = await youtube.Videos.ClosedCaptions.GetAsync(trackInfo);
-
-        //int slices = 20;
-        int captionsPerSlice = track.Captions.Count / slices;
-
-        int startIndex = 0;
-        int endIndex = captionsPerSlice;
-        string words = "";
-
         for (int l = 0; l < slices; l++)
         {
             var caption = track.Captions[startIndex];
 
             Console.Write(caption.Offset.ToString().Split('.')[0] + ": ");
-            words = "";
+            captions = "";
 
             for (int k = startIndex; k < endIndex; k++)
             {
                 caption = track.Captions[k];
                 if (!string.IsNullOrWhiteSpace(caption.Text))
                 {
-                    words += $"{caption.Text}";
+                    captions += $"{caption.Text}";
                 }
             }
             var completionResult = await openAiService.Completions.CreateCompletion(new CompletionCreateRequest()
             {
-                Prompt = $"(Summarize the following in 5 words: {words} Summary:",
+                Prompt = $"(Tell me the main idea of the following text in 10 words: {captions} Main idea:",
                 Model = Models.TextDavinciV3,
                 Temperature = (float?)0.67,
                 TopP = 1,
@@ -77,7 +81,6 @@ internal class Program
                 FrequencyPenalty = 0,
                 PresencePenalty = 0
             });
-
             if (completionResult.Successful)
             {
                 string summary = completionResult.Choices.FirstOrDefault().ToString().Remove(0, 25);
@@ -96,7 +99,6 @@ internal class Program
                 }
                 Console.WriteLine($"{completionResult.Error.Code}: {completionResult.Error.Message}");
             }
-
             if (endIndex + captionsPerSlice < track.Captions.Count)
             {
                 startIndex = startIndex + captionsPerSlice;
@@ -109,5 +111,3 @@ internal class Program
         }
     }
 }
-
-// You can specify either video ID or URL
