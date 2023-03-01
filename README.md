@@ -36,3 +36,11 @@ timestamper <youtube_video_url> number_of_timestamps_to_generate
 as an example
 ```
 timestamper https://www.youtube.com/watch?v=u2mUpkApObk 2
+```
+
+## Contributing
+
+Feel free to open up an issue or reach out to me with.
+
+- **Gwyneth Pena-Siguenza**: [@madebygps](https://github.com/madebygps)
+
