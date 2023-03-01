@@ -21,7 +21,7 @@ internal class Program
             Console.WriteLine($"timestamper v{versionString}");
             Console.WriteLine("-------------");
             Console.WriteLine("\nUsage:");
-            Console.WriteLine("  timestamper <videoUrl> <slices>");
+            Console.WriteLine("  timestamper <videoUrl> <number of timestamps>");
             return;
         }
 
