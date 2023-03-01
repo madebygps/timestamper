@@ -25,8 +25,21 @@ internal class Program
             return;
         }
 
-        YoutubeExplode.Videos.ClosedCaptions.ClosedCaptionTrack track = await SetUpServices(args[0], Int32.Parse(args[1]));
-        await GenerateCaptions(args[0], Int32.Parse(args[1]), track);
+        string? apiKey = "";
+
+        if (string.IsNullOrWhiteSpace(Environment.GetEnvironmentVariable("openai_api_key")))
+        {
+            Console.WriteLine("Please set the openai_api_key environment variable");
+            return;
+        }
+        else
+        {
+            apiKey = Environment.GetEnvironmentVariable("openai_api_key");
+            YoutubeExplode.Videos.ClosedCaptions.ClosedCaptionTrack track = await SetUpServices(args[0], Int32.Parse(args[1]));
+            await GenerateCaptions(args[0], Int32.Parse(args[1]), track, apiKey!);
+        }
+
+
     }
 
     static async Task<YoutubeExplode.Videos.ClosedCaptions.ClosedCaptionTrack> SetUpServices(string videoUrl, int slices)
@@ -42,7 +55,7 @@ internal class Program
         return track;
     }
 
-    static async Task GenerateCaptions(string videoUrl, int slices, YoutubeExplode.Videos.ClosedCaptions.ClosedCaptionTrack track)
+    static async Task GenerateCaptions(string videoUrl, int slices, YoutubeExplode.Videos.ClosedCaptions.ClosedCaptionTrack track, string apiKey)
     {
         Console.WriteLine($"Generating {slices} timestamps for " + videoUrl);
 
@@ -50,8 +63,9 @@ internal class Program
         int startIndex = 0;
         int endIndex = captionsPerSlice;
         string captions = "";
+        string summary = "";
 
-        string apiKey = Environment.GetEnvironmentVariable("openai_api_key");
+
 
         var openAiService = new OpenAIService(new OpenAI.GPT3.OpenAiOptions()
         {
@@ -73,19 +87,36 @@ internal class Program
                     captions += $"{caption.Text}";
                 }
             }
+
+
+            // Print number of chars in string
+            /// Console.WriteLine($"Characters in caption: +{captions.Length}");
+            //Console.WriteLine($"Max tokens to use: +{captions.Length/4}");
+
             var completionResult = await openAiService.Completions.CreateCompletion(new CompletionCreateRequest()
             {
-                Prompt = $"(Tell me the main idea of the following text in 10 words: {captions} Main idea:",
+                Prompt = $"(Tell me the main idea of the following text in 15 words: {captions}",
                 Model = Models.TextDavinciV3,
-                Temperature = (float?)0.67,
+                Temperature = (float?)0.7,
                 TopP = 1,
-                MaxTokens = 256,
-                FrequencyPenalty = 0,
-                PresencePenalty = 0
+                MaxTokens = captions.Length / 4,
+                FrequencyPenalty = (float?)0.93,
+                PresencePenalty = (float?)1.03
             });
+
             if (completionResult.Successful)
             {
-                string summary = completionResult.Choices.FirstOrDefault().ToString().Remove(0, 25);
+                summary = "";
+
+                if (completionResult.Choices.Count == 0)
+                {
+                    throw new Exception("No Choices");
+                } else
+                {
+                    summary = completionResult.Choices.FirstOrDefault()!.ToString().Remove(0, 25);
+                }
+                
+                //Console.WriteLine($"Tokens used: {completionResult.Usage.TotalTokens}");
                 int index = summary.IndexOf("Index =");
                 if (index >= 0)
                 {
