@@ -1,4 +1,8 @@
-# timestamper cli tool
+<div align="center">
+  <h1 align="center"> timestamper </h1>
+  <p>A CLI tool that uses AI to generate YouTube video timestamps for you.</p>
+    <img src="https://publicnotes.blob.core.windows.net/publicnotes/Screenshot 2023-02-26 at 9.15.11 PM.png"/>
+</div>
 
 ## Prerequesits
 
