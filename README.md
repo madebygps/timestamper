@@ -12,7 +12,7 @@
 
 1. Clone the code.
 2. Move into the directory.
-3. Create a NuGet package by running the dotnet pack command:
+3. Create a NuGet package:
 
     ```csharp
     dotnet pack
@@ -37,5 +37,5 @@
 
 Feel free to open up an issue or reach out to me with.
 
-- **Gwyneth Pena-Siguenza**: [@madebygps](https://github.com/madebygps)
+- **Gwyneth Pena-Siguenza**: [@madebygps](https://twitter.com/madebygps)
 
