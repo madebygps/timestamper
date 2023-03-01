@@ -51,9 +51,11 @@ internal class Program
         int endIndex = captionsPerSlice;
         string captions = "";
 
+        string apiKey = Environment.GetEnvironmentVariable("openai_api_key");
+
         var openAiService = new OpenAIService(new OpenAI.GPT3.OpenAiOptions()
         {
-            ApiKey = "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"
+            ApiKey = apiKey
         });
 
         for (int l = 0; l < slices; l++)
