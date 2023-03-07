@@ -84,7 +84,8 @@ internal class Program
                 caption = track.Captions[k];
                 if (!string.IsNullOrWhiteSpace(caption.Text))
                 {
-                    captions += $"{caption.Text}";
+                    var captionText = caption.Text.Replace('\n',' ');
+                    captions += $"{captionText}" + " ";
                 }
             }
 
@@ -113,7 +114,7 @@ internal class Program
                     throw new Exception("No Choices");
                 } else
                 {
-                    summary = completionResult.Choices.FirstOrDefault()!.ToString().Remove(0, 25);
+                    summary = completionResult.Choices.FirstOrDefault()!.Text;
                 }
                 
                 //Console.WriteLine($"Tokens used: {completionResult.Usage.TotalTokens}");
