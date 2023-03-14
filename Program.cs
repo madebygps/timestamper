@@ -84,7 +84,7 @@ internal class Program
                 caption = track.Captions[k];
                 if (!string.IsNullOrWhiteSpace(caption.Text))
                 {
-                    var captionText = caption.Text.Replace('\n',' ');
+                    var captionText = caption.Text.Replace('\n', ' ');
                     captions += $"{captionText}" + " ";
                 }
             }
@@ -94,30 +94,31 @@ internal class Program
             /// Console.WriteLine($"Characters in caption: +{captions.Length}");
             //Console.WriteLine($"Max tokens to use: +{captions.Length/4}");
 
-            var completionResult = await openAiService.Completions.CreateCompletion(new CompletionCreateRequest()
-            {
-                Prompt = $"(Tell me the main idea of the following text in 15 words: {captions}",
-                Model = Models.TextDavinciV3,
-                Temperature = (float?)0.7,
-                TopP = 1,
-                MaxTokens = captions.Length / 4,
-                FrequencyPenalty = (float?)0.93,
-                PresencePenalty = (float?)1.03
-            });
 
+            var completionResult = await openAiService.ChatCompletion.CreateCompletion(new ChatCompletionCreateRequest
+            {
+                Messages = new List<ChatMessage>
+    {
+        ChatMessage.FromSystem("You are a helpful assistant."),
+        ChatMessage.FromUser(captions + "\n --- \n Summarize the above text in 15 words:"),
+     
+    },
+                Model = Models.ChatGpt3_5Turbo
+            });
             if (completionResult.Successful)
             {
+            
                 summary = "";
 
                 if (completionResult.Choices.Count == 0)
                 {
                     throw new Exception("No Choices");
-                } else
-                {
-                    summary = completionResult.Choices.FirstOrDefault()!.Text;
                 }
-                
-                //Console.WriteLine($"Tokens used: {completionResult.Usage.TotalTokens}");
+                else
+                {
+                    summary = completionResult.Choices.First().Message.Content;
+                }
+
                 int index = summary.IndexOf("Index =");
                 if (index >= 0)
                 {
@@ -131,8 +132,15 @@ internal class Program
                 {
                     throw new Exception("Unknown Error");
                 }
+
+                if (completionResult.Error == null)
+                {
+                    throw new Exception("Unknown Error");
+                }
                 Console.WriteLine($"{completionResult.Error.Code}: {completionResult.Error.Message}");
             }
+
+
             if (endIndex + captionsPerSlice < track.Captions.Count)
             {
                 startIndex = startIndex + captionsPerSlice;
