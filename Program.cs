@@ -90,24 +90,20 @@ internal class Program
             }
 
 
-            // Print number of chars in string
-            /// Console.WriteLine($"Characters in caption: +{captions.Length}");
-            //Console.WriteLine($"Max tokens to use: +{captions.Length/4}");
-
 
             var completionResult = await openAiService.ChatCompletion.CreateCompletion(new ChatCompletionCreateRequest
             {
                 Messages = new List<ChatMessage>
     {
         ChatMessage.FromSystem("You are a helpful assistant."),
-        ChatMessage.FromUser(captions + "\n --- \n Summarize the above text in 15 words:"),
-     
+        ChatMessage.FromUser(captions + "\n --- \n Summarize the above text in 13 words:"),
+
     },
                 Model = Models.ChatGpt3_5Turbo
             });
             if (completionResult.Successful)
             {
-            
+
                 summary = "";
 
                 if (completionResult.Choices.Count == 0)
