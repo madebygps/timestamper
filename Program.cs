@@ -1,10 +1,12 @@
-﻿using OpenAI.GPT3.Managers;
-using OpenAI.GPT3.ObjectModels;
-using OpenAI.GPT3.ObjectModels.RequestModels;
-using YoutubeExplode;
+﻿using YoutubeExplode;
 
 using System.Reflection;
 using System.Text;
+
+using OpenAI.Managers;
+using OpenAI.ObjectModels.RequestModels;
+using OpenAI.ObjectModels;
+using OpenAI;
 
 namespace TeleprompterConsole;
 
@@ -61,7 +63,7 @@ internal class Program
         int startIndex = 0;
         int endIndex = captionsPerSlice;
 
-        var openAiService = new OpenAIService(new OpenAI.GPT3.OpenAiOptions()
+        var openAiService = new OpenAIService(new OpenAiOptions()
         {
             ApiKey = apiKey
         });
