@@ -26,7 +26,7 @@ internal class Program
             return;
         }
 
-        string apiKey = Environment.GetEnvironmentVariable("openai_api_key");
+        string? apiKey = Environment.GetEnvironmentVariable("openai_api_key");
 
         if (string.IsNullOrEmpty(apiKey))
         {
@@ -113,7 +113,7 @@ internal class Program
             Messages = new List<ChatMessage>
         {
             ChatMessage.FromSystem("You are a Youtube video editor."),
-            ChatMessage.FromUser($"Your task is to create the text for the title of a youtube chapter for a youtube video. Summarize the text below, delimited by triple backticks, in at most in 6 words.\n Text: ```{captions}```"),
+            ChatMessage.FromUser($"Your task is to create a summary from the captions of a youtube video. Summarize the text below, delimited by triple backticks, in at most in 6 words.\n Text: ```{captions}```"),
         },
             Model = Models.ChatGpt3_5Turbo
         };
