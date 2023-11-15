@@ -115,7 +115,7 @@ internal class Program
             Messages = new List<ChatMessage>
         {
             ChatMessage.FromSystem("You are a Youtube video editor."),
-            ChatMessage.FromUser($"Your task is to create a summary from the captions of a youtube video. Summarize the text below, delimited by triple backticks, in at most in 6 words.\n Text: ```{captions}```"),
+            ChatMessage.FromUser($"Your task is to create a summary from the captions of a youtube video. Each text I give you is only a part of an entire video transcript. Summarize the text below, delimited by triple backticks, in at most in 6 words.\n Text: ```{captions}```"),
         },
             Model = Models.ChatGpt3_5Turbo
         };
