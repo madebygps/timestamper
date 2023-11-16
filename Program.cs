@@ -2,16 +2,19 @@
 
 using System.Reflection;
 using System.Text;
-
-using OpenAI.Managers;
-using OpenAI.ObjectModels.RequestModels;
-using OpenAI.ObjectModels;
-using OpenAI;
+using Azure;
+using Azure.AI.OpenAI;
 
 namespace TeleprompterConsole;
 
 internal class Program
 {
+    public static string? OpenAiApiKey { get; } = Environment.GetEnvironmentVariable("AZURE_OPENAI_KEY");
+    public static string? OpenAiApiEndpoint { get; } = Environment.GetEnvironmentVariable("AZURE_OPENAI_ENDPOINT");
+    public static string? VideoContext { get; } = Environment.GetEnvironmentVariable("VIDEO_CONTEXT");
+
+    public static string? DeploymentName { get; } = Environment.GetEnvironmentVariable("AZURE_OPENAI_DEPLOYMENT_NAME");
+    public static OpenAIClient? AzureOpenAiClient;
 
     public static async Task Main(string[] args)
     {
@@ -24,25 +27,24 @@ internal class Program
             Console.WriteLine($"timestamper v{versionString}");
             Console.WriteLine("-------------");
             Console.WriteLine("\nUsage:");
-            Console.WriteLine("  timestamper <videoUrl> <number of timestamps>");
+            Console.WriteLine("  timestamper <videoUrl> <number of timestamps> <video context in 1 sentence>");
             return;
         }
 
-        string? apiKey = Environment.GetEnvironmentVariable("openai_api_key");
 
-        if (string.IsNullOrEmpty(apiKey))
+        if (string.IsNullOrEmpty(OpenAiApiKey) || string.IsNullOrEmpty(OpenAiApiEndpoint))
         {
-            Console.WriteLine("Please set the openai_api_key environment variable");
+            Console.WriteLine("Please make sure to set all your env variables: openai_api_key, AZURE_OPENAI_KEY, AZURE_OPENAI_ENDPOINT, context");
             return;
         }
 
-        var track = await SetUpServices(args[0], Int32.Parse(args[1]));
-        await GenerateCaptions(args[0], Int32.Parse(args[1]), track, apiKey!);
+        AzureOpenAiClient = new OpenAIClient(new Uri(OpenAiApiEndpoint), new AzureKeyCredential(OpenAiApiKey));
 
-
+        var track = await SetUpServices(args[0]);
+        await GenerateCaptions(args[0], int.Parse(args[1]), track);
     }
 
-    private static async Task<YoutubeExplode.Videos.ClosedCaptions.ClosedCaptionTrack> SetUpServices(string videoUrl, int slices)
+    private static async Task<YoutubeExplode.Videos.ClosedCaptions.ClosedCaptionTrack> SetUpServices(string videoUrl)
     {
         var youtube = new YoutubeClient();
 
@@ -55,7 +57,7 @@ internal class Program
         return track;
     }
 
-    private static async Task GenerateCaptions(string videoUrl, int slices, YoutubeExplode.Videos.ClosedCaptions.ClosedCaptionTrack track, string apiKey)
+    private static async Task GenerateCaptions(string videoUrl, int slices, YoutubeExplode.Videos.ClosedCaptions.ClosedCaptionTrack track)
     {
         Console.WriteLine($"Generating {slices} timestamps for " + videoUrl);
 
@@ -63,10 +65,6 @@ internal class Program
         int startIndex = 0;
         int endIndex = captionsPerSlice;
 
-        var openAiService = new OpenAIService(new OpenAiOptions()
-        {
-            ApiKey = apiKey
-        });
 
         for (int l = 0; l < slices; l++)
         {
@@ -74,7 +72,7 @@ internal class Program
 
             Console.Write(caption.Offset.ToString().Split('.')[0] + " ");
             var captions = GetCaptionsForSlice(track, startIndex, endIndex);
-            var summary = await GetSummaryFromOpenAI(openAiService, captions);
+            var summary = await GetSummaryFromOpenAI(captions);
 
 
             Console.WriteLine(summary);
@@ -82,8 +80,8 @@ internal class Program
 
             if (endIndex + captionsPerSlice < track.Captions.Count)
             {
-                startIndex = startIndex + captionsPerSlice;
-                endIndex = endIndex + captionsPerSlice;
+                startIndex += captionsPerSlice;
+                endIndex += captionsPerSlice;
             }
             else
             {
@@ -106,52 +104,32 @@ internal class Program
         }
         return captionsBuilder.ToString().Trim();
     }
-    private static async Task<string> GetSummaryFromOpenAI(OpenAIService openAiService, string captions)
+    private static async Task<string> GetSummaryFromOpenAI(string captions)
     {
-
-
-        var request = new ChatCompletionCreateRequest
+        if (AzureOpenAiClient == null)
         {
-            Messages = new List<ChatMessage>
+            throw new Exception("AzureOpenAiClient is null");
+        }
+
+        var chatCompletionsOptions = new ChatCompletionsOptions()
         {
-            ChatMessage.FromSystem("You are a Youtube video editor."),
-            ChatMessage.FromUser($"Your task is to create a summary from the captions of a youtube video. Each text I give you is only a part of an entire video transcript. Summarize the text below, delimited by triple backticks, in at most in 6 words.\n Text: ```{captions}```"),
-        },
-            Model = Models.ChatGpt3_5Turbo
+            DeploymentName = DeploymentName,
+            Messages =
+    {
+        new ChatMessage(ChatRole.System, "You are a YouTube video summarizer. Your task is to create a summary from the captions of a youtube video. Each text I give you is only a part of an entire video transcript. I will give you a video transcript and you will summarize it in 6 words or less."),
+        new ChatMessage(ChatRole.System, $"This video is about:{VideoContext}"),
+        new ChatMessage(ChatRole.User, $" Summarize the text below, delimited by triple backticks, in at most in 6 words.\n Text: ```{captions}```")
+    },
+            MaxTokens = 100
         };
 
-        // Send the request to OpenAI's API and wait for the response
-        var response = await openAiService.ChatCompletion.CreateCompletion(request);
 
 
-        if (response.Successful)
-        {
-            var summaryBuilder = new StringBuilder();
-            if (response.Choices.Count > 0)
-            {
-                var summary = response.Choices.First().Message.Content;
-                var index = summary.IndexOf("Index =");
-                if (index >= 0)
-                {
-                    summary = summary.Substring(0, index);
-                }
-                summaryBuilder.Append(summary);
-            }
-            return summaryBuilder.ToString().Trim();
-        }
-        else
-        {
-            // Handle different error codes using a switch statement
-            switch (response.Error?.Code)
-            {
-                case "com.openai.api.errors.TooManyRequestsError":
-                    throw new Exception("Too many requests to OpenAI's API. Please wait and try again later.");
-                case "com.openai.api.errors.AuthenticationFailedError":
-                    throw new Exception("Authentication failed. Please check your API key and try again.");
-                default:
-                    throw new Exception($"OpenAI API error: {response.Error?.Message}");
-            }
-        }
+
+        Response<ChatCompletions> response = await AzureOpenAiClient.GetChatCompletionsAsync(chatCompletionsOptions);
+        string completion = response.Value.Choices[0].Message.Content;
+
+        return completion;
     }
 
 }
