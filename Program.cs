@@ -11,8 +11,6 @@ internal class Program
 {
     public static string? OpenAiApiKey { get; } = Environment.GetEnvironmentVariable("AZURE_OPENAI_KEY");
     public static string? OpenAiApiEndpoint { get; } = Environment.GetEnvironmentVariable("AZURE_OPENAI_ENDPOINT");
-    public static string? VideoContext { get; } = Environment.GetEnvironmentVariable("VIDEO_CONTEXT");
-
     public static string? DeploymentName { get; } = Environment.GetEnvironmentVariable("AZURE_OPENAI_DEPLOYMENT_NAME");
     public static OpenAIClient? AzureOpenAiClient;
 
@@ -27,7 +25,7 @@ internal class Program
             Console.WriteLine($"timestamper v{versionString}");
             Console.WriteLine("-------------");
             Console.WriteLine("\nUsage:");
-            Console.WriteLine("  timestamper <videoUrl> <number of timestamps> <video context in 1 sentence>");
+            Console.WriteLine("  timestamper <videoUrl> <number of timestamps>");
             return;
         }
 
@@ -117,7 +115,6 @@ internal class Program
             Messages =
     {
         new ChatMessage(ChatRole.System, "You are a YouTube video summarizer. Your task is to create a summary from the captions of a youtube video. Each text I give you is only a part of an entire video transcript. I will give you a video transcript and you will summarize it in 6 words or less."),
-        new ChatMessage(ChatRole.System, $"This video is about:{VideoContext}"),
         new ChatMessage(ChatRole.User, $" Summarize the text below, delimited by triple backticks, in at most in 6 words.\n Text: ```{captions}```")
     },
             MaxTokens = 100
